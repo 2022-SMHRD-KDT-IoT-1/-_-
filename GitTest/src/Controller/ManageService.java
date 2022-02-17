@@ -18,6 +18,7 @@ public class ManageService extends HttpServlet {
 		System.out.println("짜잔");
 		System.out.println("준팡이준팡이");
 		System.out.println("제발되주세요");
+		System.out.println("준비된인재영");
 	}
 
 }
