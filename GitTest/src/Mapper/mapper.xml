@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Model.MemberDAO"> <!-- mapper를 누가사용할것인ㄴ지 정해줌 -->
+
+	<!-- select문은 select태그, insert문은 insert태그 똑같은 이름의 태그 사용 id : DAO와의 연결 매개체 
+		parameterType : 매개변수 데이터 타입을 명시 #{필드명} : 이것으로 바인드 변수를 채워주는 것임. -->
+	<select id="loginService" parameterType="Model.MemberVO"
+		resultType="Model.MemberVO">
+		select * from msg_member where email=#{email} and pw=#{pw}
+	</select>
+	<!-- select를 할 때, resultType을 통해서 원하는 VO또는 객체로 묶어줄 수 있다. 여러개의 데이터를 DB에서 
+		가져올 때, resultType은 한개로 가져올때랑 같다. -->
+
+	<insert id="joinService" parameterType="Model.MemberVO">
+		insert into msg_member values(#{email},#{pw},#{tel},#{address})
+	</insert>
+
+	<update id="updateService" parameterType="Model.MemberVO">
+		update msg_member set pw=#{pw}, tel=#{tel}, address=#{address}
+		 where email=#{email}
+	</update>
+	
+	<delete id="deleteService"><!--1개만 넣어줄때는 파라미터 타입 신경x vo는 해줘야되긴 함  -->
+	delete from msg_member
+	where email =#{email}
+	</delete>
+	
+	<insert id="messageSend">
+	insert into msg_message
+	values(msg_num_seq.nextval , #{send_name}, #{receive_name}, #{content}, sysdate)
+	</insert>
+	
+	<select id="selectMessage" resultType = "Model.MessageVO"> <!-- 넣어주는게 하나면 parameterType 필요 x -->
+	 	select * from msg_message
+	 	where recieve_name = #{email}	
+	</select>
+	<insert id = "writeBoard" parameterType = "Model.BoardVO">
+		insert into msg_board
+		values(msg_bnum_seq.nextval, #{writer}, #{title},#{fileName}, #{content}, sysdate)
+	</insert>
+	
+	
+	<select id = "selectBoard"  resultType = "Model.BoardVO">
+		select * from msg_board
+	</select>
+	
+	<select id = "viewBoard"  resultType = "Model.BoardVO">
+		select * from msg_board
+		where num = #{num}
+	</select>
+	
+	<select id = "emailCheck"  resultType = "Model.MemberVO">
+		select * from msg_member
+		where email = #{email}
+	</select>
+</mapper>
