@@ -16,6 +16,7 @@ public class ManageService extends HttpServlet {
 	 */
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("¬•¿‹");
+		System.out.println("¡ÿ∆Œ¿Ã¡ÿ∆Œ¿Ã");
 	}
 
 }
