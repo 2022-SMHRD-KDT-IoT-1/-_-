@@ -14,6 +14,7 @@ public class ManageService extends HttpServlet {
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("준비된인재영");
+		System.out.println("준팡이");
 	}
 
 }
