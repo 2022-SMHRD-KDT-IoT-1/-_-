@@ -12,24 +12,18 @@
 	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <title>관리자 페이지</title>
 
-<link
-	href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css"
-	rel="stylesheet" />
-<link href="assets/css/styles2.css" rel="stylesheet" />
+
+<link href="assets/css/styles4.css" rel="stylesheet" />
 
 
-<!-- 메뉴페이지 로고 -->
-<script
-	src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
-	crossorigin="anonymous"></script>
-<!-- 메뉴페이지 로고(화살표 등 이모티콘) -->
+
 
 
 </head>
-<body class="sb-nav-fixed">
-	<nav class="sb-topnav navbar navbar-expand bg-dark"><!-- navar-expand : 자리 고정 -->
+<body>
+	<nav class="navbar navbar-expand bg-dark"><!-- navar-expand : 자리 고정 -->
 		<!-- Navbar Brand-->
-		<a class="navbar-brand">logo56123</a>
+		<a class="logo">logo345</a>
 
 
 
@@ -37,7 +31,7 @@
 		<form class="d-md-inline-block">
 			<div class="input-group">
 				<input class="form-control" type="text" placeholder="Search for...">
-				<button class="btn btn-primary" id="btnNavbarSearch" type="button">
+				<button class="btn" id="btnNavbarSearch" type="button">
 					<i class="fas fa-search"></i>
 				</button>
 			</div>
@@ -56,8 +50,7 @@
 						<div class="sb-sidenav-menu-heading">Main12</div>
 						<a class="nav-link">
 							<div class="sb-nav-link-icon">
-								<i></i>
-							</div> 페이지1
+							</div> 페이지1234545
 						</a>
 
 
@@ -69,7 +62,7 @@
 						</a> <a class="nav-link">
 							<div class="sb-nav-link-icon">
 								<i class="fa-book-open"></i>
-							</div> 페이지3
+							</div> 페이지124
 
 						</a>
 					</div>
@@ -83,7 +76,7 @@
 				<div>
 					<h1 class="mt-4">Dashboard</h1>
 					<ol class="breadcrumb">
-						<li>회원관리 넣을 곳</li>
+						<li>회원관리 넣을 곳4567</li>
 					</ol>
 				</div>
 		</div>
