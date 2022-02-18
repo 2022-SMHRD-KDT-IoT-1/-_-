@@ -1,12 +1,62 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
-<!DOCTYPE html>
+	pageEncoding="EUC-KR"%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta charset="EUC-KR">
-<title>Insert title here</title>
+<title>Forty by HTML5 UP</title>
+<meta charset="EUC-KR" />
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+
+<link rel="stylesheet" href="assets/css/join2.css">
 </head>
+
 <body>
 
+<!-- <div class="bg">
+		<video muted autoplay loop>
+		<source src="https://bit.ly/3kYMF9A" type="video/mp4"></video> -->
+
+	<div class="wrap">
+		<div class="form-wrap">
+			<div class="button-wrap">
+				<div id="btn">회원가입</div>
+			</div>
+			<form action="#" id="login" action="" class="input-group">
+
+				<input type="text" name="name" class="input-field" placeholder="이름 입력">
+				<input type="tel" name="tel" class="input-field" placeholder="전화번호 입력">
+				<input type="text" class="input-field" placeholder="User name or Email" required>
+				<input type="password" class="input-field" placeholder="Enter Password" required>
+				
+				
+				<div class="gender">
+				남자&nbsp;<input type="radio" name="gender" class="ge" value="남">
+				&nbsp;&nbsp;&nbsp;&nbsp;여자&nbsp;<input type="radio" name="gender" class="ge" value="여">
+				</div>
+				
+				<input type="date" class="input-field" name="date" placeholder="생년월일">
+				<input type="text" class="input-field" name="Anumber" placeholder="제품번호를 입력해주세요">
+                    <button class="submit">회원가입</button>
+				</form>
+               
+            </div>
+        </div>
+        
+    </body>
+</html>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        
 </body>
 </html>
+

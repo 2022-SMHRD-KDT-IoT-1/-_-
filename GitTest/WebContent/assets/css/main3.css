@@ -1,0 +1,84 @@
+@import url(font-awesome.min.css);
+
+@import
+	url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic")
+	;
+
+
+body {
+	padding: 0px;
+	margin: 0px;
+}
+
+.bg {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	margin: 0px auto;
+	position: relative;
+}
+
+video {
+	width: 100%;
+}
+
+
+
+
+/* 로고 */
+#logo {
+	position: realtive;
+	margin-top: 0px;
+	top:0px;
+	color: #ffffff;
+}
+/* 로고 */
+
+
+
+
+/* 메인 글자 */
+.text {
+	position: absolute;
+	width: 100%;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.text p {
+	text-align: center;
+	font-size: 48px;
+	color: #ffffff;
+}
+/* 메인 글자 */
+
+
+
+
+.signbutton{
+	border: 1px solid white;
+}
+
+
+#loginbutton {
+	color: white;
+	text-align: center;
+}
+
+
+
+
+/*------------------*/
+/* Layout (No Edit) */
+/*------------------*/
+@media ( max-width :664px) {
+	.bg {
+		height: auto;
+	}
+	video {
+		height: 400px;
+	}
+	.text p {
+		font-size: 24px;
+	}
+}
