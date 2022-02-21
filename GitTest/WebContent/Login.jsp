@@ -22,10 +22,10 @@
 			<div class="button-wrap">
 				<div id="btn">&nbsp;로그인</div>
 			</div>
-			<form action="#" id="login" action="" class="input-group">
+			<form action="LoginService" id="login" action="" class="input-group" method = "post">
 
-				<input type="text" name="name" class="input-field" placeholder="ID입력">
-				<input type="password" class="input-field" placeholder="PW 입력" required>
+				<input type="text" name="mem_id" class="input-field" placeholder="ID입력">
+				<input type="password" name = "mem_pw" class="input-field" placeholder="PW 입력" required>
 				<br>
                     <button class="submit">로그인</button>
 				</form>
