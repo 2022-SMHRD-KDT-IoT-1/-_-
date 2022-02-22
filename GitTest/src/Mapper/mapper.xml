@@ -15,42 +15,10 @@
 		insert into msg_member values(#{mem_id},#{mem_pw},#{mem_name},#{mem_gender},#{mem_birthdate},#{mem_tel},#{mem_guardian_tel},#{jp_num},#{mem_joindate})
 	</insert>
 
-	<update id="updateService" parameterType="Model.MemberVO">
-		update msg_member set pw=#{pw}, tel=#{tel}, address=#{address}
-		 where email=#{email}
-	</update>
 	
-	<delete id="deleteService"><!--1개만 넣어줄때는 파라미터 타입 신경x vo는 해줘야되긴 함  -->
-	delete from msg_member
-	where email =#{email}
-	</delete>
-	
-	<insert id="messageSend">
-	insert into msg_message
-	values(msg_num_seq.nextval , #{send_name}, #{receive_name}, #{content}, sysdate)
-	</insert>
-	
-	<select id="selectMessage" resultType = "Model.MessageVO"> <!-- 넣어주는게 하나면 parameterType 필요 x -->
-	 	select * from msg_message
-	 	where recieve_name = #{email}	
-	</select>
-	<insert id = "writeBoard" parameterType = "Model.BoardVO">
-		insert into msg_board
-		values(msg_bnum_seq.nextval, #{writer}, #{title},#{fileName}, #{content}, sysdate)
-	</insert>
-	
-	
-	<select id = "selectBoard"  resultType = "Model.BoardVO">
-		select * from msg_board
+	<select id="manageService" resultType = "Model.MemberVO"> <!-- 넣어주는게 하나면 parameterType 필요 x -->
+	 	select mem_name, mem_gender, mem_birthdate, mem_guardian_tel, jp_num from jp_member;
 	</select>
 	
-	<select id = "viewBoard"  resultType = "Model.BoardVO">
-		select * from msg_board
-		where num = #{num}
-	</select>
 	
-	<select id = "emailCheck"  resultType = "Model.MemberVO">
-		select * from msg_member
-		where email = #{email}
-	</select>
 </mapper>

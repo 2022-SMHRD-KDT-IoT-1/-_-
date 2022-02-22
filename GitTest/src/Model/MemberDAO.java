@@ -1,6 +1,7 @@
 package Model;
 
 import java.io.InputStream;
+import java.util.List;
 
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -49,4 +50,14 @@ public class MemberDAO {
 		return uvo;
 	}
 	
+	public List<MemberVO> selectMember(){
+		
+		SqlSession session = sqlSessionFactory.openSession();
+		List<MemberVO> list= session.selectList("manageService"); // where절이 없으니 id값만 들어가면 된다
+		
+		session.close();
+		
+		return list;
+		
+	}
 }

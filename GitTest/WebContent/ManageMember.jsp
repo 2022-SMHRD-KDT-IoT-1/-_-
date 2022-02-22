@@ -1,3 +1,5 @@
+<%@page import="Model.MemberVO"%>
+<%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
 	pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
@@ -10,6 +12,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+<%
+			List<MemberVO> list = (List<MemberVO>)request.getAttribute("list");
+		
+	
+		%>
 <title>관리자 페이지</title>
 
 
@@ -75,9 +83,31 @@
 			<main>
 				<div>
 					<h1 class="mt-4">Dashboard</h1>
-					<ol class="breadcrumb">
-						<li>회원관리 넣을 곳4567</li>
-					</ol>
+					<table id = "list" class="breadcrumb">
+					<thead>						
+					<tr>
+						<th scope="col">이름</td>
+						<th scope="col">성별</td>
+						<th scope="col">생일</td>
+						<th scope="col">연락처</td>
+						<th scope="col">보호자 연락처</td>
+						<th scope="col">제품번호</td>
+					</tr>
+					</thead>					
+					<tbody>
+					<%for(MemberVO vo : list){ %>				
+					<tr>
+						<td><%=vo.getMem_name()%></td>
+						<td><%=vo.getMem_gender()%></td>
+						<td><%=vo.getMem_birthdate()%></td>
+						<td><%=vo.getMem_tel()%></td>
+						<td><%=vo.getMem_guardian_tel()%></td>
+						<td><%=vo.getJp_num()%></td>
+						
+					</tr>
+					<%} %>
+					</tbody>					
+				</table>					
 				</div>
 		</div>
 		</main>
