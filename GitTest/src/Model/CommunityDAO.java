@@ -26,11 +26,11 @@ public class CommunityDAO {
 		}
 	}
 
-	public int Community(CommunityVO vo) {
+	public int communityWrite(CommunityVO vo) {
 
 		SqlSession session = sqlSessionFactory.openSession();
 
-		int cnt = session.insert("", vo);
+		int cnt = session.insert("communityWrite", vo);
 
 		session.close();
 
@@ -38,11 +38,11 @@ public class CommunityDAO {
 	}
 
 	// 목록보기
-	public List<CommunityVO> selectCommunity() {
+	public List<CommunityVO> communitySelect() {
 
 		SqlSession session = sqlSessionFactory.openSession();
 
-		List<CommunityVO> list = session.selectList("selectCommunity");
+		List<CommunityVO> list = session.selectList("communitySelect");
 
 		session.close();
 
@@ -50,11 +50,11 @@ public class CommunityDAO {
 	}
 
 	// 게시글보기 // 순번
-	public CommunityVO viewCommunity(int num) {
+	public CommunityVO communityView(int num) {
 
 		SqlSession session = sqlSessionFactory.openSession();
 
-		CommunityVO vo = session.selectOne("viewCommunity", num);
+		CommunityVO vo = session.selectOne("communityView", num);
 
 		session.close();
 
@@ -62,11 +62,11 @@ public class CommunityDAO {
 
 	}
 	
-	public int deleteCommunity (CommunityVO vo) {
+	public int communityDelete (CommunityVO vo) {
 		
 		SqlSession session = sqlSessionFactory.openSession();
 		
-		int cnt = session.delete("deleteCommunity", vo);
+		int cnt = session.delete("communityDelete", vo);
 		
 		session.close();
 		
@@ -74,11 +74,11 @@ public class CommunityDAO {
 		
 	}
 	
-	public int updateCommunity(CommunityVO vo) {
+	public int communityUpdate(CommunityVO vo) {
 		
 		SqlSession session = sqlSessionFactory.openSession();
 		
-		int cnt = session.update("updateCommunity", vo);
+		int cnt = session.update("communityUpdate", vo);
 		
 		session.close();
 		

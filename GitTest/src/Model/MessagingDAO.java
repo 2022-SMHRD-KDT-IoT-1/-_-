@@ -30,7 +30,7 @@ public class MessagingDAO {
 
 		SqlSession session = sqlSessionFactory.openSession();
 
-		int cnt = session.insert("", vo);
+		int cnt = session.insert("MessagingService", vo);
 
 		session.close();
 

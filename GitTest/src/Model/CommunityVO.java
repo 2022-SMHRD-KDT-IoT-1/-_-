@@ -9,6 +9,16 @@ public class CommunityVO {
 	private String article_file2;
 	private String article_date;
 	private String mem_id;
+	
+	
+
+	public CommunityVO(String article_title, String article_content, String article_file1, String article_file2) {
+		super();
+		this.article_title = article_title;
+		this.article_content = article_content;
+		this.article_file1 = article_file1;
+		this.article_file2 = article_file2;
+	}
 
 	public CommunityVO(int article_seq, String article_title, String article_content, String article_file1,
 			String article_file2, String article_date, String mem_id) {
