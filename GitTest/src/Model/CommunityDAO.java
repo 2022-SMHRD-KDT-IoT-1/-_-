@@ -42,7 +42,7 @@ public class CommunityDAO {
 
 		SqlSession session = sqlSessionFactory.openSession();
 
-		List<CommunityVO> list = session.selectList("communitySelect");
+		List<CommunityVO> list = session.selectList("communityMain");
 
 		session.close();
 
