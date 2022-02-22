@@ -13,26 +13,26 @@
 
 <body>
 
-<!-- <div class="bg">
+	<!-- <div class="bg">
 		<video muted autoplay loop>
 		<source src="https://bit.ly/3kYMF9A" type="video/mp4"></video> -->
 
 	<div class="wrap">
 		<div class="form-wrap">
-			<div class="button-wrap">
-				<div id="btn">&nbsp;로그인</div>
-			</div>
-			<form action="LoginService" id="login" action="" class="input-group" method = "post">
+			<form action="LoginService" id="login" action="" class="input-group"
+				method="post">
+				<div id="btn">로그인</div>
+				
+				<input type="text" name="mem_id" class="input-field"
+					placeholder="ID입력"> <input type="password" name="mem_pw"
+					class="input-field" placeholder="PW 입력" required> <a
+					class="join" href="#">회원가입</a>
+				<button class="submit">로그인</button>
+			</form>
 
-				<input type="text" name="mem_id" class="input-field" placeholder="ID입력">
-				<input type="password" name = "mem_pw" class="input-field" placeholder="PW 입력" required>
-				<br>
-                    <button class="submit">로그인</button>
-				</form>
-               
-            </div>
-        </div>
-        
-    </body>
+		</div>
+	</div>
+
+</body>
 </html>
 

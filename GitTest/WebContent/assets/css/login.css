@@ -12,12 +12,22 @@ body {
 	background-image:url("https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455_960_720.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	height: 100vh;
 }
 
 
-.gender {
-	text-align: center;
+/* 회원가입 버튼 */
+.join{
+	text-align: center !important;
+	color: black;
 }
+.join:hover{
+	color: red;
+}
+/* 회원가입 버튼 */
+
+
+
 
 
 .wrap {
@@ -32,16 +42,22 @@ body {
 }
 
 * {
-    margin: 30;
+	margin: 0;
     padding: 0;
     font-family: sans-serif;
+    text-decoration-line: none;	
+    text-align:center;
+}
+
+.input-field{
+	text-align:left;
 }
 
 .form-wrap {
 	width: 380px;
-    height: 700px;
+    height: 600px;
     position: relative;
-    margin: 7% auto;
+    margin: 11% auto;
     background: #fff;
     padding: 5px;
     overflow: hidden;
@@ -54,13 +70,14 @@ body {
 #btn {
 	text-align: center;
 	width: 170px;
-    padding: 10px 30px;
+    padding: 10px 30px;s
     cursor: pointer;
     display: block;
     background: linear-gradient(to right, #1c92d2, #f2fcfe);
     border: 0;
     outline: none;
     border-radius: 30px; 
+    margin: 0px 0px 90px 35px;
 }
 /* 로그인 버튼 ================*/
 
@@ -75,7 +92,7 @@ body {
 
 
 .input-group {
-	margin-top:240px;
+	margin-top:90px;
     top: 50px;
     position: absolute;
     width: 280px;
@@ -98,7 +115,7 @@ body {
     padding: 10px 30px;
     cursor: pointer;
     display: block;
-    margin: 15px 0px 0px 70px;
+    margin: 40px 0px 0px 70px;
     background: linear-gradient(to right, #1c92d2, #f2fcfe);
     border: 0;
     outline: none;

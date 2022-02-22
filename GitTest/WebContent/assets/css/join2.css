@@ -12,6 +12,7 @@ body {
 	background-image:url("https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455_960_720.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	height: 100vh;
 }
 
 
@@ -19,27 +20,32 @@ body {
 	text-align: center;
 }
 
+body .wrap{
+	height: 100%;
+	width: 100%;
+}
+
 
 .wrap {
+	height: 100%;
+	width: 100%;
 	margin: 0px;
 	padding: 0px;
-    height: 100%;
     background:rgba(0, 0, 0, 0.5);
-    width: 100%;
     background-position: center;
     background-size: cover;
     position: absolute;
 }
 
 * {
-    margin: 30;
+    margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
 
 .form-wrap {
 	width: 380px;
-    height: 520px;
+    height: 700px;
     position: relative;
     margin: 10% auto;
     background: #fff;
@@ -60,14 +66,16 @@ body {
 
 /* 회원가입 버튼 ================*/
 #btn {
-    padding: 10px 30px;
+    text-align: center;
+	width: 170px;
+    padding: 10px 30px;s
     cursor: pointer;
     display: block;
-    margin: auto;
     background: linear-gradient(to right, #1c92d2, #f2fcfe);
     border: 0;
     outline: none;
-    border-radius: 30px;
+    border-radius: 30px; 
+    margin: 0px 0px 60px 35px;
 }
 /* 회원가입 버튼 ================*/
 
@@ -108,16 +116,16 @@ body {
 
 /* 하단 회원가입 버튼 */
 .submit {
-	
-    width: 85%;
+    width: 50%;
     padding: 10px 30px;
     cursor: pointer;
     display: block;
-    margin: auto;
+    margin: 60px 0px 0px 70px;
     background: linear-gradient(to right, #1c92d2, #f2fcfe);
     border: 0;
     outline: none;
     border-radius: 30px;
+    font-size: 15px;
 }
 /* 하단 회원가입 버튼 */
 

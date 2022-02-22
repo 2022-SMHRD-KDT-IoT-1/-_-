@@ -20,10 +20,10 @@
 	<div class="wrap">
 		<div class="form-wrap">
 			<div class="button-wrap">
-				<div id="btn">회원가입</div>
+				
 			</div>
 			<form action="#" id="login" action="" class="input-group">
-
+			<div id="btn">회원가입</div>
 				<input type="text" name="name" class="input-field" placeholder="이름 입력">
 				<input type="tel" name="tel" class="input-field" placeholder="전화번호 입력">
 				<input type="text" class="input-field" placeholder="User name or Email" required>
@@ -45,18 +45,5 @@
         
     </body>
 </html>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-        
-</body>
-</html>
+
 

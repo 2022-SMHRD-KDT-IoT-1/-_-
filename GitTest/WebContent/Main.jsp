@@ -14,34 +14,28 @@
 
 
 </head>
-<body class="landing">
+<body>
 
 
-<!--배경영상-->
-	<div class="bg">
-		<video muted autoplay loop>
-		<source src="https://bit.ly/3kYMF9A" type="video/mp4"></video>
-		
-		<div class="text">
-			<h1 id="logo">
-				<a>logo</a>
-			</h1>
-			<!-- Header -->
-			<p>We will return your sight</p>
-
-
-
+	<!--배경영상-->
+	<div class="wrap">
+		<h1>
+			<a id="logo">logo</a>
+		</h1>
+		<!-- Header -->
+		<div class="ma1">
+		<p class="ma">We will return<br>
+		 your sight</p>
+		 </div>
 
 		<!--로그인-->
-		<div id = loginbutton>
-			<a href="#">Sign Up</a>
+		<div id=loginbutton>
+			<a class="login" href="#">Sign Up</a>
 		</div>
 		<!--로그인-->
 
-		
-	<!-- Scripts -->
 
-</div>
+		<!-- Scripts -->
+	</div>
 </body>
 </html>
-
