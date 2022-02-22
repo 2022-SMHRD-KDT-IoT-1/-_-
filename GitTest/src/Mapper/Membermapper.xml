@@ -20,29 +20,4 @@
 	 	select mem_name, mem_gender, mem_birthdate, mem_guardian_tel, jp_num from jp_member;
 	</select>
 	
-	<insert id="communityWrite" parameterType = "Model.CommunityVO">
-		insert into jp_community 
-		values(jp_community_seq.nextval, #{article_title}, #{article_content}, #{article_file1}, #{article_file2}, sysdate)
-	</insert>
-	
-	<select id = "communityMain" resultType = "Model.CommunityVO">
-		select * from jp_community
-	</select>
-	
-	<select id ="communityView"	resultType = "Model.CommunityVO">
-		select * from jp_community
-		where num = #{num}
-	</select>
-	
-	<delete id="communityDelete">
-		delete from jp_community
-		where mem_id = #{mem_id}
-	</delete>
-	
-	<update id = "communityUpdate" parameterType = "Model.CommunityVO">
-		update jp_community
-		set article_content = #{article_content}, article_title = #{article_title}, 
-		article_file1 = #{article_file1}, article_file2 = #{article_file2}
-		where mem_id = #{mem_id}
-	</update>
 </mapper>

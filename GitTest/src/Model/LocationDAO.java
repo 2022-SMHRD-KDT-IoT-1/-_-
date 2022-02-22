@@ -24,9 +24,10 @@ public class LocationDAO {
 
 	public int Location(LocationVO vo) {
 
-		SqlSession session = sqlSessionFactory.openSession(true);
+		SqlSession session = sqlSessionFactory.openSession();
+		//select¹®
 
-		int cnt = session.insert("", vo);
+		int cnt = session.insert("vo", vo);
 
 		session.close(); // service
 

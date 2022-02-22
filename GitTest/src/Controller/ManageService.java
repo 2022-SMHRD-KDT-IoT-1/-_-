@@ -20,6 +20,7 @@ public class ManageService extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
 		MemberDAO dao = new MemberDAO();
 		List<MemberVO> list = dao.selectMember();
 		

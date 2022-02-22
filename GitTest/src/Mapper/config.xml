@@ -15,6 +15,10 @@
     </environment>
   </environments>
   <mappers>
-    <mapper resource="Mapper/mapper.xml"/>
+    <mapper resource="Mapper/Membermapper.xml"/>
+    <mapper resource="Mapper/Messagingmapper.xml"/>
+    <mapper resource="Mapper/Communitymapper.xml"/>
+    <mapper resource="Mapper/Locationmapper.xml"/>
+    <mapper resource="Mapper/SOSmapper.xml"/>   
   </mappers>
 </configuration>

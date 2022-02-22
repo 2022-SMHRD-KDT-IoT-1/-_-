@@ -1,6 +1,7 @@
 package Model;
 
 import java.io.InputStream;
+import java.util.List;
 
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -24,16 +25,15 @@ public class SosDAO {
 		}
 	}
 
-	public int SOSManage(SosVO vo) {
-
-		SqlSession session = sqlSessionFactory.openSession(true);
-
-		int cnt = session.insert("", vo);
-
+	
+	public List<SosVO> selectSos(){
+		
+		SqlSession session = sqlSessionFactory.openSession();
+		List<SosVO> list= session.selectList("SosService"); // where절이 없으니 id값만 들어가면 된다
+		
 		session.close();
-
-		return cnt;
-
+		
+		return list;
+		
 	}
-
 }
