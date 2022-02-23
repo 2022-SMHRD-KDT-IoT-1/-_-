@@ -16,17 +16,16 @@
 	<!-- <div class="bg">
 		<video muted autoplay loop>
 		<source src="https://bit.ly/3kYMF9A" type="video/mp4"></video> -->
-
+<!-- 와 콘솔창 안나오니까 너무 답답한데 설정 좀만 만질게여 -->
 	<div class="wrap">
 		<div class="form-wrap">
-			<form action="LoginService" id="login" action="" class="input-group"
+			<form action="LoginService" id="login" class="input-group"
 				method="post">
 				<div id="btn">로그인</div>
-				
 				<input type="text" name="mem_id" class="input-field"
 					placeholder="ID입력"> <input type="password" name="mem_pw"
 					class="input-field" placeholder="PW 입력" required> <a
-					class="join" href="#">회원가입</a>
+					class="join" href="Join.jsp">회원가입</a>
 				<button class="submit">로그인</button>
 			</form>
 

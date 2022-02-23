@@ -12,37 +12,30 @@ import javax.servlet.http.HttpSession;
 import Model.MemberDAO;
 import Model.MemberVO;
 
-
 @WebServlet("/LoginService")
 public class LoginService extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	
-	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void service(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		String mem_id = request.getParameter("mem_id");
 		String mem_pw = request.getParameter("mem_pw");
-		
+
 		MemberVO vo = new MemberVO(mem_id, mem_pw);
-		
+
 		MemberDAO dao = new MemberDAO();
-		
+
 		MemberVO uvo = dao.login(vo);
-	
-		if(uvo != null) {
-			
+		System.out.println(uvo);
+		if (uvo != null) {
 			HttpSession session = request.getSession();
-			
 			session.setAttribute("vo", uvo);
 			response.sendRedirect("LoginMain.jsp");
-			
-			
-		}else {
-		
+		} else {
 			response.sendRedirect("Login.jsp");
-		
+
 		}
-		
-		
+
 	}
 
 }

@@ -18,7 +18,7 @@ public class MemberDAO {
 			InputStream inputStream = Resources.getResourceAsStream(resource);
 			sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
 			
-			
+
 		} catch (Exception e) {
 			
 		}
@@ -39,13 +39,9 @@ public class MemberDAO {
 	public MemberVO login(MemberVO vo) {
 		
 		
-		SqlSession session = sqlSessionFactory.openSession();
-		
+		SqlSession session = sqlSessionFactory.openSession(); //얘가 안열리네용 잠만용
 		
 		MemberVO uvo = session.selectOne("loginService", vo);
-		
-		
-	
 		session.close();
 		return uvo;
 	}
@@ -53,7 +49,7 @@ public class MemberDAO {
 	public List<MemberVO> selectMember(){
 		
 		SqlSession session = sqlSessionFactory.openSession();
-		List<MemberVO> list= session.selectList("manageService"); // where절이 없으니 id값만 들어가면 된다
+		List<MemberVO> list= session.selectList("manageService"); 
 		
 		session.close();
 		
