@@ -7,9 +7,17 @@
 <title>Forty by HTML5 UP</title>
 <meta charset="EUC-KR" />
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-
 <link rel="stylesheet" href="assets/css/join2.css">
+	<style>
+		@media ( max-width :500px) {
+			.form-wrap {
+				margin: 0px;
+				height: 100vh;
+			}
+		}
+	</style>
 </head>
+
 
 <body>
 	
