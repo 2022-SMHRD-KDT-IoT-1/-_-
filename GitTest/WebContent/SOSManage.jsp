@@ -23,13 +23,13 @@
 								</td>
 								<th scope="col">위치
 								</td>
-								<th scope="col">이름
+								<th scope="col">회원 이름
 								</td>
 								<th scope="col">연락처
 								</td>
 								<th scope="col">보호자 연락처
 								</td>
-								<th scope="col">제품번호
+								<th scope="col">지팡이 번호
 								</td>
 							</tr>
 						</thead>
@@ -40,10 +40,10 @@
 							<tr>
 								<td><%=vo.getSos_seq()%></td>
 								<td><%=vo.getLatitude()%><%=vo.getLongtitude()%></td>
-								<td><%=vo.getMem_name() %></td>
+								<td><%=vo.getMem_name()%></td>
 								<td><%=vo.getMem_tel()%></td>
 								<td><%=vo.getMem_guardian_tel()%></td>
-								<td><a href="SOSlocation.jsp"><%=vo.getJp_num()%></a></td>
+								<td><a href = "ViewSos?num=<%=vo.getSos_seq()%>"><%=vo.getJp_num()%></a></td>
 
 							</tr>
 							<%

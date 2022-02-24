@@ -29,11 +29,24 @@ public class SosDAO {
 	public List<SosVO> selectSos(){
 		
 		SqlSession session = sqlSessionFactory.openSession();
-		List<SosVO> list= session.selectList("SosService"); // where절이 없으니 id값만 들어가면 된다
+		List<SosVO> list= session.selectList("SosService"); 
 		
 		session.close();
 		
 		return list;
 		
 	}
+
+	public SosVO viewSos(int sos_seq) {
+		
+		
+		SqlSession session = sqlSessionFactory.openSession();
+		
+		
+		SosVO vo = session.selectOne("viewSos",sos_seq);
+		
+		session.close();
+		return  vo;
+	}
+
 }

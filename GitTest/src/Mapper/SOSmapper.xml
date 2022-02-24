@@ -19,4 +19,10 @@
 	 	 			where jp_sos.jp_loc_seq = A.jp_loc_seq ;
 	</select>
 
+	<select id = "ViewSos"  resultType = "Model.SosVO">
+		select * from jp_sos
+		where sos_seq = #{sos_seq}
+	</select>
+	
+
 </mapper>

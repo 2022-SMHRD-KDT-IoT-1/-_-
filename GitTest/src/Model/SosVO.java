@@ -4,8 +4,15 @@ public class SosVO {
 
 	private int sos_seq;
 	private String sos_time;
+	private int jp_loc_seq;
+	private String sos_memo;
+	private String sos_status;
+	
 	private String latitude;
 	private String longtitude;
+	
+	
+	
 	private String mem_name;
 	private String mem_tel;
 	private String mem_guardian_tel;
