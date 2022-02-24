@@ -37,7 +37,12 @@
 		
 		<video muted autoplay loop>
 			<source src="assets/bg/bg.mp4" type="video/mp4">
-		</video>	
+		</video>
+		<div class="menu">	
+			<ul>
+				<li><a class="menu logo">logo</a></li>
+			</ul>
+		</div>
 		<div class="wrap_bg">
 		</div>
 		<div class="form-wrap">
