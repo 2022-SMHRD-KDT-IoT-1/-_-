@@ -39,9 +39,6 @@ public class MemberVO {
 	}
 
 
-
-
-
 	public String getMem_id() {
 		return mem_id;
 	}

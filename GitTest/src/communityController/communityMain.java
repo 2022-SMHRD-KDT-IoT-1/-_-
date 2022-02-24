@@ -21,9 +21,9 @@ public class communityMain extends HttpServlet {
 			throws ServletException, IOException {
 
 		CommunityDAO dao = new CommunityDAO();
-		List<CommunityVO> list = dao.communitySelect();
+		List<CommunityVO> communityList = dao.communitySelect();
 
-		request.setAttribute("list", list);
+		request.setAttribute("communityList", communityList);
 
 		RequestDispatcher rd = request.getRequestDispatcher("communityMain.jsp");
 		rd.forward(request, response);

@@ -11,65 +11,66 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 public class CommentDAO {
 
 	private static SqlSessionFactory sqlSessionFactory;
-	
+
 	static {
 		try {
-			
+
 			String resource = "Mapper/config.xml";
-			
+
 			InputStream inputStream = Resources.getResourceAsStream(resource);
-			
+
 			sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
-		}catch(Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
-			
+
 		}
-	
+
 	}
-	
-	public int Comment(CommentVO vo) {
-		
+
+	public int commentWrite(CommentVO vo) {
+
 		SqlSession session = sqlSessionFactory.openSession();
-		
-		int cnt = session.insert("", vo);
-		
+
+		int cnt = session.insert("commentWrite", vo);
+
 		session.close();
-		
+
 		return cnt;
 	}
-	
-	public List<CommentVO> selectComment(){
-		
+
+	public List<CommentVO> commentView() {
+
 		SqlSession session = sqlSessionFactory.openSession();
-		
-		List<CommentVO> list = session.selectList("viewComment");
-		
+
+		List<CommentVO> list = session.selectList("commentView");
+
 		session.close();
-		
+
 		return list;
-		
+
 	}
-	
-	public int deleteComment (CommentVO vo) {
-		
+
+	public int commentDelete(CommentVO vo) {
+
 		SqlSession session = sqlSessionFactory.openSession();
-		
-		int cnt = session.delete("deleteComment", vo);
-		
+
+		int cnt = session.delete("commentDelete", vo);
+
 		session.close();
-		
+
 		return cnt;
-		
+
 	}
-	
-	public int updateComment (CommentVO vo) {
-		
-		SqlSession session = sqlSessionFactory.openSession();
-		
-		int cnt = session.update("updateComment", vo);
-		
-		session.close();
-		
-		return cnt;
-	}
+
+	/*
+	 * public int commentUpdate(CommentVO vo) {
+	 * 
+	 * SqlSession session = sqlSessionFactory.openSession();
+	 * 
+	 * int cnt = session.update("commentUpdate", vo);
+	 * 
+	 * session.close();
+	 * 
+	 * return cnt; }
+	 */
 }

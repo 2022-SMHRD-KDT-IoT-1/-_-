@@ -16,6 +16,14 @@ public class CommentVO {
 			this.comm_date = comm_date;
 			this.mem_id = mem_id;
 		}
+		
+		
+		public CommentVO(String comm_content) {
+
+			this.comm_content = comm_content;
+		}
+
+
 		public int getComm_seq() {
 			return comm_seq;
 		}

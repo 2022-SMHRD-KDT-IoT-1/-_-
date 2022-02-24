@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Model.CommentDAO">
+
+
+	<insert id="commentWrite" parameterType="Model.CommentVO">
+		insert into jp_comment
+		values(comm_seq, article_seq, #{comm_content}, #{comm_date}, #{mem_id})
+	</insert>
+
+	<select id=" communityView" resultType="Model.CommentVO">
+		select * from jp_comment
+	</select>
+	
+	<delete id = "commentDelete">
+		delete from jp_comment
+		where mem_id = #{mem_id}
+	</delete>
+
+
+
+
+
+</mapper> 
