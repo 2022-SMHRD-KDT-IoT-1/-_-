@@ -5,18 +5,12 @@
 <mapper namespace="Model.SosDAO"> <!-- mapper를 누가사용할것인ㄴ지 정해줌 -->
 
 	<select id="SosService" resultType = "Model.SosVO"> <!-- 넣어주는게 하나면 parameterType 필요 x -->	 		 	  
-	 	  select jp_sos.sos_seq, jp_sos.sos_time, A.latitude, A.longtitude, A.jp_member.mem_name, A.jp_member.mem_tel, A.jp_member.mem_guardian_tel, A.jp_member.jp_num
-	 	  from jp_sos, (	 	  
-	 	  	select  jp_location.jp_loc_seq,
-	 	  			jp_location.latitude, 
-	 		   		jp_location.longtitude, 
-	 		   		jp_member.mem_name, 
-	 		   		jp_member.mem_tel,
-	 		   		jp_member.mem_guardian_tel, 
-	 		   		jp_member.jp_num 
-	 	  			from jp_member, jp_location
-	 	 			where jp_location.mem_id = jp_member.mem_id) as A
-	 	 			where jp_sos.jp_loc_seq = A.jp_loc_seq ;
+	
+	 	  select jp_sos.sos_seq, jp_sos.sos_time, jp_location.latitude, jp_location.longitude, jp_member.mem_name, jp_member.mem_tel, jp_member.mem_guardian_tel, jp_member.jp_num
+		  from jp_sos, jp_location, jp_member
+		  where jp_member.mem_id = jp_location.mem_id
+	 	  and jp_location.jp_loc_seq = jp_sos.jp_loc_seq;
+	
 	</select>
 
 	<select id = "ViewSos"  resultType = "Model.SosVO">
