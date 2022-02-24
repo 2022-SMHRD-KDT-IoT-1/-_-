@@ -19,11 +19,15 @@
 		<video muted autoplay loop> <source src="assets/bg/bg.mp4"
 			type="video/mp4"></video>
 		<div class="wrap_bg">
+		<a href="#"><img src="assets/image/user.png"></a>
 		</div>
 		
-		<div class="menu">	
+		<div class="menu">
 			<ul>
 				<li><a class="menu logo">logo</a></li>
+				<li><a class="menu list">게시판</a></li>
+				<li><a class="menu list">실시간</a></li>
+				<li><a class="menu list">로그아웃</a></li>
 			</ul>
 		</div>
 		<div class="ma1">

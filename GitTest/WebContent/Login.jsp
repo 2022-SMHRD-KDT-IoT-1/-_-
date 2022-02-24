@@ -10,7 +10,6 @@
 
 <link rel="stylesheet" href="assets/css/join2.css">
 <style>
-
 	
 	
 	@media ( max-width :500px) {
