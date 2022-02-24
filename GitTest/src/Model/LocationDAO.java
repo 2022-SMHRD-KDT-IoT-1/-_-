@@ -1,6 +1,7 @@
 package Model;
 
 import java.io.InputStream;
+import java.util.List;
 
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -22,16 +23,17 @@ public class LocationDAO {
 		}
 	}
 
-	public int Location(LocationVO vo) {
 
+	
+	public List<LocationVO> selectLocation(){
+		
 		SqlSession session = sqlSessionFactory.openSession();
-		//select¹®
-
-		int cnt = session.insert("vo", vo);
-
-		session.close(); // service
-
-		return cnt;
+		List<LocationVO> list = session.selectList("ViewLocation"); 
+		
+		session.close();
+		
+		return list;
+		
 	}
 
 }

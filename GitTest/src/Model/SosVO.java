@@ -9,7 +9,7 @@ public class SosVO {
 	private String sos_status;
 	
 	private String latitude;
-	private String longtitude;
+	private String longitude;
 	
 	
 	
@@ -18,13 +18,13 @@ public class SosVO {
 	private String mem_guardian_tel;
 	private String jp_num;
 	
-	public SosVO(int sos_seq, String sos_time, String latitude, String longtitude, String mem_name, String mem_tel,
+	public SosVO(int sos_seq, String sos_time, String latitude, String longitude, String mem_name, String mem_tel,
 			String mem_guardian_tel, String jp_num) {
 		super();
 		this.sos_seq = sos_seq;
 		this.sos_time = sos_time;
 		this.latitude = latitude;
-		this.longtitude = longtitude;
+		this.longitude = longitude;
 		this.mem_name = mem_name;
 		this.mem_tel = mem_tel;
 		this.mem_guardian_tel = mem_guardian_tel;
@@ -56,11 +56,11 @@ public class SosVO {
 	}
 
 	public String getLongtitude() {
-		return longtitude;
+		return longitude;
 	}
 
-	public void setLongtitude(String longtitude) {
-		this.longtitude = longtitude;
+	public void setLongtitude(String longitude) {
+		this.longitude = longitude;
 	}
 
 	public String getMem_name() {
