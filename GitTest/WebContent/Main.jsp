@@ -1,41 +1,38 @@
-<%@page import="java.util.List"%>
-<%@page import="Model.MemberVO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
 	pageEncoding="EUC-KR"%>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<title>Landed by HTML5 UP</title>
-<meta charset="utf-8">
+<title>Forty by HTML5 UP</title>
+<meta charset="EUC-KR" />
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 
-
-<link rel="stylesheet" href="assets/css/main3.css">
-
-
+<link rel="stylesheet" href="assets/css/join2.css">
 </head>
+
 <body>
-
-
-	<!--배경영상-->
+	<div>
+		
+	</div>
 	<div class="wrap">
-		<h1>
-			<a id="logo">logo</a>
-		</h1>
-		<!-- Header -->
-		<div class="ma1">
-		<p class="ma">We will return<br>
-		 your sight</p>
-		 </div>
-
-		<!--로그인-->
-		<div id=loginbutton>
-			<a class="login" href="#">Sign Up</a>
+		<video muted autoplay loop> <source src="assets/bg/bg.mp4"
+			type="video/mp4"></video>
+		<div class="wrap_bg">
 		</div>
-		<!--로그인-->
+		
+		<div class="menu">	
+			<ul>
+				<li><a class="menu logo">logo</a></li>
+			</ul>
+		</div>
+		<div class="ma1">
+			<p class="ma">
+				We will return<br> your sight
+			</p>
+		</div>
 
-
-		<!-- Scripts -->
 	</div>
 </body>
 </html>
+

@@ -8,30 +8,51 @@
 <meta charset="EUC-KR" />
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 
-<link rel="stylesheet" href="assets/css/login.css">
+<link rel="stylesheet" href="assets/css/join2.css">
+<style>
+
+	
+	
+	@media ( max-width :500px) {
+		.form-wrap {
+		
+		/*여기는 모바일로 봤을때 설정 화면이에요 
+		줄어들었을때 마진 값 없애서 왼쪽으로 붙여놓고 
+		세로길이 100 view 로 해놨어용 
+		이부분은 이제 재훈씨가 모바일로 했을때 어떻게 보였으면 좋겠는지
+		여기다가 작성 하시면 됩니당
+		*/
+			margin: 0px;
+			height : 100vh;
+			
+		}
+	}
+</style>
 </head>
 
 <body>
-
-	<!-- <div class="bg">
-		<video muted autoplay loop>
-		<source src="https://bit.ly/3kYMF9A" type="video/mp4"></video> -->
-<!-- 와 콘솔창 안나오니까 너무 답답한데 설정 좀만 만질게여 -->
+	
+	
 	<div class="wrap">
+			
+		
+		<video muted autoplay loop>
+			<source src="assets/bg/bg.mp4" type="video/mp4">
+		</video>	
+		<div class="wrap_bg">
+		</div>
 		<div class="form-wrap">
-			<form action="LoginService" id="login" class="input-group"
+			<form action="LoginService" id="login" action="" class="input-group"
 				method="post">
 				<div id="btn">로그인</div>
 				<input type="text" name="mem_id" class="input-field"
 					placeholder="ID입력"> <input type="password" name="mem_pw"
-					class="input-field" placeholder="PW 입력" required> <a
-					class="join" href="Join.jsp">회원가입</a>
+					class="input-field" placeholder="PW 입력" required>
 				<button class="submit">로그인</button>
 			</form>
-
-		</div>
+         
+           </div>
 	</div>
-
 </body>
 </html>
 

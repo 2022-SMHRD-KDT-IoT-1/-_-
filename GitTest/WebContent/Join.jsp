@@ -12,17 +12,13 @@
 </head>
 
 <body>
-
-<!-- <div class="bg">
-		<video muted autoplay loop>
-		<source src="https://bit.ly/3kYMF9A" type="video/mp4"></video> -->
-
+	
+	
 	<div class="wrap">
+		<video muted autoplay loop> <source src="assets/bg/bg.mp4" type="video/mp4"></video>
+			<div class="wrap_bg"></div>
 		<div class="form-wrap">
-			<div class="button-wrap">
-				
-			</div>
-			<form action="#" id="login" action="" class="input-group">
+			<form action="#" id="login" action="" class="input-group1">
 			<div id="btn">회원가입</div>
 				<input type="text" name="name" class="input-field" placeholder="이름 입력">
 				<input type="tel" name="tel" class="input-field" placeholder="전화번호 입력">
@@ -39,11 +35,9 @@
 				<input type="text" class="input-field" name="Anumber" placeholder="제품번호를 입력해주세요">
                     <button class="submit">회원가입</button>
 				</form>
-               
+         
             </div>
-        </div>
-        
-    </body>
+	</div>
+</body>
 </html>
-
 
