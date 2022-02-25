@@ -40,8 +40,9 @@
 				<input type="date" class="input-field" name="mem_birthdate" placeholder="생년월일">
 				<input type="text" name="jp_num" class="input-field" placeholder="제품번호">
 			
+                    <a href="Login.jsp" onClick = "alert('회원가입 완료')"><button class = "submit" >회원가입</button></a>
 				
-                    <button class="submit">회원가입</button>
+                    
 				</form>
                
             </div>

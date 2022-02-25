@@ -9,9 +9,20 @@
 		insert into jp_comment
 		values(comm_seq, article_seq, #{comm_content}, #{comm_date}, #{mem_id})
 	</insert>
+	
+	<!--
+		INSERT INTO 
+			`jp_comment`
+		SET
+			`comm_seq`     = comm_seq, 
+			`article_seq`  = article_seq, 
+			`comm_content` = '#{comm_content}', 
+			`comm_date`    = #{comm_date}, 
+			`mem_id`       = '#{mem_id}'
+ -->
 
 	<select id=" communityView" resultType="Model.CommentVO">
-		select * from jp_comment
+		select * from jp_comment where article_seq = #{article_seq} ORDER BY comm_seq DESC
 	</select>
 	
 	<delete id = "commentDelete">

@@ -7,6 +7,7 @@
 	<insert id="communityWrite" parameterType = "Model.CommunityVO">
 		insert into jp_community 
 		values(jp_community_seq.nextval, #{article_title}, #{article_content}, #{article_file1}, #{article_file2}, sysdate)
+		where mem_id = #{mem_id}
 	</insert>
 	
 	<select id = "communityMain" resultType = "Model.CommunityVO">
