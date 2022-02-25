@@ -7,45 +7,47 @@
 <title>Forty by HTML5 UP</title>
 <meta charset="EUC-KR" />
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+
 <link rel="stylesheet" href="assets/css/join2.css">
-	<style>
-		@media ( max-width :500px) {
-			.form-wrap {
-				margin: 0px;
-				height: 100vh;
-			}
-		}
-	</style>
 </head>
 
-
 <body>
-	
-	
+
+<!-- <div class="bg">
+		<video muted autoplay loop>
+		<source src="https://bit.ly/3kYMF9A" type="video/mp4"></video> -->
+
 	<div class="wrap">
-		<video muted autoplay loop> <source src="assets/bg/bg.mp4" type="video/mp4"></video>
-			<div class="wrap_bg"></div>
 		<div class="form-wrap">
-			<form action="#" id="login" action="" class="input-group1">
+			<div class="button-wrap">
+				
+			</div>
+			<form action="JoinService" id="Join" class="input-group" method="post">
 			<div id="btn">회원가입</div>
-				<input type="text" name="name" class="input-field" placeholder="이름 입력">
-				<input type="tel" name="tel" class="input-field" placeholder="전화번호 입력">
-				<input type="text" class="input-field" placeholder="User name or Email" required>
-				<input type="password" class="input-field" placeholder="Enter Password" required>
+				<input type="text" name="mem_id" class="input-field" placeholder="ID입력">
+				<input type="password" name="mem_pw" class="input-field" placeholder="PW입력">
+				<input type="text" name="mem_name" class="input-field" placeholder="User name or Email" required>
+				
 				
 				
 				<div class="gender">
-				남자&nbsp;<input type="radio" name="gender" class="ge" value="남">
-				&nbsp;&nbsp;&nbsp;&nbsp;여자&nbsp;<input type="radio" name="gender" class="ge" value="여">
+				남자&nbsp;<input type="radio" name="mem_gender" class="ge" value="m">
+				&nbsp;&nbsp;&nbsp;&nbsp;여자&nbsp;<input type="radio" name="mem_gender" class="ge" value="f">
 				</div>
 				
-				<input type="date" class="input-field" name="date" placeholder="생년월일">
-				<input type="text" class="input-field" name="Anumber" placeholder="제품번호를 입력해주세요">
+				<input type="text" name="mem_tel" class="input-field" placeholder="연락처">
+				<input type="text" name="mem_guardian_tel" class="input-field" placeholder="보호자 연락처">
+				<input type="date" class="input-field" name="mem_birthdate" placeholder="생년월일">
+				<input type="text" name="jp_num" class="input-field" placeholder="제품번호">
+			
+				
                     <button class="submit">회원가입</button>
 				</form>
-         
+               
             </div>
-	</div>
-</body>
+        </div>
+        
+    </body>
 </html>
+
 

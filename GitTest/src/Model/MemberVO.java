@@ -10,11 +10,11 @@ public class MemberVO {
 	private String mem_tel;
 	private String mem_guardian_tel;
 	private String jp_num;
-	private String mem_joindate;
+	
 	
 	
 	public MemberVO(String mem_id, String mem_pw, String mem_name, String mem_gender, String mem_birthdate,
-			String mem_tel, String mem_guardian_tel, String jp_num, String mem_joindate) {
+			String mem_tel, String mem_guardian_tel, String jp_num) {
 		
 		this.mem_id = mem_id;
 		this.mem_pw = mem_pw;
@@ -24,7 +24,7 @@ public class MemberVO {
 		this.mem_tel = mem_tel;
 		this.mem_guardian_tel = mem_guardian_tel;
 		this.jp_num = jp_num;
-		this.mem_joindate = mem_joindate;
+		
 	}
 
 
@@ -119,15 +119,7 @@ public class MemberVO {
 	}
 
 
-	public String getMem_joindate() {
-		return mem_joindate;
-	}
-
-
-	public void setMem_joindate(String mem_joindate) {
-		this.mem_joindate = mem_joindate;
-	}
-
+	
 	
 		
 }

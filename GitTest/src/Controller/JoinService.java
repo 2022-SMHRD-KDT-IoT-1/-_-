@@ -26,9 +26,9 @@ public class JoinService extends HttpServlet {
 		String mem_tel = request.getParameter("mem_tel");
 		String mem_guardian_tel = request.getParameter("mem_guardian_tel");
 		String jp_num = request.getParameter("jp_num");
-		String mem_joindate = request.getParameter("mem_joindate");
 		
-		MemberVO vo = new MemberVO(mem_id, mem_pw, mem_name, mem_gender, mem_birthdate, mem_tel, mem_guardian_tel, jp_num, mem_joindate);
+		
+		MemberVO vo = new MemberVO(mem_id, mem_pw, mem_name, mem_gender, mem_birthdate, mem_tel, mem_guardian_tel, jp_num);
 		
 		MemberDAO dao = new MemberDAO();
 		
