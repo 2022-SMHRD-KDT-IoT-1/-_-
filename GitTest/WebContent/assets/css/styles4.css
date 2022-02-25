@@ -1,13 +1,21 @@
 @charset "UTF-8";
 
+
+*{
+	margin:0;
+	
+}
+
+.search{
+	margin-right: 30px;
+}
+
+
 /* 상단 배경 */
 :root { -
 	-bs-dark-rgb: 33, 37, 41;
 }
-/* 상단 배경 */
-*, *::before, *::after {
-	box-sizing: border-box;
-}
+
 
 /* 검색===================================================== */
 .navbar {
@@ -19,18 +27,10 @@
 }
 /* 검색===================================================== */
 
- .member {
- 	 border: 1px solid black;
- 	 margin-left: auto;
- 	 margin-right: auto;
- }
- th {
- 
- }
- 
- td {
- 
- }
+.member{
+	margin-top : 30px;
+	margin-left : 30px;
+}
 
 
 .this {
@@ -43,9 +43,10 @@
 /* 로고 */
 .logo {
 	padding-top: 0.3125rem;
-	padding-bottom: 0.3125rem;
-	font-size: 1.25rem;
-	color: white;
+    padding-bottom: 0.3125rem;
+    font-size: 2rem;
+    margin-left: 21px;
+    color: white;
 }
 /* 로고 */
 
@@ -95,6 +96,7 @@
 	font-weight: bold;
 	text-transform: uppercase;
 	color: white;
+	margin-left: 15px;
 }
 
 /* 왼쪽 사이드바 글자 */
@@ -105,14 +107,15 @@
 	position: relative;
 }
 
-.sb-sidenav-menu {
+.sb-menu {
 	color: rgba(255, 255, 255, 0.25); 
+	margin-left: 46px;
 }
 /* 왼쪽 사이드바 글자 */
 
 /* 왼쪽 사이드바 */
 .sidemenu-bg {
-	background-color: #212529;
+	background-color: #36304a;
 }
 
 .sb-sidenav {
@@ -168,4 +171,126 @@
 		margin-left: 0;
 		transition: margin 0.15s ease-in-out;
 	}
+}
+
+
+
+
+
+
+
+
+
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url('../fonts/OpenSans/OpenSans-Regular.ttf'); 
+}
+
+table {
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 1420px;
+  margin: 0 auto;
+  position: relative;
+}
+table * {
+  position: relative;
+}
+table thead tr {
+  height: 60px;
+  background: #36304a;
+}
+table tbody tr {
+  height: 50px;
+}
+table tbody tr:last-child {
+  border: 0;
+}
+
+
+
+.table-tr th{
+  font-family: OpenSans-Regular;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.2;
+  font-weight: unset;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+tbody tr {
+  font-family: OpenSans-Regular;
+  font-size: 15px;
+  color: #808080;
+  line-height: 1.2;
+  font-weight: unset;
+}
+
+tbody tr:hover {
+  color: #555555;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.name {
+  width: 15%;
+  padding-left: 40px;
+}
+
+.gender {
+  width: 15%;
+}
+
+.birth {
+  width: 15%;
+}
+
+.number1 {
+  width: 15%;
+}
+
+.number2 {
+  width: 15%;
+}
+
+.number3 {
+ width: 15%;
+}
+
+th{
+	text-align: left;
+	padding-left: 40px;
+}
+td{
+	padding-left: 40px;
+}
+
+
+@media screen and (max-width: 992px) {
+  table {
+    display: block;
+  }
+  table > *, table tr, table td, table th {
+    display: block;
+  }
+  table thead {
+    display: none;
+  }
+  table tbody tr {
+    height: auto;
+    padding: 37px 0;
+  }
+
+
+
+  tbody tr {
+    font-size: 14px;
+  }
+}
+
 }
