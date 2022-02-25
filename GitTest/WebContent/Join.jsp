@@ -65,8 +65,8 @@
 				
 				
 				<div class="gender">
-				남자&nbsp;<input type="radio" name="gender" class="ge" value="남">
-				&nbsp;&nbsp;&nbsp;&nbsp;여자&nbsp;<input type="radio" name="gender" class="ge" value="여">
+				남자&nbsp;<input type="radio" name="mem_gender" class="ge" value="m">
+				&nbsp;&nbsp;&nbsp;&nbsp;여자&nbsp;<input type="radio" name="mem_gender" class="ge" value="f">
 				</div>
 				
 				<input type="text" name="mem_tel" class="input-field" placeholder="연락처">
