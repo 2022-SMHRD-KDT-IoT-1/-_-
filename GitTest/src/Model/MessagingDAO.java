@@ -26,23 +26,13 @@ public class MessagingDAO {
 		}
 	}
 
-	public int Messaging(MessagingVO vo) {
+
+	// 메시지 보내기
+	public List<MessagingVO> SendMessaging() {
 
 		SqlSession session = sqlSessionFactory.openSession();
 
-		int cnt = session.insert("MessagingService", vo);
-
-		session.close();
-
-		return cnt;
-	}
-
-	// 메세지목록보기
-	public List<MessagingVO> selectMessaging() {
-
-		SqlSession session = sqlSessionFactory.openSession();
-
-		List<MessagingVO> list = session.selectList("selectMessaging");
+		List<MessagingVO> list = session.selectList("SendMessaging");
 
 		session.close();
 

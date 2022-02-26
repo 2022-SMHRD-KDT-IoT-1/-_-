@@ -1,3 +1,4 @@
+<%@page import="Model.MessagingVO"%>
 <%@page import="Model.SosVO"%>
 <%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
@@ -11,6 +12,9 @@
 <body>
 <%
 	List<SosVO> list = (List<SosVO>) request.getAttribute("list");
+	List<MessagingVO> Messaging = (List<MessagingVO>)request.getAttribute("Messaging");
+	//api 불러오기 / 지팡이 번호 옆 th태그 추가해서  메시지 send 버튼 추가
+
 %>
 	<div id="layoutSidenav_content">
 			<main>

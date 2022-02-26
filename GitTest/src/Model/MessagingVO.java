@@ -6,6 +6,17 @@ public class MessagingVO {
 		private String msg_content;
 		private String mem_id;
 		private String msg_time;
+		private String mem_name;
+		private String mem_guardian_tel;
+		
+		
+		public MessagingVO(String msg_content, String msg_time, String mem_name, String mem_guardian_tel) {
+			super();
+			this.msg_content = msg_content;
+			this.msg_time = msg_time;
+			this.mem_name = mem_name;
+			this.mem_guardian_tel = mem_guardian_tel;
+		}
 		
 		public MessagingVO(int msg_seq, String msg_content, String mem_id, String msg_time) {
 			
@@ -14,6 +25,23 @@ public class MessagingVO {
 			this.mem_id = mem_id;
 			this.msg_time = msg_time;
 		}
+		
+		public String getMem_name() {
+			return mem_name;
+		}
+		
+		public void setMem_name(String mem_name) {
+			this.mem_name = mem_name;
+		}
+		
+		public String getMem_guardian_tel() {
+			return mem_guardian_tel;
+		}
+		
+		public void setMem_guardian_tel(String mem_guardian_tel) {
+			this.mem_guardian_tel = mem_guardian_tel;
+		}
+		
 		public int getMsg_seq() {
 			return msg_seq;
 		}

@@ -20,11 +20,11 @@ public class MessagingService extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		MessagingDAO dao = new MessagingDAO();
-		List<MessagingVO> list = dao.selectMessaging();
+		List<MessagingVO> list = dao.SendMessaging();
 		
-		request.setAttribute("list", list);
+		request.setAttribute("Messaging", list);
 		
-		RequestDispatcher rd = request.getRequestDispatcher("");
+		RequestDispatcher rd = request.getRequestDispatcher("SOSManage.jsp");
 		rd.forward(request, response);	
 		
 		
