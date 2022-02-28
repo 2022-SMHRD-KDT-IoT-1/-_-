@@ -5,24 +5,26 @@ public class MemberVO {
 	private String mem_id;
 	private String mem_pw;
 	private String mem_name;
-	private String mem_gender;
-	private String mem_birthdate;
+	private String mem_gender;	
 	private String mem_tel;
 	private String mem_guardian_tel;
+	private String mem_birthdate;
 	private String jp_num;
 	
+	public MemberVO() {
+		// TODO Auto-generated constructor stub
+	}
 	
-	
-	public MemberVO(String mem_id, String mem_pw, String mem_name, String mem_gender, String mem_birthdate,
-			String mem_tel, String mem_guardian_tel, String jp_num) {
+	public MemberVO(String mem_id, String mem_pw, String mem_name, String mem_gender, String mem_tel, String mem_guardian_tel, String mem_birthdate 
+			 , String jp_num) {
 		
 		this.mem_id = mem_id;
 		this.mem_pw = mem_pw;
 		this.mem_name = mem_name;
 		this.mem_gender = mem_gender;
-		this.mem_birthdate = mem_birthdate;
 		this.mem_tel = mem_tel;
 		this.mem_guardian_tel = mem_guardian_tel;
+		this.mem_birthdate = mem_birthdate;
 		this.jp_num = jp_num;
 		
 	}

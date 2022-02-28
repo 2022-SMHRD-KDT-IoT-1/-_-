@@ -24,8 +24,8 @@
 			<ul>
 				<li><a href="LoginMain.jsp" class="menu logo">logo</a></li>
 				<li><a href="communityMain.jsp" class="menu list">게시판</a></li>
-				<li><a href="SOSlocation.jsp" class="menu list">실시간</a></li>
-				<li><a href="#" class="menu list">로그아웃</a></li>
+				<li><a href="Location.jsp" class="menu list">실시간</a></li>
+				<li><a href="LogoutService" class="menu list">로그아웃</a></li>
 			</ul>
 		</div>
 		<div class="ma1">

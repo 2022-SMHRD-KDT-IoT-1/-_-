@@ -7,7 +7,7 @@
 	<select id = "SendMessaging"  resultType = "Model.MessagingVO">
 		select jp_messaging.msg_content, jp_messaging.msg_time,jp.member.mem_name, jp_member.mem_guardian_tel
 		from jp_messaging, jp_member
-		where jp_messaging.mem_id = jp_member.mem_id;
+		where jp_messaging.mem_id = jp_member.mem_id
 	 </select>
 
 </mapper>

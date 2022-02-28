@@ -1,6 +1,7 @@
 package Controller;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -18,6 +19,8 @@ public class LoginService extends HttpServlet {
 
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		
+		
 		String mem_id = request.getParameter("mem_id");
 		String mem_pw = request.getParameter("mem_pw");
 
@@ -30,6 +33,12 @@ public class LoginService extends HttpServlet {
 		if (uvo != null) {
 			HttpSession session = request.getSession();
 			session.setAttribute("vo", uvo);
+			/*
+			 * response.setContentType("text/html; charset=UTF-8"); PrintWriter writer =
+			 * response.getWriter(); writer.println("<script>alert('로그인 성공'); </script>");
+			 * writer.close();
+			 */
+
 			response.sendRedirect("LoginMain.jsp");
 		} else {
 			response.sendRedirect("Login.jsp");

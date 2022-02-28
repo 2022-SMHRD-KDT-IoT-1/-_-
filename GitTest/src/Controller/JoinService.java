@@ -28,7 +28,7 @@ public class JoinService extends HttpServlet {
 		String jp_num = request.getParameter("jp_num");
 		
 		
-		MemberVO vo = new MemberVO(mem_id, mem_pw, mem_name, mem_gender, mem_birthdate, mem_tel, mem_guardian_tel, jp_num);
+		MemberVO vo = new MemberVO(mem_id, mem_pw, mem_name, mem_gender, mem_tel, mem_guardian_tel,mem_birthdate, jp_num);
 		
 		MemberDAO dao = new MemberDAO();
 		

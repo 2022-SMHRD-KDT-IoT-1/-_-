@@ -30,7 +30,7 @@
 			<p class="ma">
 				We will return<br> your sight
 			</p>	
-			<a href="Join.jsp" class="mainbtn-2"><button class="mainbtn-1">Join</button></a>
+			<a href="Login.jsp" class="mainbtn-2"><button class="mainbtn-1">Join</button></a>
 		</div>
 		<div class="mainbtn">
 			

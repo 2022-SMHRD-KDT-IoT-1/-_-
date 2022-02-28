@@ -9,7 +9,7 @@
 	 	  select jp_sos.sos_seq, jp_sos.sos_time, jp_location.latitude, jp_location.longitude, jp_member.mem_name, jp_member.mem_tel, jp_member.mem_guardian_tel, jp_member.jp_num
 		  from jp_sos, jp_location, jp_member
 		  where jp_member.mem_id = jp_location.mem_id
-	 	  and jp_location.jp_loc_seq = jp_sos.jp_loc_seq;
+	 	  and jp_location.jp_loc_seq = jp_sos.jp_loc_seq
 	
 	</select>
 
