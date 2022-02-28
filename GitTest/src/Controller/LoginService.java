@@ -19,8 +19,7 @@ public class LoginService extends HttpServlet {
 
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		
-		
+
 		String mem_id = request.getParameter("mem_id");
 		String mem_pw = request.getParameter("mem_pw");
 
@@ -33,15 +32,27 @@ public class LoginService extends HttpServlet {
 		if (uvo != null) {
 			HttpSession session = request.getSession();
 			session.setAttribute("vo", uvo);
-			/*
-			 * response.setContentType("text/html; charset=UTF-8"); PrintWriter writer =
-			 * response.getWriter(); writer.println("<script>alert('로그인 성공'); </script>");
-			 * writer.close();
-			 */
+			
+			response.setContentType("text/html; charset=UTF-8");
+			 
+			PrintWriter out = response.getWriter();
+			 
+			out.println("<script>alert('로그인 성공'); location.href='LoginMain.jsp';</script>");
+			 
+			out.flush();
 
-			response.sendRedirect("LoginMain.jsp");
+			 
+			
+		
 		} else {
-			response.sendRedirect("Login.jsp");
+			response.setContentType("text/html; charset=UTF-8");
+			 
+			PrintWriter out = response.getWriter();
+			 
+			out.println("<script>alert('로그인 실패'); location.href='Login.jsp';</script>");
+			 
+			out.flush();
+	
 
 		}
 

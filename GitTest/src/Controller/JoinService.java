@@ -1,6 +1,8 @@
 package Controller;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -36,11 +38,28 @@ public class JoinService extends HttpServlet {
 		int cnt = dao.join(vo);
 		
 		if(cnt > 0) {
+			
+			response.setContentType("text/html; charset=UTF-8");
+			 
+			PrintWriter out = response.getWriter();
+			 
+			out.println("<script>alert('회원가입 성공'); location.href='Main.jsp';</script>");
+			 
+			out.flush();
+
 			//성공
-			response.sendRedirect("Main.jsp");
+			
 		}else {
 			//실패
-			response.sendRedirect("Join.jsp");
+			
+			response.setContentType("text/html; charset=UTF-8");
+			 
+			PrintWriter out = response.getWriter();
+			 
+			out.println("<script>alert('회원가입 실패'); location.href='Join.jsp';</script>");
+			 
+			out.flush();
+			
 		}
 	}
 

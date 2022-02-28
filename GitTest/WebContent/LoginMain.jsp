@@ -1,3 +1,4 @@
+<%@page import="Model.MemberVO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
 	pageEncoding="EUC-KR"%>
 
@@ -10,8 +11,8 @@
 
 <link rel="stylesheet" href="assets/css/join2.css">
 </head>
-
 <body>
+	<% MemberVO vo = (MemberVO)session.getAttribute("vo"); %>
 	<div></div>
 	<div class="wrap">
 		<video muted autoplay loop> <source src="assets/bg/bg.mp4"
@@ -22,7 +23,7 @@
 
 		<div class="menu">
 			<ul>
-				<li><a href="LoginMain.jsp" class="menu logo">logo</a></li>
+				<li><a href="LoginMain.jsp" class="menu logo">logo <%= vo.getMem_name() %></a></li>
 				<li><a href="communityMain.jsp" class="menu list">게시판</a></li>
 				<li><a href="Location.jsp" class="menu list">실시간</a></li>
 				<li><a href="LogoutService" class="menu list">로그아웃</a></li>
