@@ -28,14 +28,13 @@
 </head>
 <body>
 	<nav class="navbar navbar-expand bg">
-		<!-- navar-expand : 자리 고정 -->
-		<!-- Navbar Brand-->
-		<a class="logo">logo345</a>
+		<a class="logo">logo</a>
 
 
 
 		<!-- 검색-->
 		<form>
+
 			<div class="search">
 				<input type="text" placeholder="Search for...">
 				<button class="btn" id="btnNavbarSearch" type="button"></button>
@@ -53,11 +52,11 @@
 				<div class="sb-sidenav-menu">
 					<div class="nav">
 						<div class="menu">메뉴</div>
-						<a class="sb-menu"> 페이지1234545 </a>
+						<a class="sb-menu"> 페이지 </a>
 
 
 						<div class="menu">menu</div>
-						<a class="sb-menu"> 페이지2 </a> <a class="sb-menu">페이지124 </a>
+						<a class="sb-menu"> 페이지 </a>
 					</div>
 			</nav>
 
@@ -67,24 +66,59 @@
 		<div id="layoutSidenav_content">
 			<main>
 				<div>
-					<h1 class="this">Dashboard</h1>
+					<h1 class="this">회원관리</h1>
 					<table id="list" class="member">
 						<thead>
+						
+						<!-- ================예시=============== -->
 							<tr>
-								<th scope="col">이름
+								<th class="name th1" scope="col">이름
 								</td>
-								<th scope="col">성별
+								<th class="gender th1" scope="col">성별
 								</td>
-								<th scope="col">생일
+								<th class="birth th1" scope="col">생일
 								</td>
-								<th scope="col">연락처
+								<th class="number1 th1" scope="col">연락처
 								</td>
-								<th scope="col">보호자 연락처
+								<th class="number2 th1" scope="col">보호자 연락처
 								</td>
-								<th scope="col">제품번호
+								<th class="number3 th1" scope="col">제품번호
 								</td>
 							</tr>
+						
+						<tbody>
+							<tr>
+								<th class="name td1"">최재훈
+								</td>
+								<th class="gender td1">남
+								</td>
+								<th class="birth td1">1998/03/30
+								</td>
+								<th class="number1 td1">010-6383-4376
+								</td>
+								<th class="number2 td1">010-6383-4376
+								</td>
+								<th class="number3 td1">ASDF098SDF
+								</td>
+							</tr>
+							<tr>
+								<th class="name td1"">최재훈
+								</td>
+								<th class="gender td1">남
+								</td>
+								<th class="birth td1">1998/03/30
+								</td>
+								<th class="number1 td1">010-6383-4376
+								</td>
+								<th class="number2 td1">010-6383-4376
+								</td>
+								<th class="number3 td1">ASDF098SDF
+								</td>
+							</tr>
+						</tbody>
 						</thead>
+						<!-- ================예시=============== -->
+						<%-- </thead>
 						<tbody>
 							<%
 								for (MemberVO vo : list) {
@@ -101,7 +135,7 @@
 							<%
 								}
 							%>
-						</tbody>
+						</tbody> --%>
 					</table>
 				</div>
 		</div>

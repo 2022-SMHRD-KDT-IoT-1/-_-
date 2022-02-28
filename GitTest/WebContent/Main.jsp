@@ -29,8 +29,12 @@
 		<div class="ma1">
 			<p class="ma">
 				We will return<br> your sight
-			</p>
+			</p>	
+			<a href="Join.jsp" class="mainbtn-2"><button class="mainbtn-1">Join</button></a>
 		</div>
+		<div class="mainbtn">
+			
+			</div>
 
 	</div>
 </body>
