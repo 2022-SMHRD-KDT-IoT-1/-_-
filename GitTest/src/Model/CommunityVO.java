@@ -11,18 +11,19 @@ public class CommunityVO {
 	private String mem_id;
 	
 	
+	public CommunityVO() {
+		// TODO Auto-generated constructor stub
+	}
 
-	public CommunityVO(String article_title, String article_content, String article_file1, String article_file2) {
-		super();
-		this.article_title = article_title;
-		this.article_content = article_content;
-		this.article_file1 = article_file1;
-		this.article_file2 = article_file2;
+
+	public CommunityVO(int article_seq) {
+		
+		this.article_seq = article_seq;
 	}
 
 	public CommunityVO(int article_seq, String article_title, String article_content, String article_file1,
 			String article_file2, String article_date, String mem_id) {
-
+		
 		this.article_seq = article_seq;
 		this.article_title = article_title;
 		this.article_content = article_content;
@@ -32,13 +33,39 @@ public class CommunityVO {
 		this.mem_id = mem_id;
 	}
 
+
+
+
+	public CommunityVO(String article_title, String article_content, String article_file1, String article_file2) {
+		super();
+		this.article_title = article_title;
+		this.article_content = article_content;
+		this.article_file1 = article_file1;
+		this.article_file2 = article_file2;
+	}
+
+	public CommunityVO(String article_title, String article_content, String article_file1,
+			String article_file2,String mem_id) {
+
+		
+		this.article_title = article_title;
+		this.article_content = article_content;
+		this.article_file1 = article_file1;
+		this.article_file2 = article_file2;
+		this.mem_id = mem_id;
+	}
+
+
 	public int getArticle_seq() {
 		return article_seq;
 	}
 
-	public void setArticle_seq(int article_seq) {
+
+
+	public void setArticle_num(int article_seq) {
 		this.article_seq = article_seq;
 	}
+
 
 	public String getArticle_title() {
 		return article_title;
@@ -72,13 +99,20 @@ public class CommunityVO {
 		this.article_file2 = article_file2;
 	}
 
+
 	public String getArticle_date() {
 		return article_date;
 	}
 
+
+
+
 	public void setArticle_date(String article_date) {
 		this.article_date = article_date;
 	}
+
+
+
 
 	public String getMem_id() {
 		return mem_id;

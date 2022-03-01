@@ -24,7 +24,7 @@
 			<div id="btn">회원가입</div>
 				<input type="text" name="mem_id" class="input-field" placeholder="ID입력">
 				<input type="password" name="mem_pw" class="input-field" placeholder="PW입력">
-				<input type="text" name="mem_name" class="input-field" placeholder="User name or Email" required>
+				<input type="text" name="mem_name" class="input-field" placeholder="이름 입력" required>
 				
 				
 				<div class="gender">
@@ -36,7 +36,7 @@
 				<input type="text" name="mem_guardian_tel" class="input-field" placeholder="보호자 연락처">
 				<input type="date" class="input-field" name="mem_birthdate" placeholder="생년월일">
 				<input type="text" name="jp_num" class="input-field" placeholder="제품번호">
-				  <a class="joinsubmit" onClick = "alert('회원가입 완료')"><button class = "submit" >회원가입</button></a>
+				 <button class = "submit" >회원가입</button>
 				</form>  
                  
             </div>

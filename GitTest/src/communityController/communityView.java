@@ -18,10 +18,10 @@ public class communityView extends HttpServlet {
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-	int num = Integer.parseInt(request.getParameter("num"));
+	int article_seq = Integer.parseInt(request.getParameter("num"));
 	
 	CommunityDAO dao = new CommunityDAO();
-	CommunityVO cvo = dao.communityView(num);
+	CommunityVO cvo = dao.communityView(article_seq);
 	
 	request.setAttribute("cvo", cvo);
 	

@@ -20,7 +20,7 @@ public class CommunityDAO {
 			InputStream inputStream = Resources.getResourceAsStream(resource);
 
 			sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
-
+			System.out.println("삭제찾았니");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -28,10 +28,10 @@ public class CommunityDAO {
 
 	public int communityWrite(CommunityVO vo) {
 
-		SqlSession session = sqlSessionFactory.openSession();
-
+		SqlSession session = sqlSessionFactory.openSession(true);
+		
 		int cnt = session.insert("communityWrite", vo);
-
+	
 		session.close();
 
 		return cnt;
@@ -41,9 +41,9 @@ public class CommunityDAO {
 	public List<CommunityVO> communitySelect() {
 
 		SqlSession session = sqlSessionFactory.openSession();
-
+		
 		List<CommunityVO> list = session.selectList("communityMain");
-
+		
 		session.close();
 
 		return list;
@@ -62,12 +62,12 @@ public class CommunityDAO {
 
 	}
 	
-	public int communityDelete (CommunityVO vo) {
-		
-		SqlSession session = sqlSessionFactory.openSession();
-		
-		int cnt = session.delete("communityDelete", vo);
-		
+	public int communityDelete (int article_seq) {
+		System.out.println("삭제하니1111");
+		SqlSession session = sqlSessionFactory.openSession(true);
+		System.out.println("삭제하니2222");
+		int cnt = session.delete("communityDelete", article_seq);
+		System.out.println("삭제삭제");
 		session.close();
 		
 		return cnt;
@@ -84,6 +84,8 @@ public class CommunityDAO {
 		
 		return cnt;
 	}
+
+	
 }
 
 

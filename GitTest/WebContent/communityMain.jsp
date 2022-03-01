@@ -34,9 +34,9 @@
 					</div>
 				</form>
 
-				<%-- <%
-		List<CommunityVO> communityList = (List<CommunityVO>)request.getAttribute("list");
-	%> --%>
+				 <%
+		List<CommunityVO> list = (List<CommunityVO>)request.getAttribute("list");
+	%> 
 				<div id="community">
 					<table id="comunityList" class="member">
 						<thead>
@@ -58,11 +58,13 @@
 						
 						<tbody>
 							<tr>
-								<td class="name td1"">1</td>
-								<td class="title td1">제목이 들어갑니다ㅇㅇㅇㅇㅇㅇ]</td>
-								<td class="gender td1">최재훈</td>
-								<td class="date td1">2022.02.26</td>
+							<%for(CommunityVO vo: list){ %>
+								<td class="name td1""><%=vo.getArticle_seq() %></td>
+								<td class="title td1"><a href = "communityView?num=<%=vo.getArticle_seq()%>"><%=vo.getArticle_seq() %></a></td>
+								<td class="gender td1"><%=vo.getMem_id() %></td>
+								<td class="date td1"><%=vo.getArticle_date()%></td>
 							</tr>
+							<%} %>
 							<%-- <--<%for (CommunityVO vo : communityList){ %>	
 				<tr>
 				<td><%=vo.getArticle_seq() %></td>

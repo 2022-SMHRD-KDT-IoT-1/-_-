@@ -52,9 +52,10 @@
 				<input type="text" name="mem_id" class="input-field"
 					placeholder="ID입력"> <input type="password" name="mem_pw"
 					class="input-field" placeholder="PW 입력" required>
-				<div class="sub2"><button class="submit">로그인</button></div>
+				<div class="sub2"><button class="submit">로그인/<a href="Join.jsp">회원가입</a></button></div>
+				
 			</form>
-         
+         	
            </div>
 	</div>
 </body>

@@ -40,13 +40,8 @@ public class MemberDAO {
 		
 		
 		SqlSession session = sqlSessionFactory.openSession(); //얘가 안열리네용 잠만용
-		System.out.println("123");
-		
-		System.out.println(vo.getMem_id());
-		System.out.println(vo.getMem_pw());
 		
 		MemberVO uvo = session.selectOne("loginService", vo);
-		System.out.println("456");
 		session.close();
 		return uvo;
 	}

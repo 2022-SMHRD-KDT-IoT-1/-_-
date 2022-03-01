@@ -28,31 +28,44 @@ public class LoginService extends HttpServlet {
 		MemberDAO dao = new MemberDAO();
 
 		MemberVO uvo = dao.login(vo);
-		System.out.println(uvo);
-		if (uvo != null) {
-			HttpSession session = request.getSession();
-			session.setAttribute("vo", uvo);
-			
-			response.setContentType("text/html; charset=UTF-8");
-			 
-			PrintWriter out = response.getWriter();
-			 
-			out.println("<script>alert('로그인 성공'); location.href='LoginMain.jsp';</script>");
-			 
-			out.flush();
 
-			 
-			
 		
+		if (uvo != null) {
+
+			if (mem_id.contains("jp")) {
+
+				HttpSession session = request.getSession();
+				session.setAttribute("vo", uvo);
+
+				response.setContentType("text/html; charset=UTF-8");
+
+				PrintWriter out = response.getWriter();
+
+				out.println("<script>alert('관리자 로그인'); location.href='ManagerMain.jsp';</script>");
+
+				out.flush();
+			} else {
+				HttpSession session = request.getSession();
+				session.setAttribute("vo", uvo);
+
+				response.setContentType("text/html; charset=UTF-8");
+
+				PrintWriter out = response.getWriter();
+
+				out.println("<script>alert('로그인 성공'); location.href='LoginMain.jsp';</script>");
+
+				out.flush();
+
+			}
+
 		} else {
 			response.setContentType("text/html; charset=UTF-8");
-			 
+
 			PrintWriter out = response.getWriter();
-			 
+
 			out.println("<script>alert('로그인 실패'); location.href='Login.jsp';</script>");
-			 
+
 			out.flush();
-	
 
 		}
 

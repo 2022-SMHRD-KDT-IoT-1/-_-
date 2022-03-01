@@ -1,3 +1,4 @@
+<%@page import="Model.MemberVO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
 	pageEncoding="EUC-KR"%>
 <%@page import="Model.CommunityVO"%>
@@ -16,6 +17,8 @@
 
 </head>
 <body>
+
+<% MemberVO vo = (MemberVO)session.getAttribute("vo"); %>
 	<nav class="navbar navbar-expand bg">
 		<a class="logo">logo</a>
 	</nav>
@@ -25,7 +28,7 @@
 		<main>
 			<div>
 				<h1 class="this">게시판</h1>
-				<form class="write3">
+				<form action="communityWrite" class="write3" method="post" enctype="multipart/form-data">
 					<table style="padding-top: 50px" align=center width=700 border=0
 						cellpadding=2>
 						<tr>
@@ -37,31 +40,31 @@
 								<table class="table2">
 									<tr>
 										<td class="writetd2">작성자</td>
-										<td><input class="user1 board2" type=text name=name
+										<td><input class="user1 board2" type=text name=mem_id value=<%=vo.getMem_id() %>
 											size=30></td>
 									</tr>
 
 									<tr>
 										<td class="writetd2">제목</td>
-										<td><input class="title1 board2" type=text name=title
+										<td><input class="title1 board2" type=text name=article_title
 											size=60></td>
 									</tr>
 
 									<tr>
 										<td style='vertical-align: middle' class="writetd2">내용</td>
-										<td><textarea class="content1 board3" name="content"
+										<td><textarea class="content1 board3" name="article_content"
 												cols="85" rows="15" style="width: 100%; height: 254px;"></textarea></td>
 									</tr>
-
+									<td colspan="2">
+										<input name = "article_file1" type="file" style="float: left;">
+										<input name = "article_file2" type="file" style="float: left;">
 									<tr>
-										<td class="writetd2">비밀번호</td>
-										<td><input class="password1 board2" type=password name=pw
-											size=10 maxlength=10></td>
+										
 									</tr>
 								</table>
 
 								<div class="write_2">
-									<a href="communityMain.jsp" onClick = "alert('작성 완료')"><button class="write2">작성</button></a>
+									<button class="write2">작성</button>
 								</div>
 							</td>
 						</tr>

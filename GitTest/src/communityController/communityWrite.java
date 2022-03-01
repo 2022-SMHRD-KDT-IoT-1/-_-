@@ -30,20 +30,25 @@ public class communityWrite extends HttpServlet {
 		
 		MultipartRequest multi = new MultipartRequest(request, savePath, maxSize, encoding, new DefaultFileRenamePolicy());
 		
-		String article_title = multi.getParameter("title");
-		String article_content = multi.getParameter("content");
+		String article_title = multi.getParameter("article_title");
+		String article_content = multi.getParameter("article_content");
 		
-		String article_file1 = multi.getFilesystemName("file1");
-		String article_file2 = multi.getFilesystemName("file2");
-		
-		CommunityVO vo = new CommunityVO(article_title, article_content, article_file1, article_file2);
-		
+		String article_file1 = multi.getFilesystemName("article_file1");
+		String article_file2 = multi.getFilesystemName("article_file2");
+		String mem_id = multi.getParameter("mem_id");
+		CommunityVO vo = new CommunityVO(article_title, article_content, article_file1, article_file2,mem_id);
+		System.out.println(article_title);
+		System.out.println(article_content);
+		System.out.println(article_file1);
+		System.out.println(article_file2);
+		System.out.println(mem_id);
 		CommunityDAO dao = new CommunityDAO();
+	
 		int cnt = dao.communityWrite(vo);
-		
+	
 		if (cnt > 0) {
 			
-			response.sendRedirect("communityMain");
+			response.sendRedirect("communityMain.jsp");
 		}else {
 			response.sendRedirect("communityWrite.jsp");
 		}
