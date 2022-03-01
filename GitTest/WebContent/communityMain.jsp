@@ -1,3 +1,4 @@
+<%@page import="Model.MemberVO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
 	pageEncoding="EUC-KR"%>
 <%@page import="Model.CommunityVO"%>
@@ -13,9 +14,9 @@
 
 <link href="assets/css/styles2.css" rel="stylesheet" />
 
-
 </head>
 <body>
+
 	<nav class="navbar navbar-expand bg">
 		<a class="logo">logo</a>
 	</nav>
@@ -60,7 +61,7 @@
 							<tr>
 							<%for(CommunityVO vo: list){ %>
 								<td class="name td1""><%=vo.getArticle_seq() %></td>
-								<td class="title td1"><a href = "communityView?num=<%=vo.getArticle_seq()%>"><%=vo.getArticle_seq() %></a></td>
+								<td class="title td1"><a href = "communityView?num=<%=vo.getArticle_seq()%>"><%=vo.getArticle_content()%></a></td>
 								<td class="gender td1"><%=vo.getMem_id() %></td>
 								<td class="date td1"><%=vo.getArticle_date()%></td>
 							</tr>
@@ -82,7 +83,7 @@
 				<div class="page"s><a href="#" class="abc">1</a></div>
 			</div>
 		</main>
-	</div>>
+	</div>
 	
 	
 

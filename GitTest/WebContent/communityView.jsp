@@ -47,9 +47,9 @@
            
         </form>
         <div class="writeview">
-					<a href="communityMain.jsp"><button class="viewwrite">나가기</button></a>
+					<a href="communityMain"><button class="viewwrite">나가기</button></a>
 					<a href="communityUpdate.jsp"><button class="viewwrite">수정</button></a>
-					<a href="communityDelete"><button class="viewwrite">삭제</button></a>
+					<a href = "communityDelete?num=<%=cvo.getArticle_seq()%>"><button class="viewwrite">삭제</button></a>
 				</div>
     </div>
 			<div id = "community">

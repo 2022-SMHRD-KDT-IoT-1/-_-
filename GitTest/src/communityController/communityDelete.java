@@ -1,6 +1,8 @@
 package communityController;
 
 import java.io.IOException;
+import java.util.List;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -19,18 +21,21 @@ public class communityDelete extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException {
 
 		HttpSession session = request.getSession();
-		System.out.println("하이");
+		
+		
+		
+		int article_seq = Integer.parseInt(request.getParameter("num"));
 		CommunityVO vo = (CommunityVO) session.getAttribute("cvo");
-		System.out.println("하이222");
+		
 		
 		CommunityDAO dao = new CommunityDAO();
-		System.out.println("하이333");
 		
-		int cnt = dao.communityDelete(vo.getArticle_seq());
-		System.out.println("하이444");
+		
+		int cnt = dao.communityDelete(article_seq);
+		
 		if (cnt > 0) {
 			session.removeAttribute("vo");
-			response.sendRedirect("communityMain.jsp");
+			response.sendRedirect("communityMain");
 		}else {
 			System.out.println("게시글 삭제 실패");
 		}
