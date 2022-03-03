@@ -48,7 +48,7 @@ public class communityWrite extends HttpServlet {
 	
 		if (cnt > 0) {
 			
-			response.sendRedirect("communityMain.jsp");
+			response.sendRedirect("communityMain");
 		}else {
 			response.sendRedirect("communityWrite.jsp");
 		}

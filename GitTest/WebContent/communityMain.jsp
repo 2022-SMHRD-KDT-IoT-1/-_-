@@ -66,14 +66,7 @@
 								<td class="date td1"><%=vo.getArticle_date()%></td>
 							</tr>
 							<%} %>
-							<%-- <--<%for (CommunityVO vo : communityList){ %>	
-				<tr>
-				<td><%=vo.getArticle_seq() %></td>
-				<td><a href = "communityMain?num=<%=vo.getArticle_seq()%>"><%=vo.getArticle_title() %></a></td>
-				<td><%= vo.getMem_id() %></td>
-				<td><%= vo.getArticle_date() %></td>
-				</tr>
-			<%} %> --%>
+							
 					</table>
 				</div>
 				

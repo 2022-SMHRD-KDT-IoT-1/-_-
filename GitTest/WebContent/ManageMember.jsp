@@ -86,7 +86,7 @@
 								</td>
 							</tr>
 						
-						<tbody>
+						<!-- <tbody>
 							<tr>
 								<th class="name td1"">√÷¿Á»∆
 								</td>
@@ -116,9 +116,9 @@
 								</td>
 							</tr>
 						</tbody>
-						</thead>
+						</thead> -->
 						<!-- ================øπΩ√=============== -->
-						<%-- </thead>
+						
 						<tbody>
 							<%
 								for (MemberVO vo : list) {
@@ -135,7 +135,8 @@
 							<%
 								}
 							%>
-						</tbody> --%>
+						</tbody> 
+						 </thead>
 					</table>
 				</div>
 		</div>
