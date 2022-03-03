@@ -76,10 +76,12 @@ public class CommunityDAO {
 	
 	public int communityUpdate(CommunityVO vo) {
 		
-		SqlSession session = sqlSessionFactory.openSession();
-		
+		System.out.println(vo);
+		SqlSession session = sqlSessionFactory.openSession(true);
+		System.out.println("µé¾î¿À´×");
+		System.out.println(vo.getArticle_seq());
 		int cnt = session.update("communityUpdate", vo);
-		
+		System.out.println(cnt);
 		session.close();
 		
 		return cnt;

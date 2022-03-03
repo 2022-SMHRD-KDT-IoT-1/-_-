@@ -33,19 +33,39 @@ public class CommunityVO {
 		this.mem_id = mem_id;
 	}
 
+	public CommunityVO(int article_seq, String article_title, String article_content, String article_file1,
+				String article_file2) {
+		
+		this.article_seq = article_seq;
+		this.article_title = article_title;
+		this.article_content = article_content;
+		this.article_file1 = article_file1;
+		this.article_file2 = article_file2;
+		
+		
+	}
 
-
+	
 
 	public CommunityVO(String article_title, String article_content, String article_file1, String article_file2) {
-		super();
+	
 		this.article_title = article_title;
 		this.article_content = article_content;
 		this.article_file1 = article_file1;
 		this.article_file2 = article_file2;
 	}
 
-	public CommunityVO(String article_title, String article_content, String article_file1,
-			String article_file2,String mem_id) {
+	public CommunityVO(String article_title, String article_content, String article_file1, String article_file2,int article_seq) {
+
+		
+		this.article_title = article_title;
+		this.article_content = article_content;
+		this.article_file1 = article_file1;
+		this.article_file2 = article_file2;
+		this.article_seq = article_seq;
+	}
+
+	public CommunityVO(String article_title, String article_content, String article_file1, String article_file2,String mem_id) {
 
 		
 		this.article_title = article_title;
@@ -54,7 +74,6 @@ public class CommunityVO {
 		this.article_file2 = article_file2;
 		this.mem_id = mem_id;
 	}
-
 
 	public int getArticle_seq() {
 		return article_seq;

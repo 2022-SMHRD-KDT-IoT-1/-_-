@@ -61,7 +61,7 @@
 							<tr>
 							<%for(CommunityVO vo: list){ %>
 								<td class="name td1""><%=vo.getArticle_seq() %></td>
-								<td class="title td1"><a href = "communityView?num=<%=vo.getArticle_seq()%>"><%=vo.getArticle_content()%></a></td>
+								<td class="title td1"><a href = "communityView?num=<%=vo.getArticle_seq()%>"><%=vo.getArticle_title()%></a></td>
 								<td class="gender td1"><%=vo.getMem_id() %></td>
 								<td class="date td1"><%=vo.getArticle_date()%></td>
 							</tr>

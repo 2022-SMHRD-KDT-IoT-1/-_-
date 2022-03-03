@@ -27,7 +27,7 @@
 		update jp_community
 		set article_content = #{article_content}, article_title = #{article_title}, 
 		article_file1 = #{article_file1}, article_file2 = #{article_file2}
-		where mem_id = #{mem_id}
+		where article_seq = #{article_seq}
 	</update> 
 	
 </mapper>
