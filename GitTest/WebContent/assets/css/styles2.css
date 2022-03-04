@@ -2,30 +2,30 @@
 
 
 *{
-	margin:0;
-	
+   margin:0;
+   
 }
 
 .search{
-	margin-top: 45px;
+   margin-top: 45px;
     text-align: center;
     margin-left: 758px;
 }
 
 
 .abc{
-	color: black;
-	text-decoration-line: none;
+   color: black;
+   text-decoration-line: none;
 }
 
 .write{
-	text-align: center;
+   text-align: center;
     margin-left: 865px;
     margin-top: 20px;
 }
 
 .write2{
-	background-color: #4682b4;
+   background-color: #4682b4;
     border-radius: 15px;
     width: 88px;
     height: 34px;
@@ -35,7 +35,7 @@
 
 
 .write_2{
-	text-align: center;
+   text-align: center;
     margin-top: 20px;
 }
 
@@ -43,55 +43,55 @@
 
 /* 상단 배경 */
 :root { -
-	-bs-dark-rgb: 33, 37, 41;
+   -bs-dark-rgb: 33, 37, 41;
 }
 
 
 /* 검색===================================================== */
 .navbar {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-top: 0.5rem;
+   padding-bottom: 0.5rem;
 }
 /* 검색===================================================== */
 
 .member{
-	margin-top : 13px;
-	margin-left: auto;
+   margin-top : 13px;
+   margin-left: auto;
     margin-right: auto;
 }
 
 .se{
-	font-size:15px;
-	border:none;
-	        border-bottom: 1px solid;
+   font-size:15px;
+   border:none;
+           border-bottom: 1px solid;
 }
 .se1{
-	width:22px;
+   width:22px;
 }
 
 
 .this {
-	text-align: center;
-	margin-top: 30px;
-	font-size: 43px;
+   text-align: center;
+   margin-top: 30px;
+   font-size: 43px;
 }
 
 .btn{
-	background-color: white;
-	border:none;
+   background-color: white;
+   border:none;
 }
 
 .page{
-	text-align:center;
+   text-align:center;
 }
 
 
 /* 로고 */
 .logo {
-	padding-top: 0.3125rem;
+   padding-top: 0.3125rem;
     padding-bottom: 0.3125rem;
     font-size: 2rem;
     margin-left: 21px;
@@ -102,7 +102,7 @@
 /* 로고 */
 
 .write3{
-	margin-top:37px;
+   margin-top:37px;
 }
 
 
@@ -137,94 +137,94 @@ table.table2{
 
 /* 배경 */
 .bg {
-	--bs-bg-opacity: 1;
-	    background-color: #4682b4;
+   --bs-bg-opacity: 1;
+       background-color: #4682b4;
 }
 /* 배경 */
 
 /* 검색버튼 */
 .btn {
-	cursor: pointer;
-	padding: 0.375rem 0.75rem;
-	border-radius: 0.25rem;
+   cursor: pointer;
+   padding: 0.375rem 0.75rem;
+   border-radius: 0.25rem;
 }
 /* 검색버튼 */
 @media ( prefers-reduced-motion : reduce) {
-	.btn {
-		transition: none;
-	}
+   .btn {
+      transition: none;
+   }
 }
 
 .btn-primary {
-	color: #fff;
-	background-color: #0d6efd;
-	border-color: #0d6efd;
+   color: #fff;
+   background-color: #0d6efd;
+   border-color: #0d6efd;
 }
 
 
 
 .sb-menu {
-	color: rgba(255, 255, 255, 0.25); 
-	margin-left: 46px;
+   color: rgba(255, 255, 255, 0.25); 
+   margin-left: 46px;
 }
 /* 왼쪽 사이드바 글자 */
 
 
 /* 내용 */
 #layoutSidenav_content {
-	min-height: calc(100vh - 56px);
+   min-height: calc(100vh - 56px);
 }
 /* 왼쪽 사이드바 */
 
 /* 내용 */
 .breadcrumb {
-	padding: 0 0;
-	position: relative;
+   padding: 0 0;
+   position: relative;
 }
 /* 내용 */
 #sidemenu {
-	display: flex;
+   display: flex;
 }
 
 @media ( min-width : 992px) {
-	#sidemenu #sidemenu_section {
-		transform: translateX(0);
-	}
-	#sidemenu #layoutSidenav_content {
-		margin-left: 0;
-		transition: margin 0.15s ease-in-out;
-	}
-	.
-	#sidemenu #sidemenu_section {
-		transform: translateX(-225px);
-	}
-	#sidemenu #layoutSidenav_content {
-		margin-left: -225px;
-	}
-	#sidemenu #layoutSidenav_content:before {
-		display: none;
-	}
+   #sidemenu #sidemenu_section {
+      transform: translateX(0);
+   }
+   #sidemenu #layoutSidenav_content {
+      margin-left: 0;
+      transition: margin 0.15s ease-in-out;
+   }
+   .
+   #sidemenu #sidemenu_section {
+      transform: translateX(-225px);
+   }
+   #sidemenu #layoutSidenav_content {
+      margin-left: -225px;
+   }
+   #sidemenu #layoutSidenav_content:before {
+      display: none;
+   }
 }
 
 @media ( min-width : 992px) {
-	#sidemenu #layoutSidenav_content {
-		margin-left: 0;
-		transition: margin 0.15s ease-in-out;
-	}
+   #sidemenu #layoutSidenav_content {
+      margin-left: 0;
+      transition: margin 0.15s ease-in-out;
+   }
 }
 
 
 .writetd{
-	padding-left: 14px;
+   padding-left: 14px;
 }
 
 .writetd1{
-	padding-left:10px;
+   padding-left:10px;
 }
 
 
 .writeth{
-	    color: black;
+       color: black;
     background-color: whitesmoke;
     padding-right: 85px;
     padding-left: 85px;
@@ -233,59 +233,59 @@ table.table2{
 }
 
 .writeview{
-	text-align: center;
+   text-align: center;
     margin-left: 727px;
     margin-top: 20px;
 }
 
 
 .table3, .writeth, .writetd{
-	border: 1px solid black;
+   border: 1px solid black;
 }
 
 .table3{
-	margin-top:135px;
+   margin-top:135px;
 }
 
 
 .answer{
-	width: 97%;
+   width: 97%;
     height: 36px;
     border:none;
     font-size: 19px;
 }
 
 .answer1{
-	width: 725px;
+   width: 725px;
     height: 360px;
-	border:none;
-	font-size: 25px;
+   border:none;
+   font-size: 25px;
 }
 
 .board2{
-	height:25px;
-	font-size: 19px;
+   height:25px;
+   font-size: 19px;
 }
 
 .board3{
-	font-size: 19px;
+   font-size: 19px;
 }
 
 .writetd2{
-	text-align: center;
-	border-right: 1px solid #ccc;
-	vertical-align: middle;
+   text-align: center;
+   border-right: 1px solid #ccc;
+   vertical-align: middle;
 }
 
 
 
 .board2, .board3{
-	border: none;
+   border: none;
 }
 
 
 .viewwrite{
-	background-color: #4682b4;
+   background-color: #4682b4;
     border-radius: 15px;
     width: 88px;
     height: 34px;
@@ -294,7 +294,7 @@ table.table2{
 }
 
 .password1{
-	width: 172px;
+   width: 172px;
 }
 
 
@@ -325,12 +325,12 @@ table tbody tr {
 
 
 .th1{
-	color:#000000;
+   color:#000000;
 }
 
 .td1{
-	color:#000000;
-	border-bottom: 1px solid lightgray;
+   color:#000000;
+   border-bottom: 1px solid lightgray;
 }
 
 .table-tr th{
@@ -357,7 +357,7 @@ tbody tr:hover {
 }
 
 .abc:hover{
-	color: red;
+   color: red;
 }
 
 .name {
@@ -381,11 +381,11 @@ tbody tr:hover {
 }
 
 th{
-	text-align: left;
-	padding-left: 40px;
+   text-align: left;
+   padding-left: 40px;
 }
 td{
-	padding-left: 40px;
+   padding-left: 40px;
 }
 
 
@@ -421,7 +421,7 @@ td{
 
 
 .this{
-	margin-left: 39px;
+   margin-left: 39px;
 }
 
 
@@ -431,7 +431,7 @@ td{
 
 
 .ddd{
-	border: 1px solid black;
+   border: 1px solid black;
     width: 100%;
     height: 700px;
     border-radius: 56px;
@@ -449,12 +449,12 @@ td{
 
 
 .picture{
-	width:50%;
+   width:50%;
 }
 
 body{
-	margin: 0px;
-	
+   margin: 0px;
+   
 }
 
 .section1 {
@@ -512,15 +512,15 @@ section:hover {  box-shadow: 0 4px 15px -4px #fff; }
 
 
 .file2{
-	width:50%;
+   width:50%;
 }
 
 .file1{
-	width:50px;
+   width:50px;
 }
 
 .sizing{
-	width: 30px;
+   width: 30px;
 }
 
 
@@ -590,8 +590,8 @@ section:hover {  box-shadow: 0 4px 15px -4px #fff; }
 }
 
 .se1{
-	width:30px;
-	    height: 30px;
+   width:30px;
+       height: 30px;
 }
 
 /* 검색===================================================== */
@@ -614,8 +614,8 @@ margin-top: 30px;
 
 
 *{
-	margin:0;
-	
+   margin:0;
+   
 }
 
 .search{
@@ -626,14 +626,14 @@ margin-top: 30px;
 
 /* 상단 배경 */
 :root { -
-	-bs-dark-rgb: 33, 37, 41;
+   -bs-dark-rgb: 33, 37, 41;
 }
 
 
 .this {
 margin-left: 71px;
     margin-top: 120px;
-    font-size: 38px;	
+    font-size: 38px;   
 }
 
 hr {
@@ -660,7 +660,7 @@ padding-top: 14px;
 
 
 .logo {
-	padding-top: 0.3125rem;
+   padding-top: 0.3125rem;
     padding-bottom: 0.3125rem;
     font-size: 2rem;
     margin-left: 21px;
@@ -678,95 +678,95 @@ padding-top: 14px;
 
 
 .se{
-	font-size:15px;
-	border:none;
-	        border-bottom: 1px solid;
-	        	position: relative;
+   font-size:15px;
+   border:none;
+           border-bottom: 1px solid;
+              position: relative;
 }
 .btn{
-	background-color: white;
-	border:none;
-	position: relative;
+   background-color: white;
+   border:none;
+   position: relative;
 }
 
 #sidemenu {
-	display: flex;
+   display: flex;
 }
 
 @media ( min-width : 992px) {
-	#sidemenu #sidemenu_section {
-		transform: translateX(0);
-	}
-	#sidemenu #layoutSidenav_content {
-		margin-left: 0;
-		transition: margin 0.15s ease-in-out;
-	}
-	.
-	#sidemenu #sidemenu_section {
-		transform: translateX(-225px);
-	}
-	#sidemenu #layoutSidenav_content {
-		margin-left: -225px;
-	}
-	#sidemenu #layoutSidenav_content:before {
-		display: none;
-	}
+   #sidemenu #sidemenu_section {
+      transform: translateX(0);
+   }
+   #sidemenu #layoutSidenav_content {
+      margin-left: 0;
+      transition: margin 0.15s ease-in-out;
+   }
+   .
+   #sidemenu #sidemenu_section {
+      transform: translateX(-225px);
+   }
+   #sidemenu #layoutSidenav_content {
+      margin-left: -225px;
+   }
+   #sidemenu #layoutSidenav_content:before {
+      display: none;
+   }
 }
 
 @media ( min-width : 992px) {
-	#sidemenu #layoutSidenav_content {
-		margin-left: 0;
-		transition: margin 0.15s ease-in-out;
-	}
+   #sidemenu #layoutSidenav_content {
+      margin-left: 0;
+      transition: margin 0.15s ease-in-out;
+   }
 }
 
 color: rgba(255, 255, 255, 0.25);
     font-size: 25px;
-        	text-decoration-line: none;
+           text-decoration-line: none;
 }
 
 .sidemenu-bg {
-	background-color: #212537;
+   background-color: #212537;
 }
 
 .sb-sidenav .sb-sidenav-menu .nav .nav-link {
-	display: flex;
-	padding-top: 0.75rem;
-	padding-bottom: 0.75rem;
-	position: relative;
+   display: flex;
+   padding-top: 0.75rem;
+   padding-bottom: 0.75rem;
+   position: relative;
 }
 
 @media ( prefers-reduced-motion : reduce) {
-	.btn {
-		transition: none;
-	}
+   .btn {
+      transition: none;
+   }
 }
 
 .btn-primary {
-	color: #fff;
-	background-color: #0d6efd;
-	border-color: #0d6efd;
+   color: #fff;
+   background-color: #0d6efd;
+   border-color: #0d6efd;
 }
 
 #sidemenu {
-	display: flex;
+   display: flex;
 }
 
 .btn {
-	vertical-align: middle;
-	cursor: pointer;
-	padding: 0.375rem 0.75rem;
-	border-radius: 0.25rem;
+   vertical-align: middle;
+   cursor: pointer;
+   padding: 0.375rem 0.75rem;
+   border-radius: 0.25rem;
 }
 
 
 
 #sidemenu #sidemenu_section {
-	flex-basis: 225px;
-	flex-shrink: 0;
-	transition: transform 0.15s ease-in-out;
-	z-index: 1038;
-	transform: translateX(-225px);
+   flex-basis: 225px;
+   flex-shrink: 0;
+   transition: transform 0.15s ease-in-out;
+   z-index: 1038;
+   transform: translateX(-225px);
 }
 
 .sb-sidenav .sb-sidenav-menu .nav .menu {
@@ -801,14 +801,14 @@ text-align: center;
 }
 
 #layoutSidenav_content {
-	min-height: calc(100vh - 56px);
-	margin-left: -225px;
+   min-height: calc(100vh - 56px);
+   margin-left: -225px;
 }
 
 @media ( min-width : 992px) {
-	#sidemenu #sidemenu_section {
-		transform: translateX(0);
-	}
+   #sidemenu #sidemenu_section {
+      transform: translateX(0);
+   }
 }
 
 
@@ -823,7 +823,7 @@ text-align: center;
 
 
 img {
-	height: 60px;
-	margin-right: 30px;
-	float: right;
+   height: 60px;
+   margin-right: 30px;
+   float: right;
 }

@@ -10,40 +10,42 @@
 
 <link rel="stylesheet" href="assets/css/join2.css">
 <style>
-	
-	
-	@media ( max-width :500px) {
-		.form-wrap {
-		
+@media ( max-width :500px) {
+	.form-wrap {
 		/*여기는 모바일로 봤을때 설정 화면이에요 
 		줄어들었을때 마진 값 없애서 왼쪽으로 붙여놓고 
 		세로길이 100 view 로 해놨어용 
 		이부분은 이제 재훈씨가 모바일로 했을때 어떻게 보였으면 좋겠는지
 		여기다가 작성 하시면 됩니당
 		*/
-			margin: 0px;
-			height : 100vh;
-			
-		}
+		margin: 0px;
+		height: 100vh;
 	}
+}
 </style>
 </head>
 
 <body>
-	
-	
+
+
 	<div class="wrap">
-			
-		
-		<video muted autoplay loop>
-			<source src="assets/bg/bg.mp4" type="video/mp4">
-		</video>
-		<div class="menu">	
-			<ul>
-				<li><a class="menu logo">logo</a></li>
-			</ul>
-		</div>
+
+
+		<video muted autoplay loop> <source src="assets/bg/bg.mp4"
+			type="video/mp4"></video>
 		<div class="wrap_bg">
+			<div class="menu">
+				<ul>
+					<li>
+						<button type="button" onclick="location.href='Main.jsp'"
+							class="btm_image" id="img_btn">
+							<img src="assets/image/logo.png">
+						</button>
+
+					</li>
+				</ul>
+			</div>
+
 		</div>
 		<div class="form-wrap">
 			<form action="LoginService" id="login" class="input-group"
@@ -52,14 +54,15 @@
 				<input type="text" name="mem_id" class="input-field"
 					placeholder="ID입력"> <input type="password" name="mem_pw"
 					class="input-field" placeholder="PW 입력" required>
-					
+
 				<div class="sub2">
-				<a href="Join.jsp" class="joinsubmit1">회원가입</a>
-				<button class="submit">로그인</button></div> 
-				
+					<a href="Join.jsp" class="joinsubmit1">회원가입</a>
+					<button class="submit">로그인</button>
+				</div>
+
 			</form>
-         	
-           </div>
+
+		</div>
 	</div>
 </body>
 </html>

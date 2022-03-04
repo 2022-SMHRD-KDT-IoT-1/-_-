@@ -1,324 +1,324 @@
 body {
-	height: 100vh;
-	background-repeat: no-repeat;
-	background-size: cover;
+   height: 100vh;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
 video {
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	margin: 0px auto;
-	position: absolute;
-	object-fit: fill;
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   margin: 0px auto;
+   position: absolute;
+   object-fit: fill;
 }
 
 .wrap_bg {
-	background: rgba(0, 0, 0, 0.4);
-	width: 100%;
-	height: 100%;
-	display: inline;
-	position: absolute;
-	left: 0
+   background: rgba(0, 0, 0, 0.4);
+   width: 100%;
+   height: 100%;
+   display: inline;
+   position: absolute;
+   left: 0
 }
 
 .mainbtn {
-	top: 59%;
-	left: 48%;
-	position: absolute;
+   top: 59%;
+   left: 48%;
+   position: absolute;
 }
 
 .mainbtn-1:hover {
-	background: rgba(2, 100, 300, 0.7);
+   background: rgba(2, 100, 300, 0.7);
 }
 
 .mainbtn-1 {
-	background: rgba(2, 134, 500, 0.7);
-	border: 0px;
-	color: white;
-	width: 107px;
-	height: 46px;
-	font-size: 23px;
-	margin-top: 25px;
-	border-radius: 28px;
-	margin-left: 37%;
+   background: rgba(2, 134, 500, 0.7);
+   border: 0px;
+   color: white;
+   width: 107px;
+   height: 46px;
+   font-size: 23px;
+   margin-top: 25px;
+   border-radius: 28px;
+   margin-left: 37%;
 }
 
 .input-field {
-	width: 100%;
-	padding: 10px 0;
-	margin: 5px 0;
-	border: none;
-	border-bottom: 1px solid #999;
-	outline: none;
-	background: transparent;
-	color: black;
+   width: 100%;
+   padding: 10px 0;
+   margin: 5px 0;
+   border: none;
+   border-bottom: 1px solid #999;
+   outline: none;
+   background: transparent;
+   color: black;
 }
 
 .button-wrap {
-	width: 130px;
-	margin: 35px auto;
-	position: relative;
-	box-shadow: 0 0 600px 9px #fcae8f;
-	border-radius: 30px;
+   width: 130px;
+   margin: 35px auto;
+   position: relative;
+   box-shadow: 0 0 600px 9px #fcae8f;
+   border-radius: 30px;
 }
 
 .ge {
-	padding: 10px 0;
-	margin: 5px 0;
-	border: none;
-	border-bottom: 1px solid #999;
-	outline: none;
-	background: transparent;
+   padding: 10px 0;
+   margin: 5px 0;
+   border: none;
+   border-bottom: 1px solid #999;
+   outline: none;
+   background: transparent;
 }
 
 .input-group {
-	margin-top: 135px;
-	position: absolute;
-	width: 280px;
-	transition: .5s;
+   margin-top: 135px;
+   position: absolute;
+   width: 280px;
+   transition: .5s;
 }
 
 .input-group1 {
-	margin-top: 55px;
-	margin-left: 38px;
-	position: absolute;
-	width: 280px;
-	transition: .5s;
+   margin-top: 55px;
+   margin-left: 38px;
+   position: absolute;
+   width: 280px;
+   transition: .5s;
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	font-family: sans-serif;
+   margin: 0;
+   padding: 0;
+   font-family: sans-serif;
 }
 
 .form-wrap {
-	/*여기가 컴퓨터로 보는 화면의 설정 화면이구요 로그인 창 */
-	width: 360px;
-	height: 575px;
-	position: fixed;
-	margin-top: 199px;
-	margin-left: 40%;
-	float: right;
-	background: #fff;
-	padding: 5px;
-	overflow: hidden;
+   /*여기가 컴퓨터로 보는 화면의 설정 화면이구요 로그인 창 */
+   width: 360px;
+   height: 575px;
+   position: fixed;
+   margin-top: 199px;
+   margin-left: 40%;
+   float: right;
+   background: #fff;
+   padding: 5px;
+   overflow: hidden;
 }
 
 .form-wrap1 {
-	/*여기가 컴퓨터로 보는 화면의 설정 화면이구요 로그인 창 */
-	width: 360px;
-	height: 700px;
-	position: fixed;
-	margin-top: 135px;
-	margin-left: 40%;
-	float: right;
-	/* background: #fff; */
-	    background: rgba(255, 255, 255, 0.7);
-	padding: 5px;
-	overflow: hidden;
+   /*여기가 컴퓨터로 보는 화면의 설정 화면이구요 로그인 창 */
+   width: 360px;
+   height: 700px;
+   position: fixed;
+   margin-top: 135px;
+   margin-left: 40%;
+   float: right;
+   /* background: #fff; */
+       background: rgba(255, 255, 255, 0.7);
+   padding: 5px;
+   overflow: hidden;
 }
 
 .article {
-	float: left;
-	margin: 4% 2% 6% 17%;
+   float: left;
+   margin: 4% 2% 6% 17%;
 }
 
 .togglebtn {
-	text-align: center;
-	padding: 10px;
-	cursor: pointer;
-	background: transparent;
-	border: 0;
-	outline: none;
-	position: relative;
+   text-align: center;
+   padding: 10px;
+   cursor: pointer;
+   background: transparent;
+   border: 0;
+   outline: none;
+   position: relative;
 }
 
 /* 회원가입 버튼 ================*/
 #btn {
-	text-align: center;
-	width: 170px;
-	padding: 10px 30px;
-	s cursor: pointer;
-	display: block;
-	background: linear-gradient(to right, #1c92d2, #f2fcfe);
-	border: 0;
-	outline: none;
-	border-radius: 30px;
-	margin: 0px 0px 60px 23px;
+   text-align: center;
+   width: 170px;
+   padding: 10px 30px;
+   s cursor: pointer;
+   display: block;
+   background: linear-gradient(to right, #1c92d2, #f2fcfe);
+   border: 0;
+   outline: none;
+   border-radius: 30px;
+   margin: 0px 0px 60px 23px;
 }
 /* 회원가입 버튼 ================*/
 .gender {
-	text-align: center;
+   text-align: center;
 }
 
 .sub2 {
-	text-align: center;
+   text-align: center;
 }
 
 .sub {
-	width: 100%;
-	margin-top: 46px;
-	position: fixed;
+   width: 100%;
+   margin-top: 46px;
+   position: fixed;
 }
 
 body .wrap {
-	height: 100vh;
-	width: 100vh;
+   height: 100vh;
+   width: 100vh;
 }
 
 /* 하단 회원가입 버튼 */
 .submit {
-	padding: 10px 30px;
-	cursor: pointer;
-	display: block;
-	background: linear-gradient(to right, #1c92d2, #f2fcfe);
-	border: 0;
-	outline: none;
-	border-radius: 30px;
-	font-size: 15px;
-	margin-left: 85px;
-	margin-top: 35px;
+   padding: 10px 30px;
+   cursor: pointer;
+   display: block;
+   background: linear-gradient(to right, #1c92d2, #f2fcfe);
+   border: 0;
+   outline: none;
+   border-radius: 30px;
+   font-size: 15px;
+   margin-left: 85px;
+   margin-top: 35px;
 }
 /* 하단 회원가입 버튼 */
 .checkbox {
-	margin: 30px 10px 30px 0;
+   margin: 30px 10px 30px 0;
 }
 
 span {
-	/* color: #777; */
-	font-size: 12px;
-	bottom: 68px;
-	position: absolute;
+   /* color: #777; */
+   font-size: 12px;
+   bottom: 68px;
+   position: absolute;
 }
 
 #login {
-	left: 50px;
+   left: 50px;
 }
 
 /* 메인========================================================================= */
 .login {
-	color: white;
-	text-decoration-line: none;
-	padding: 30px;
-	font-size: 20px;
+   color: white;
+   text-decoration-line: none;
+   padding: 30px;
+   font-size: 20px;
 }
 
 /* 로고 */
 #logo {
-	margin-left: 15px;
-	color: #ffffff;
-	font-size: 60px;
+   margin-left: 15px;
+   color: #ffffff;
+   font-size: 60px;
 }
 /* 로고 */
 
 /* 메인 글자 */
 .text {
-	position: absolute;
-	width: 100%;
-	top: 35%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+   position: absolute;
+   width: 100%;
+   top: 35%;
+   left: 50%;
+   transform: translate(-50%, -50%);
 }
 
 .text p {
-	text-align: center;
-	font-size: 50px;
-	color: #ffffff;
-	margin: 0px auto;
+   text-align: center;
+   font-size: 50px;
+   color: #ffffff;
+   margin: 0px auto;
 }
 /* 메인 글자 */
 #loginbutton {
-	width: 140px;
-	height: 50px;
-	margin: 0px auto;
-	color: white;
-	text-align: center;
-	vertical-align: middle;
-	border: 2px solid white;
-	border-radius: 30px;
-	box-sizing: border-box;
+   width: 140px;
+   height: 50px;
+   margin: 0px auto;
+   color: white;
+   text-align: center;
+   vertical-align: middle;
+   border: 2px solid white;
+   border-radius: 30px;
+   box-sizing: border-box;
 }
 
 /*------------------*/
 /* Layout (No Edit) */
 /*------------------*/
 @media ( max-width :664px) {
-	.bg {
-		height: auto;
-	}
-	video {
-		height: 400px;
-	}
-	.text p {
-		font-size: 24px;
-	}
+   .bg {
+      height: auto;
+   }
+   video {
+      height: 400px;
+   }
+   .text p {
+      font-size: 24px;
+   }
 }
 
 /* 메인========================================================================= */
 .login {
-	color: white;
-	text-decoration-line: none;
-	padding: 30px;
-	font-size: 20px;
+   color: white;
+   text-decoration-line: none;
+   padding: 30px;
+   font-size: 20px;
 }
 
 .list:hover {
-	color: red;
+   color: red;
 }
 
 .menu {
-	position: relative;
-	width: auto;
-	text-decoration-line: none;
-	s
+   position: relative;
+   width: auto;
+   text-decoration-line: none;
+   s
 }
 
 .joinsubmit {
-	color: white;
-	text-decoration-line: none;
-	float: right;
-	margin-top: 166%;
-	margin-right: 31%;
+   color: white;
+   text-decoration-line: none;
+   float: right;
+   margin-top: 166%;
+   margin-right: 31%;
 }
 
 .joinsubmit1 {
-	text-decoration-line: none;
-	color: black;
+   text-decoration-line: none;
+   color: black;
 }
 
 .joinsubmit1:hover {
-	color: red;
+   color: red;
 }
 
 .menu ul li {
-	float: left;
-	height: 100%;
-	text-align: center;
-	margin: 0px;
+   float: left;
+   height: 100%;
+   text-align: center;
+   margin: 0px;
 }
 
 .menu ul li a {
-	display: block;
+   display: block;
 }
 
 .list {
-	padding-top: 53px;
-	color: white;
-	width: 137px;
-	height: 53%;
-	font-size: 19px;
+   padding-top: 53px;
+   color: white;
+   width: 137px;
+   height: 53%;
+   font-size: 19px;
 }
 
 .controller {
-	position: absolute;
-	right: 55px;
-	bottom: 52px;
+   position: absolute;
+   right: 55px;
+   bottom: 52px;
 }
 
 .mapcontrol {
-	border: 1px solid;
+   border: 1px solid;
     border-radius: 30px;
     width: 75px;
     height: 140px;
@@ -326,92 +326,96 @@ span {
 }
 
 .control1 {
-	border-bottom: 1px solid black;;
+   border-bottom: 1px solid black;;
 }
 
 .control1, .control2{
-	font-size:38px;
+   font-size:38px;
 }
 
 .control1:hover{
-	color: red;
+   color: red;
 }
 .control2:hover{
-	color: red;
+   color: red;
 }
 
 ul {
-	list-style: none;
+   list-style: none;
 }
 
 /* 로고 */
 .logo {
-	color: #ffffff;
-	font-size: 50px;
-	margin: 0px;
-	padding-left: 26px;
-	padding-top: 16px;
+   color: #ffffff;
+   font-size: 50px;
+   margin: 0px;
+   padding-left: 26px;
+   padding-top: 16px;
 }
 /* 로고 */
 .ma {
-	color: #ffffff;
-	font-size: 70px;
-	text-align: center;
+   color: #ffffff;
+   font-size: 70px;
+   text-align: center;
 }
 
 .ma1 {
-	position: fixed;
-	top: 35%;
-	left: 38%;
+   position: fixed;
+   top: 35%;
+   left: 38%;
 }
 
 /* 메인 글자 */
 .text {
-	position: absolute;
-	width: 100%;
-	top: 35%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+   position: absolute;
+   width: 100%;
+   top: 35%;
+   left: 50%;
+   transform: translate(-50%, -50%);
 }
 
 .text p {
-	text-align: center;
-	font-size: 50px;
-	color: #ffffff;
-	margin: 0px auto;
+   text-align: center;
+   font-size: 50px;
+   color: #ffffff;
+   margin: 0px auto;
 }
 /* 메인 글자 */
 #loginbutton {
-	width: 140px;
-	height: 50px;
-	margin: 0px auto;
-	color: white;
-	text-align: center;
-	vertical-align: middle;
-	border: 2px solid white;
-	border-radius: 30px;
-	box-sizing: border-box;
+   width: 140px;
+   height: 50px;
+   margin: 0px auto;
+   color: white;
+   text-align: center;
+   vertical-align: middle;
+   border: 2px solid white;
+   border-radius: 30px;
+   box-sizing: border-box;
 }
 
 /*------------------*/
 /* Layout (No Edit) */
 /*------------------*/
 @media ( max-width :664px) {
-	.bg {
-		height: auto;
-	}
-	video {
-		height: 400px;
-	}
-	.text p {
-		font-size: 24px;
-	}
+   .bg {
+      height: auto;
+   }
+   video {
+      height: 400px;
+   }
+   .text p {
+      font-size: 24px;
+   }
 }
 
 img {
-	width: 60px;
-	height: 60px;
-	margin-top: 30px;
-	margin-right: 30px;
-	float: right;
+   width: 100px;
+   height: 100px;
+   margin-top: 30px;
+   margin-right: 30px;
+   float: right;
 }
+
+button#img_btn {
+    background: none;
+    border: none;

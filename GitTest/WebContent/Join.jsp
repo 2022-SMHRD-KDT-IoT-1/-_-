@@ -20,7 +20,9 @@
 		<video muted autoplay loop> <source src="assets/bg/bg.mp4" type="video/mp4"></video>
 		<div class="menu">	
 			<ul>
-				<li><a class="menu logo">logo</a></li>
+				<button type="button" onclick="location.href='Main.jsp'"
+				class="btm_image" id="img_btn"><img src="assets/image/logo.png"></button>
+
 			</ul>
 		</div>
 			<div class="wrap_bg"></div>

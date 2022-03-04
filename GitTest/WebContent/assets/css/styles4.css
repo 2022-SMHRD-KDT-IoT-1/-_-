@@ -2,8 +2,8 @@
 
 
 *{
-	margin:0;
-	
+   margin:0;
+   
 }
 
 .search{
@@ -14,7 +14,7 @@
 
 /* 상단 배경 */
 :root { -
-	-bs-dark-rgb: 33, 37, 41;
+   -bs-dark-rgb: 33, 37, 41;
 }
 
 
@@ -37,8 +37,8 @@ margin-top: 30px;
 }
 
 .member1{
-	margin-top : 13px;
-	margin-left: auto;
+   margin-top : 13px;
+   margin-left: auto;
     margin-right: auto;
 }
 
@@ -47,7 +47,7 @@ margin-top: 30px;
 .this {
 margin-left: 71px;
     margin-top: 120px;
-    font-size: 38px;	
+    font-size: 38px;   
 }
 
 hr {
@@ -72,7 +72,7 @@ padding-top: 14px;
 
 /* 로고 */
 .logo {
-	padding-top: 0.3125rem;
+   padding-top: 0.3125rem;
     padding-bottom: 0.3125rem;
     font-size: 2rem;
     margin-left: 21px;
@@ -93,42 +93,42 @@ padding-top: 14px;
 
 /* 배경 */
 .bg {
-	--bs-bg-opacity: 1;
-	border-bottom: 1px solid gray;
+   --bs-bg-opacity: 1;
+   border-bottom: 1px solid gray;
 
 }
 /* 배경 */
 
 /* 검색버튼 */
 .btn {
-	vertical-align: middle;
-	cursor: pointer;
-	padding: 0.375rem 0.75rem;
-	border-radius: 0.25rem;
+   vertical-align: middle;
+   cursor: pointer;
+   padding: 0.375rem 0.75rem;
+   border-radius: 0.25rem;
 }
 /* 검색버튼 */
 @media ( prefers-reduced-motion : reduce) {
-	.btn {
-		transition: none;
-	}
+   .btn {
+      transition: none;
+   }
 }
 
 .btn-primary {
-	color: #fff;
-	background-color: #0d6efd;
-	border-color: #0d6efd;
+   color: #fff;
+   background-color: #0d6efd;
+   border-color: #0d6efd;
 }
 
 #sidemenu {
-	display: flex;
+   display: flex;
 }
 
 #sidemenu #sidemenu_section {
-	flex-basis: 225px;
-	flex-shrink: 0;
-	transition: transform 0.15s ease-in-out;
-	z-index: 1038;
-	transform: translateX(-225px);
+   flex-basis: 225px;
+   flex-shrink: 0;
+   transition: transform 0.15s ease-in-out;
+   z-index: 1038;
+   transform: translateX(-225px);
 }
 
 .sb-sidenav .sb-sidenav-menu .nav .menu {
@@ -141,10 +141,10 @@ padding: 1.75rem 1rem 0.75rem;
 
 /* 왼쪽 사이드바 글자 */
 .sb-sidenav .sb-sidenav-menu .nav .nav-link {
-	display: flex;
-	padding-top: 0.75rem;
-	padding-bottom: 0.75rem;
-	position: relative;
+   display: flex;
+   padding-top: 0.75rem;
+   padding-bottom: 0.75rem;
+   position: relative;
 }
 
 ul {
@@ -164,13 +164,13 @@ text-align: center;
 .sb-menu {
 color: rgba(255, 255, 255, 0.25);
     font-size: 25px;
-        	text-decoration-line: none;
+           text-decoration-line: none;
 }
 /* 왼쪽 사이드바 글자 */
 
 /* 왼쪽 사이드바 */
 .sidemenu-bg {
-	background-color: #212537;
+   background-color: #212537;
 }
 
 .sb-sidenav {
@@ -179,54 +179,54 @@ color: rgba(255, 255, 255, 0.25);
 }
 /* 왼쪽 사이드 여닫기 */
 @media ( min-width : 992px) {
-	#sidemenu #sidemenu_section {
-		transform: translateX(0);
-	}
+   #sidemenu #sidemenu_section {
+      transform: translateX(0);
+   }
 }
 /* 왼쪽 사이드 여닫기 */
 
 /* 내용 */
 #layoutSidenav_content {
-	min-height: calc(100vh - 56px);
-	margin-left: -225px;
+   min-height: calc(100vh - 56px);
+   margin-left: -225px;
 }
 /* 왼쪽 사이드바 */
 
 /* 내용 */
 .breadcrumb {
-	padding: 0 0;
-	position: relative;
+   padding: 0 0;
+   position: relative;
 }
 /* 내용 */
 #sidemenu {
-	display: flex;
+   display: flex;
 }
 
 @media ( min-width : 992px) {
-	#sidemenu #sidemenu_section {
-		transform: translateX(0);
-	}
-	#sidemenu #layoutSidenav_content {
-		margin-left: 0;
-		transition: margin 0.15s ease-in-out;
-	}
-	.
-	#sidemenu #sidemenu_section {
-		transform: translateX(-225px);
-	}
-	#sidemenu #layoutSidenav_content {
-		margin-left: -225px;
-	}
-	#sidemenu #layoutSidenav_content:before {
-		display: none;
-	}
+   #sidemenu #sidemenu_section {
+      transform: translateX(0);
+   }
+   #sidemenu #layoutSidenav_content {
+      margin-left: 0;
+      transition: margin 0.15s ease-in-out;
+   }
+   .
+   #sidemenu #sidemenu_section {
+      transform: translateX(-225px);
+   }
+   #sidemenu #layoutSidenav_content {
+      margin-left: -225px;
+   }
+   #sidemenu #layoutSidenav_content:before {
+      display: none;
+   }
 }
 
 @media ( min-width : 992px) {
-	#sidemenu #layoutSidenav_content {
-		margin-left: 0;
-		transition: margin 0.15s ease-in-out;
-	}
+   #sidemenu #layoutSidenav_content {
+      margin-left: 0;
+      transition: margin 0.15s ease-in-out;
+   }
 }
 
 
@@ -288,8 +288,8 @@ tbody tr {
 }
 
 body{
-	margin: 0px;
-	background: rgba(204, 240, 230, 0.2);
+   margin: 0px;
+   background: rgba(204, 240, 230, 0.2);
 }
 
 
@@ -325,15 +325,15 @@ tbody tr:hover {
 }
 
 th{
-	text-align: left;
-	padding-left: 40px;
+   text-align: left;
+   padding-left: 40px;
 }
 td{
-	padding-left: 40px;
+   padding-left: 40px;
 }
 
 .th1{
-	color: white;
+   color: white;
 }
 
 
@@ -368,20 +368,20 @@ td{
 }
 
 .se1{
-	width:30px;
-	    height: 30px;
+   width:30px;
+       height: 30px;
 }
 
 .se{
-	font-size:15px;
-	border:none;
-	        border-bottom: 1px solid;
-	        	position: relative;
+   font-size:15px;
+   border:none;
+           border-bottom: 1px solid;
+              position: relative;
 }
 .btn{
-	background-color: white;
-	border:none;
-	position: relative;
+   background-color: white;
+   border:none;
+   position: relative;
 }
 
 .imgback {
@@ -390,12 +390,11 @@ td{
 
 
 img {
-	height: 60px;
+   height: 60px;
 
-	margin-right: 30px;
-	float: right;
+   margin-right: 30px;
+   float: right;
 }
-
 
 
 
