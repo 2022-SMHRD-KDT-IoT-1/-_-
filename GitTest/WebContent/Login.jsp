@@ -15,7 +15,7 @@
 	@media ( max-width :500px) {
 		.form-wrap {
 		
-		/*여기는 모바일로 봤을때 설정 화면이에요 loc
+		/*여기는 모바일로 봤을때 설정 화면이에요 
 		줄어들었을때 마진 값 없애서 왼쪽으로 붙여놓고 
 		세로길이 100 view 로 해놨어용 
 		이부분은 이제 재훈씨가 모바일로 했을때 어떻게 보였으면 좋겠는지
@@ -52,7 +52,10 @@
 				<input type="text" name="mem_id" class="input-field"
 					placeholder="ID입력"> <input type="password" name="mem_pw"
 					class="input-field" placeholder="PW 입력" required>
-				<div class="sub2"><button class="submit">로그인 / <a href="Join.jsp">회원가입</a></button></div>
+					
+				<div class="sub2">
+				<a href="Join.jsp" class="joinsubmit1">회원가입</a>
+				<button class="submit">로그인</button></div> 
 				
 			</form>
          	

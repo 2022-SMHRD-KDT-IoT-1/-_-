@@ -22,30 +22,27 @@ video {
 	left: 0
 }
 
-.mainbtn{
+.mainbtn {
 	top: 59%;
-    left: 48%;
-    position:absolute;
+	left: 48%;
+	position: absolute;
 }
 
-
-.mainbtn-1:hover{
+.mainbtn-1:hover {
 	background: rgba(2, 100, 300, 0.7);
 }
 
-
-.mainbtn-1{
+.mainbtn-1 {
 	background: rgba(2, 134, 500, 0.7);
-    border: 0px;
-    color: white;
-    width: 107px;
-    height: 46px;
-    font-size: 23px;
-    margin-top: 25px;
-    border-radius: 28px;
-    margin-left: 37%;
+	border: 0px;
+	color: white;
+	width: 107px;
+	height: 46px;
+	font-size: 23px;
+	margin-top: 25px;
+	border-radius: 28px;
+	margin-left: 37%;
 }
-
 
 .input-field {
 	width: 100%;
@@ -55,6 +52,7 @@ video {
 	border-bottom: 1px solid #999;
 	outline: none;
 	background: transparent;
+	color: black;
 }
 
 .button-wrap {
@@ -75,14 +73,14 @@ video {
 }
 
 .input-group {
-	margin-top: 185px;
+	margin-top: 135px;
 	position: absolute;
 	width: 280px;
 	transition: .5s;
 }
 
 .input-group1 {
-	margin-top: 90px;
+	margin-top: 55px;
 	margin-left: 38px;
 	position: absolute;
 	width: 280px;
@@ -97,15 +95,34 @@ video {
 
 .form-wrap {
 	/*여기가 컴퓨터로 보는 화면의 설정 화면이구요 로그인 창 */
-	    width: 360px;
-    height: 700px;
-    position: fixed;
-    margin-top: 7%;
-    margin-left: 40%;
-    float: right;
-    background: #fff;
-    padding: 5px;
-    overflow: hidden;
+	width: 360px;
+	height: 575px;
+	position: fixed;
+	margin-top: 199px;
+	margin-left: 40%;
+	float: right;
+	background: #fff;
+	padding: 5px;
+	overflow: hidden;
+}
+
+.form-wrap1 {
+	/*여기가 컴퓨터로 보는 화면의 설정 화면이구요 로그인 창 */
+	width: 360px;
+	height: 700px;
+	position: fixed;
+	margin-top: 135px;
+	margin-left: 40%;
+	float: right;
+	/* background: #fff; */
+	    background: rgba(255, 255, 255, 0.7);
+	padding: 5px;
+	overflow: hidden;
+}
+
+.article {
+	float: left;
+	margin: 4% 2% 6% 17%;
 }
 
 .togglebtn {
@@ -129,7 +146,7 @@ video {
 	border: 0;
 	outline: none;
 	border-radius: 30px;
-	margin: 0px 0px 60px 35px;
+	margin: 0px 0px 60px 23px;
 }
 /* 회원가입 버튼 ================*/
 .gender {
@@ -137,8 +154,7 @@ video {
 }
 
 .sub2 {
-	width: 200px;
-	margin-top: 50px;
+	text-align: center;
 }
 
 .sub {
@@ -162,6 +178,8 @@ body .wrap {
 	outline: none;
 	border-radius: 30px;
 	font-size: 15px;
+	margin-left: 85px;
+	margin-top: 35px;
 }
 /* 하단 회원가입 버튼 */
 .checkbox {
@@ -169,7 +187,7 @@ body .wrap {
 }
 
 span {
-	color: #777;
+	/* color: #777; */
 	font-size: 12px;
 	bottom: 68px;
 	position: absolute;
@@ -253,23 +271,32 @@ span {
 .menu {
 	position: relative;
 	width: auto;
-	 text-decoration-line: none;s
-	
+	text-decoration-line: none;
+	s
 }
 
 .joinsubmit {
 	color: white;
-    text-decoration-line: none;
-    float: right;
-    margin-top: 166%;
-    margin-right: 31%;
+	text-decoration-line: none;
+	float: right;
+	margin-top: 166%;
+	margin-right: 31%;
+}
+
+.joinsubmit1 {
+	text-decoration-line: none;
+	color: black;
+}
+
+.joinsubmit1:hover {
+	color: red;
 }
 
 .menu ul li {
 	float: left;
 	height: 100%;
 	text-align: center;
-	margin:0px;
+	margin: 0px;
 }
 
 .menu ul li a {
@@ -278,10 +305,39 @@ span {
 
 .list {
 	padding-top: 53px;
-    color: white;
-    width: 140px;
-    height: 53%;
-    font-size: 19px;
+	color: white;
+	width: 137px;
+	height: 53%;
+	font-size: 19px;
+}
+
+.controller {
+	position: absolute;
+	right: 55px;
+	bottom: 52px;
+}
+
+.mapcontrol {
+	border: 1px solid;
+    border-radius: 30px;
+    width: 75px;
+    height: 140px;
+    text-align: center;
+}
+
+.control1 {
+	border-bottom: 1px solid black;;
+}
+
+.control1, .control2{
+	font-size:38px;
+}
+
+.control1:hover{
+	color: red;
+}
+.control2:hover{
+	color: red;
 }
 
 ul {

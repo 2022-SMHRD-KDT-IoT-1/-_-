@@ -18,7 +18,7 @@
 		<video muted autoplay loop> <source src="assets/bg/bg.mp4"
 			type="video/mp4"></video>
 		<div class="wrap_bg">
-			<a href="Mypage.jsp" class="userimage"><img src="assets/image/user.png"></a>
+			<a href="Mypage.jsp"><img src="assets/image/user.png"></a>
 		</div>
 
 		<div class="menu">
