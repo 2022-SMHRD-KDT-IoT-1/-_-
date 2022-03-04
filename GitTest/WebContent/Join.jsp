@@ -21,7 +21,7 @@
 		<div class="wrap_bg">
 		<div class="menu">	
 			<ul>
-				<button type="button" onclick="location.href='Main.jsp'"
+				<button type="button" onclick="location.href='LoginMain.jsp'"
 				class="btm_image" id="img_btn"><img src="assets/image/logo.png"></button>
 
 			</ul>

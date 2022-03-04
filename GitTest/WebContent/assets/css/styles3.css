@@ -182,7 +182,10 @@
 
 
 
-
+button#img_btn {
+    background: none;
+    border: none;
+}
 
 
 

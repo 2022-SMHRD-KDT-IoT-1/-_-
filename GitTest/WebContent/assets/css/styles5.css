@@ -158,7 +158,10 @@ section1:hover {
 }
 
 
-
+button#img_btn {
+    background: none;
+    border: none;
+}
 
 
 

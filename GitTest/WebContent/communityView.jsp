@@ -21,7 +21,8 @@
 		CommunityVO cvo = (CommunityVO)request.getAttribute("cvo");
 	%>
 	<nav class="navbar navbar-expand bg">
-		<a class="logo" href="LoginMain.jsp">logo</a>
+		<button type="button" onclick="location.href='LoginMain.jsp'"
+				class="btm_image" id="img_btn"><img class = "eye" src="assets/image/logo.png"></button>
 	</nav>
     <div id="wrap">
         <form action="communityUpdate" method="post" enctype="multipart/form-data">
