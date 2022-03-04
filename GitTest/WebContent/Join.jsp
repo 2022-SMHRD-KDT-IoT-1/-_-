@@ -18,6 +18,7 @@
     <body>
 	<div class="wrap">
 		<video muted autoplay loop> <source src="assets/bg/bg.mp4" type="video/mp4"></video>
+		<div class="wrap_bg">
 		<div class="menu">	
 			<ul>
 				<button type="button" onclick="location.href='Main.jsp'"
@@ -25,7 +26,7 @@
 
 			</ul>
 		</div>
-			<div class="wrap_bg"></div>
+			</div>
 		<div class="form-wrap1">
 			<form action="JoinService" id="Join" class="input-group1" method="post">
 			<div id="btn">회원가입</div>
