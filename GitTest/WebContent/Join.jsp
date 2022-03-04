@@ -18,14 +18,22 @@
     <body>
 	<div class="wrap">
 		<video muted autoplay loop> <source src="assets/bg/bg.mp4" type="video/mp4"></video>
+		<div class="menu">	
+			<ul>
+				<li><a class="menu logo">logo</a></li>
+			</ul>
+		</div>
 			<div class="wrap_bg"></div>
-		<div class="form-wrap">
+		<div class="form-wrap1">
 			<form action="JoinService" id="Join" class="input-group1" method="post">
 			<div id="btn">회원가입</div>
 				<input type="text" name="mem_id" class="input-field" placeholder="ID입력">
 				<input type="password" name="mem_pw" class="input-field" placeholder="PW입력">
 				<input type="text" name="mem_name" class="input-field" placeholder="이름 입력" required>
 				
+				<div class="article">
+				<input name = "article_file1" type="file" style="float: left;">
+				</div>
 				
 				<div class="gender">
 				남자&nbsp;<input type="radio" name="mem_gender" class="ge" value="m">
