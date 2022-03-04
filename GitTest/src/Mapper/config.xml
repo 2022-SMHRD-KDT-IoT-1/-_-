@@ -19,6 +19,7 @@
     <mapper resource="Mapper/Messagingmapper.xml"/>
     <mapper resource="Mapper/Communitymapper.xml"/>
     <mapper resource="Mapper/Locationmapper.xml"/>
-    <mapper resource="Mapper/SOSmapper.xml"/>   
+    <mapper resource="Mapper/SOSmapper.xml"/>  
+    <mapper resource="Mapper/GPSmapper.xml"/>    
   </mappers>
 </configuration>

@@ -42,13 +42,18 @@ public class communityUpdate extends HttpServlet {
 		String article_file3=multi.getFilesystemName("article_file3");
 		String article_file4=multi.getFilesystemName("article_file3");
 		
+		System.out.println(article_file3);
+		System.out.println(article_file4);
+		
 		if(article_file3 != null) {
 			article_file1 = article_file3;
 		}
 		if(article_file4 != null) {
 			article_file2 = article_file4;
+		}else {
+			article_file2 = article_file2;
 		}
-		
+	
 		
 		CommunityVO vo = new CommunityVO(article_title, article_content, article_file1, article_file2, article_seq);
 		

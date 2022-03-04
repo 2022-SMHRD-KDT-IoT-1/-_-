@@ -40,9 +40,9 @@
                 </tr>
                 <tr>
                     <th class="writeth">첨부파일</th>
-                    <td class="writetd"><input type="text" name="article_file1" value ="<%=cvo.getArticle_file1() %>" ><input type="file" name="article_file3" value="변경"></td>
+                    <td class="writetd"><input type="text" name="article_file1" value ="<%=cvo.getArticle_file1() %>" ><input type="file" name="article_file3" ></td>
                     
-                	<td class="writetd"><input type="text" name="article_file2" value = "<%=cvo.getArticle_file2() %>"><input type="file" name="article_file4" value="변경"></td>
+                	<td class="writetd"><input type="text" name="article_file2" value = "<%=cvo.getArticle_file2() %>"><input type="file" name="article_file4"></td>
                     
                 </tr>
                 <tr>

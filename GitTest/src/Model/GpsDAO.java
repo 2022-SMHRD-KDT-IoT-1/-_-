@@ -1,8 +1,10 @@
 package Model;
 
 import java.io.InputStream;
+import java.util.List;
 
 import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
@@ -20,10 +22,30 @@ public class GpsDAO {
 			e.printStackTrace();
 		}
 	}
-	
-	
-	
-	
-	
-	
+	public int load(GpsVO vo) {
+		
+		SqlSession session = sqlSessionFactory.openSession(true);
+		
+		int cnt = session.insert("GPSload", vo);
+		
+		session.close();
+		
+		return cnt;	
+	}
+	public List<GpsVO> detect(){
+		
+		SqlSession session = sqlSessionFactory.openSession();
+		List<GpsVO> list= session.selectList("GPSdetect"); 
+		
+		session.close();
+		
+		return list;
+		
+	}
 }
+	
+	
+	
+	
+	
+

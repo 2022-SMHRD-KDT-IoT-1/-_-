@@ -1,6 +1,8 @@
 package Controller;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -18,24 +20,43 @@ public class gps extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		response.setCharacterEncoding("UTF-8");
-		response.setContentType("teext/html; charset=UTF-8");
-		
+		response.setContentType("text/html; charset=UTF-8");
+
 		double longitude = Double.parseDouble(request.getParameter("longitude"));
 		double latitude = Double.parseDouble(request.getParameter("latitude"));
-		String loc_date = request.getParameter("loc_date");
+		String mem_id = "hjh950424";
+		String loc_memo = "현재 위치는" +" 위도 :"+latitude + " 경도 : "+ longitude;
+		
 		
 		System.out.print("위도 :" + latitude );
 		System.out.print("경도 :" + longitude );
-		System.out.println("현재시간 :"+loc_date);
+		
 		
 		GpsDAO dao = new GpsDAO();
-		GpsVO vo = new GpsVO(latitude, longitude, loc_date);
+		GpsVO vo = new GpsVO(mem_id, latitude, longitude, loc_memo);
 		
-		response.setStatus(200);	
+		int cnt = dao.load(vo);
+		
+		if(cnt > 0) {
+			
+			
+			response.setStatus(200);	
+			 
+			
+			//성공
+			
+		}else {
+			//실패
+			
+			response.setStatus(400);	
+			 
+			
+			
+		}
+		
 		
 		return;
-		
-		
+				
 	
 	
 	}

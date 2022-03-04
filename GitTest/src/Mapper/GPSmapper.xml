@@ -5,10 +5,15 @@
 <mapper namespace="Model.MemberDAO"> <!-- mapper를 누가사용할것인ㄴ지 정해줌 -->
 
 
-	<insert id="joinService" parameterType="Model.MemberVO">
-		insert into jp_location values(#{mem_id},#{mem_pw},#{mem_name},#{mem_gender},#{mem_birthdate},#{mem_tel},#{mem_guardian_tel},#{jp_num},sysdate)
+	<insert id="GPSload" parameterType="Model.GpsVO">
+		insert into jp_location values(jp_location_seq.nextval, #{mem_id}, #{latitude},#{longitude},#{loc_memo},sysdate)
 	</insert>
 
+	<select id ="GPSdetect"	resultType = "Model.CommunityVO">
+		select * from jp_community
+		where mem_id = #{mem_id}
+	</select>
+	
 	
 	
 </mapper>
