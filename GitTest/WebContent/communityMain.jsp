@@ -80,17 +80,14 @@
 		</div>
 		<div id="layoutSidenav_content">
 			<main>
-				<div>
+				<div class="content123">
 					<h1 class="this">게시판</h1>
-
-
 					<%-- 				<%
 					List<CommunityVO> list = (List<CommunityVO>) request.getAttribute("list");
 				%> --%>
 					<div id="community">
 						<table id="comunityList" class="member1">
 							<thead>
-
 								<!-- ================예시=============== -->
 								<tr>
 									<th class="name th1" scope="col">번호

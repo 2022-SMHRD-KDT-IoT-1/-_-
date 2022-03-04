@@ -13,7 +13,6 @@
 
 <body>
 	<div>
-		
 	</div>
 	<div class="wrap">
 		<video muted autoplay loop> <source src="assets/bg/bg.mp4"

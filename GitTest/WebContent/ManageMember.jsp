@@ -78,8 +78,9 @@
 		</div>
 		<div id="layoutSidenav_content">
 			<main>
-				 <div>
+				 <div class>
                <h1 class="this">회원관리</h1>
+               <div>
                <table id="list" class="member">
                   <thead>
                   
