@@ -22,7 +22,7 @@
 		
 		<div class="menu">	
 			<ul>
-				<button type="button" onclick="location.href='Main.jsp'" class="btm_image" id="img_btn"><img src="assets/image/logo.png"></button>
+				<button type="button" onclick="location.href='Main.jsp'" class="btm_image" id="img_btn"><img class = "eye" src="assets/image/logo.png"></button>
 			</ul>
 		</div>
 		<div class="ma1">
