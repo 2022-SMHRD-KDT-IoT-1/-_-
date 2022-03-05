@@ -17,7 +17,7 @@ public class GpsDAO {
 			String resource = "Mapper/config.xml";
 			InputStream inputStream = Resources.getResourceAsStream(resource);
 			sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
-
+			System.out.println("들어오니");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -32,14 +32,17 @@ public class GpsDAO {
 		
 		return cnt;	
 	}
-	public List<GpsVO> detect(){
+	
+	public GpsVO detect(String mem_id){
 		
 		SqlSession session = sqlSessionFactory.openSession();
-		List<GpsVO> list= session.selectList("GPSdetect"); 
-		
+	
+		System.out.println("detect");
+		GpsVO vo= session.selectOne("GPSdetect",mem_id); 
+		System.out.println("detect2222");
 		session.close();
 		
-		return list;
+		return vo;
 		
 	}
 }

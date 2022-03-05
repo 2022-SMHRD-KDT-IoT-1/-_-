@@ -30,7 +30,7 @@
 						<img class = "eye" src="assets/image/logo.png">
 					</button></li>
 				<li><a href="communityMain" class="menu list">게시판</a></li>
-				<li><a href="SOSManage.jsp" class="menu list">실시간</a></li>
+				<li><a href="ViewLocation?mem_id=<%=vo.getMem_id()%>" class="menu list">실시간</a></li>
 				<li><a href="LogoutService" class="menu list">로그아웃</a></li>
 			</ul>
 		</div>

@@ -4,15 +4,47 @@ public class GpsVO {
 	
 	private int jp_loc_seq;
 	private String mem_id;
+	private String mem_name;
+	private String mem_tel;
+	private String mem_guardian_tel;
+	private String jp_num;
+	
+
 	private double latitude;
 	private double longitude;
 	private String loc_memo;
 	private String loc_date;
 	
+	
 
 
 	
 	
+	public GpsVO() {
+	
+	}
+
+
+
+
+
+	public GpsVO(int jp_loc_seq, double latitude, double longitude, String mem_id, String mem_name, String mem_tel, String mem_guardian_tel, String jp_num
+			) {
+		
+		this.jp_loc_seq = jp_loc_seq;
+		this.mem_id = mem_id;
+		this.mem_name = mem_name;
+		this.mem_tel = mem_tel;
+		this.mem_guardian_tel = mem_guardian_tel;
+		this.jp_num = jp_num;
+		this.latitude = latitude;
+		this.longitude = longitude;
+	}
+
+
+
+
+
 	public GpsVO(int jp_loc_seq, String mem_id, double latitude, double longitude, String loc_memo, String loc_date) {
 		
 		this.jp_loc_seq = jp_loc_seq;
@@ -24,6 +56,8 @@ public class GpsVO {
 	}
 
 	
+	
+
 
 	public GpsVO(double latitude, double longitude, String loc_date) {
 		this.latitude = latitude;
@@ -88,4 +122,64 @@ public class GpsVO {
 		this.mem_id = mem_id;
 	}
 
+	public String getMem_name() {
+		return mem_name;
+	}
+
+
+
+
+
+	public void setMem_name(String mem_name) {
+		this.mem_name = mem_name;
+	}
+
+
+
+
+
+	public String getMem_tel() {
+		return mem_tel;
+	}
+
+
+
+
+
+	public void setMem_tel(String mem_tel) {
+		this.mem_tel = mem_tel;
+	}
+
+
+
+
+
+	public String getMem_guardian_tel() {
+		return mem_guardian_tel;
+	}
+
+
+
+
+
+	public void setMem_guardian_tel(String mem_guardian_tel) {
+		this.mem_guardian_tel = mem_guardian_tel;
+	}
+
+
+
+
+
+	public String getJp_num() {
+		return jp_num;
+	}
+
+
+
+
+
+	public void setJp_num(String jp_num) {
+		this.jp_num = jp_num;
+	}
+	
 }

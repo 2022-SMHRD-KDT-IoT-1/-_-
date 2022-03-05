@@ -2,18 +2,34 @@
 <!DOCTYPE mapper
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="Model.MemberDAO"> <!-- mapper를 누가사용할것인ㄴ지 정해줌 -->
+<mapper namespace="Model.GpsDAO"> <!-- mapper를 누가사용할것인ㄴ지 정해줌 -->
 
 
 	<insert id="GPSload" parameterType="Model.GpsVO">
 		insert into jp_location values(jp_location_seq.nextval, #{mem_id}, #{latitude},#{longitude},#{loc_memo},sysdate)
 	</insert>
 
-	<select id ="GPSdetect"	resultType = "Model.CommunityVO">
-		select * from jp_community
-		where mem_id = #{mem_id}
+	<select id ="SOSdetect"	resultType = "Model.GpsVO">
+		select jp_location.jp_loc_seq, jp_location.latitude, jp_location.longitude, jp_member.mem_name, jp_member.mem_tel, jp_member.mem_guardian_tel, jp_member.jp_num
+		from jp_member, jp_location
+		where jp_member.mem_id = jp_location.mem_id
+		AND JP_location.jp_loc_seq = #{jp_loc_seq}  			 
+	</select>
+	
+	<select id ="SOSmanage"	resultType = "Model.GpsVO">
+	  	select jp_sos.sos_seq, jp_sos.sos_time, jp_location.latitude, jp_location.longitude, jp_member.mem_name, jp_member.mem_tel, jp_member.mem_guardian_tel, jp_member.jp_num
+		  from jp_sos, jp_location, jp_member
+		  where jp_member.mem_id = jp_location.mem_id
+	 	  and jp_location.jp_loc_seq = jp_sos.jp_loc_seq 			 
 	</select>
 	
 	
+	
+	<select id ="GPSdetect"	resultType = "Model.GpsVO">
+		select jp_location.jp_loc_seq, jp_location.latitude, jp_location.longitude, jp_member.mem_name, jp_member.mem_tel, jp_member.mem_guardian_tel, jp_member.jp_num
+		from jp_member, jp_location
+		where jp_member.mem_id = jp_location.mem_id 
+		AND jp_member.mem_id= #{mem_id} 			 
+	</select>
 	
 </mapper>
