@@ -157,3 +157,7 @@ section1:hover {
 	box-shadow: 0 4px 15px -4px #fff;
 }
 
+button#img_btn {
+    background: none;
+    border : none;
+}

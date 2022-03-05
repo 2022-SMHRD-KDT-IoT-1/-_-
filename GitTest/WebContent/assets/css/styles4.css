@@ -45,14 +45,15 @@ margin-top: 30px;
 
 
 .this {
-margin-left: 71px;
-    margin-top: 120px;
-    font-size: 38px;	
+    margin-left: 71px;
+    margin-top: 136px;
+    font-size: 38px;
+    width: 200px;
 }
 
 hr {
     width: 99.3%;
-    margin-top: -24px;
+    margin-top: 22px;
 }
 
 .logoteam{
@@ -396,7 +397,10 @@ img {
 	float: right;
 }
 
-
+button#img_btn {
+    background: none;
+    border : none;
+}
 
 
 

@@ -19,11 +19,13 @@
 	<div class="wrap">
 		<video muted autoplay loop> <source src="assets/bg/bg.mp4" type="video/mp4"></video>
 		<div class="menu">	
-			<ul>
-				<li><a class="menu logo">logo</a></li>
-			</ul>
+			
+			
 		</div>
-			<div class="wrap_bg"></div>
+			<div class="wrap_bg">
+			
+				<button type="button" onclick="location.href='Main.jsp'" class="btm_image" id="img_btn"><img src="assets/image/logo.png"></button>
+			</div>
 		<div class="form-wrap1">
 			<form action="JoinService" id="Join" class="input-group1" method="post">
 			<div id="btn">회원가입</div>
@@ -42,13 +44,17 @@
 				
 				<input type="text" name="mem_tel" class="input-field" placeholder="연락처">
 				<input type="text" name="mem_guardian_tel" class="input-field" placeholder="보호자 연락처">
-				<input type="date" class="input-field" name="mem_birthdate" placeholder="생년월일">
+				<input type="date" id='currentDate' class="input-field" name="mem_birthdate" placeholder="생년월일">
 				<input type="text" name="jp_num" class="input-field" placeholder="제품번호">
 				 <button class = "submit" >회원가입</button>
 				</form>  
                  
             </div>
 	</div>
+	   <script>
+   document.getElementById('currentDate').value = new Date()
+         .toISOString().substring(0, 10);;
+         </script>
 </body>
 </html>
 

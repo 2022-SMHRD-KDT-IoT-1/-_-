@@ -27,7 +27,7 @@
 			<ul>
 				<li><button type="button" onclick="location.href='Main.jsp'"
 						class="btm_image" id="img_btn">
-						<img src="assets/image/logo.png">
+						<img class = "eye" src="assets/image/logo.png">
 					</button></li>
 				<li><a href="communityMain" class="menu list">게시판</a></li>
 				<li><a href="SOSManage.jsp" class="menu list">실시간</a></li>

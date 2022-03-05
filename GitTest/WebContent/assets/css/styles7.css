@@ -534,7 +534,7 @@ section {
 
 hr {
 	width: 99.3%;
-	margin-top: -24px;
+	margin-top: 22px;
 }
 
 .logoteam {
@@ -681,4 +681,9 @@ img {
 	height: 60px;
 	margin-right: 30px;
 	float: right;
+}
+
+button#img_btn {
+    background: none;
+    border : none;
 }
