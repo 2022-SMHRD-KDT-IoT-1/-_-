@@ -7,8 +7,69 @@
 <head>
 <meta charset="EUC-KR">
 <title>Insert title here</title>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+<title>관리자 페이지</title>
+
+
+<link href="assets/css/styles7.css" rel="stylesheet" />
+
+
+
+
+
 </head>
 <body>
+	<nav class="navbar navbar-expand bg">
+		<div class="logo">logo</div>
+		<form>
+			<div class="search">
+				<input class="se" type="text" placeholder="Search for...">
+				<button class="btn" id="btnNavbarSearch" type="button">
+					<img class="se1" src="assets/image/search1.png">
+				</button>
+			</div>
+		</form>
+
+		<div class="imgback">
+			<a href="Mypage.jsp" class="userimage"><img
+				src="assets/image/user1.png"></a>
+		</div>
+
+
+
+		<!-- 검색-->
+
+
+	</nav>
+
+
+	<!-- 레이아웃 왼쪽 사이드바 -->
+	<div id="sidemenu">
+		<div>
+			<nav class="sb-sidenav sidemenu-bg">
+				<div class="sb-sidenav-menu">
+					<div class="nav">
+						<div class="logoteam">logo</div>
+
+						<hr>
+
+					</div>
+					<div class="menu">
+						<ul>
+							<li class="logoteam1"><a href="#"></a>menu</li>
+							<li><a href="#" class="sb-menu"> 페이지 </a></li>
+							<li><a href="#" class="sb-menu"> 페이지 </a></li>
+							<li><a href="#" class="sb-menu"> 페이지 </a></li>
+						</ul>
+					</div>
+			</nav>			
+		</div>
+
 <%
 	List<SosVO> list = (List<SosVO>) request.getAttribute("list");
 
@@ -44,7 +105,15 @@ marker.setMap(map);
 // marker.setMap(null);    
 </script>
 
-</body>
-</html>
+
+
+
+<script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		crossorigin="anonymous">
+	
+
+	</script>
 </body>
 </html>
