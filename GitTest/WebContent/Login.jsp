@@ -43,7 +43,7 @@
 			
 		</div>
 		<div class="wrap_bg">
-				<button type="button" onclick="location.href='Main.jsp'" class="btm_image" id="img_btn"><img src="assets/image/logo.png"></button>
+				<button type="button" onclick="location.href='Main.jsp'" class="btm_image" id="img_btn"><img class = "eye" src="assets/image/logo.png"></button>
 		</div>
 		<div class="form-wrap">
 			<form action="LoginService" id="login" class="input-group"

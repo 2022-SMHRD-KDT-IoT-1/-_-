@@ -24,7 +24,7 @@
 		</div>
 			<div class="wrap_bg">
 			
-				<button type="button" onclick="location.href='Main.jsp'" class="btm_image" id="img_btn"><img src="assets/image/logo.png"></button>
+				<button type="button" onclick="location.href='Main.jsp'" class="btm_image" id="img_btn"><img class = "eye"  src="assets/image/logo.png"></button>
 			</div>
 		<div class="form-wrap1">
 			<form action="JoinService" id="Join" class="input-group1" method="post">
@@ -33,9 +33,6 @@
 				<input type="password" name="mem_pw" class="input-field" placeholder="PW입력">
 				<input type="text" name="mem_name" class="input-field" placeholder="이름 입력" required>
 				
-				<div class="article">
-				<input name = "article_file1" type="file" style="float: left;">
-				</div>
 				
 				<div class="gender">
 				남자&nbsp;<input type="radio" name="mem_gender" class="ge" value="m">

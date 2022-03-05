@@ -67,7 +67,7 @@
 							<li class="logoteam1"><a href="#"></a>menu</li>
 							<li><a href="communityMain" class="sb-menu"> 게시판 </a></li>
 							<li><a href="" class="sb-menu"> 실시간 </a></li>
-							<li><a href="Logoutservice" class="sb-menu"> 로그아웃 </a></li>
+							<li><a href="LogoutService" class="sb-menu"> 로그아웃 </a></li>
 						</ul>
 					</div>
 			</nav>

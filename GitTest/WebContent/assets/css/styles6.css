@@ -61,6 +61,15 @@ div#map {
 	font-weight: bolder;
 }
 
+
+ .sb-menu1:visited{
+    color:red;
+ }
+ 
+  .sb-menu2:visited{
+    color:red;
+ }
+
 .write_2 {
 	text-align: center;
 	margin-top: 20px;

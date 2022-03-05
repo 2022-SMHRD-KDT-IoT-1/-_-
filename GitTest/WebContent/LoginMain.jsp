@@ -25,7 +25,7 @@
 
 		<div class="menu">
 			<ul>
-				<li><button type="button" onclick="location.href='Main.jsp'"
+				<li><button type="button" onclick="location.href='LoginMain.jsp'"
 						class="btm_image" id="img_btn">
 						<img class = "eye" src="assets/image/logo.png">
 					</button></li>
