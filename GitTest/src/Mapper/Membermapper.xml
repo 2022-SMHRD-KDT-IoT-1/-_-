@@ -17,7 +17,7 @@
 
 	
 	<select id="manageService" resultType = "Model.MemberVO"> <!-- 넣어주는게 하나면 parameterType 필요 x -->
-	 	select mem_name, mem_gender, mem_birthdate, mem_guardian_tel, jp_num from jp_member
+	 	select mem_name, mem_gender, mem_birthdate, mem_tel, mem_guardian_tel, jp_num from jp_member
 	</select>
 	
 </mapper>
