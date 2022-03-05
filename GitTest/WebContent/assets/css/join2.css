@@ -49,10 +49,10 @@ video {
 	padding: 10px 0;
 	margin: 5px 0;
 	border: none;
-	border-bottom: 1px solid #999;
+	border-bottom: 1px solid white;
 	outline: none;
 	background: transparent;
-	color: black;
+	color: whitesmoke;
 }
 
 .button-wrap {
@@ -63,6 +63,9 @@ video {
 	border-radius: 30px;
 }
 
+.postcontent{
+	
+}
 .ge {
 	padding: 10px 0;
 	margin: 5px 0;
@@ -101,9 +104,10 @@ video {
 	margin-top: 199px;
 	margin-left: 40%;
 	float: right;
-	background: rgba(255, 255, 255, 0.7);
+	background: rgba(10, 10, 10, 0.8);
 	padding: 5px;
 	overflow: hidden;
+	border-radius: 20px 20px 20px 20px;
 }
 
 .form-wrap1 {
@@ -115,9 +119,10 @@ video {
 	margin-left: 40%;
 	float: right;
 	/* background: #fff; */
-	background: rgba(255, 255, 255, 0.7);
+	background: rgba(10, 10, 10, 0.8);
 	padding: 5px;
 	overflow: hidden;
+	border-radius: 20px 20px 20px 20px;
 }
 
 .article {
@@ -142,15 +147,19 @@ video {
 	padding: 10px 30px;
 	s cursor: pointer;
 	display: block;
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(0, 0, 0, 0.4);
 	border: 0;
 	outline: none;
 	border-radius: 30px;
 	margin: 0px 0px 60px 23px;
+	color: whitesmoke;
 }
 /* 회원가입 버튼 ================*/
 .gender {
 	text-align: center;
+}
+.gender {
+    color: whitesmoke;
 }
 
 .sub2 {
@@ -180,6 +189,7 @@ body .wrap {
 	font-size: 15px;
 	margin-left: 85px;
 	margin-top: 35px;
+	color: whitesmoke;
 }
 /* 하단 회원가입 버튼 */
 .checkbox {
