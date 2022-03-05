@@ -1,6 +1,8 @@
 package Controller;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -20,7 +22,13 @@ public class LogoutService extends HttpServlet {
 		
 		session.removeAttribute("vo");
 		
-		response.sendRedirect("Main.jsp");
+		response.setContentType("text/html; charset=UTF-8");
+
+		PrintWriter out = response.getWriter();
+
+		out.println("<script>alert('로그아웃 되었습니다.'); location.href='Main.jsp';</script>");
+
+		out.flush();
 		
 	}
 
