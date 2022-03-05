@@ -53,7 +53,7 @@ div#map {
 }
 
 .write2 {
-	background-color: #4682b4;
+	background-color: #5081b1;
 	border-radius: 15px;
 	width: 100px;
 	height: 34px;
@@ -534,7 +534,7 @@ section {
 
 hr {
 	width: 99.3%;
-	margin-top: 22px;
+	margin-top: -11px;
 }
 
 .logoteam {
@@ -600,7 +600,7 @@ color:rgba(255,255,255,0.25);{
 text-decoration-line: none;
 }
 .sidemenu-bg {
-	background-color: #212537;
+	background-color: #5081b1;
 }
 
 .sb-sidenav .sb-sidenav-menu .nav .nav-link {
@@ -686,4 +686,11 @@ img {
 button#img_btn {
     background: none;
     border : none;
+}
+
+img.eye {
+    width: 100px;
+    height: 100px;
+    margin-left: 81px;
+    margin-top: -7px;
 }
