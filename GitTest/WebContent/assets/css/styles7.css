@@ -8,6 +8,8 @@ main {
 	width: 135%;
 }
 
+
+
 .search {
 	text-align: center;
 	margin-left: 758px;
@@ -17,6 +19,22 @@ main {
 	color: black;
 	text-decoration-line: none;
 }
+
+.sb-menu:hover{
+	color:white;
+}
+ 
+ a.sb-menu.sb-menu2:visited{
+ color: white;
+
+ }
+ 
+ a.sb-menu.sb-menu2{
+        background: rgba(255, 255, 255, 0.3);
+    border-radius: 28px;
+    padding-left: 40px;
+    padding-right: 40px;
+ }
 
 .sosline {
 	width: 1238px;

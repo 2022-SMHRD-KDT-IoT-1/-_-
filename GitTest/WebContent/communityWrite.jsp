@@ -28,7 +28,7 @@
 </head>
 <body>
 	<nav class="navbar navbar-expand bg">
-		
+
 		<form>
 			<div class="search">
 				<input class="se" type="text" placeholder="Search for...">
@@ -57,7 +57,10 @@
 			<nav class="sb-sidenav sidemenu-bg">
 				<div class="sb-sidenav-menu">
 					<div class="nav">
-						<button type="button" onclick="location.href='LoginMain.jsp'" class="btm_image" id="img_btn"><img class = "eye" src="assets/image/logo.png"></button>
+						<button type="button" onclick="location.href='LoginMain.jsp'"
+							class="btm_image" id="img_btn">
+							<img class="eye" src="assets/image/logo.png">
+						</button>
 
 						<hr>
 
@@ -77,51 +80,54 @@
 		</div>
 		<div id="layoutSidenav_content">
 			<main>
-			<div>
-				<h1 class="this">게시판</h1>
-				<form action="communityWrite" class="write3" method="post" enctype="multipart/form-data">
-					<table style="padding-top: 50px" align=center width=700 border=0
-						cellpadding=2>
-						<tr>
-							<td height=20 align=center bgcolor=#ccc><font color=black>
-									글쓰기</font></td>
-						</tr>
-						<tr>
-							<td bgcolor=white>
-								<table class="table2">
-									<tr>
-										<td class="writetd2">작성자</td>
-										<td><input class="user1 board2" type=text name=mem_id value=<%-- <%=vo.getMem_id() %> --%>
+				<div>
+					<h1 class="this">게시판</h1>
+					<form action="communityWrite" class="write3" method="post"
+						enctype="multipart/form-data">
+						<table style="padding-top: 50px" align=center width=700 border=0
+							cellpadding=2>
+							<tr>
+								<td height=20 align=center bgcolor=#ccc><font color=black>
+										글쓰기</font></td>
+							</tr>
+							<tr>
+								<td bgcolor=white>
+									<table class="table2">
+										<tr>
+											<td class="writetd2">작성자</td>
+											<td><input class="user1 board2" type=text name=mem_id
+												value=<%-- <%=vo.getMem_id() %> --%>
 											size=30></td>
-									</tr>
+										</tr>
 
-									<tr>
-										<td class="writetd2">제목</td>
-										<td><input class="title1 board2" type=text name=article_title
-											size=60></td>
-									</tr>
+										<tr>
+											<td class="writetd2">제목</td>
+											<td><input class="title1 board2" type=text
+												name=article_title size=60></td>
+										</tr>
 
-									<tr>
-										<td style='vertical-align: middle' class="writetd2">내용</td>
-										<td><textarea class="content1 board3" name="article_content"
-												cols="85" rows="15" style="width: 100%; height: 254px;"></textarea></td>
-									</tr>
-									<td colspan="2">
-										<input name = "article_file1" type="file" style="float: left;">
-										<input name = "article_file2" type="file" style="float: left;">
-									<tr>
+										<tr>
+											<td style='vertical-align: middle' class="writetd2">내용</td>
+											<td><textarea class="content1 board3"
+													name="article_content" cols="85" rows="15"
+													style="width: 100%; height: 254px;"></textarea></td>
+										</tr>
+										<td colspan="2"><input name="article_file1" type="file"
+											style="float: left;"> <input name="article_file2"
+											type="file" style="float: left;"></td>
+
 										
-									</tr>
-								</table>
 
-								<div class="write_2">
-									<button class="write2">작성</button>
-								</div>
-							</td>
-						</tr>
-					</table>
-				</form>
-			</div>
+									</table>
+									<div class="write_2">
+											<button class="write2">작성</button>
+										</div>
+
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
 			</main>
 		</div>
 		<!-- 레이아웃 왼쪽 사이드바 -->

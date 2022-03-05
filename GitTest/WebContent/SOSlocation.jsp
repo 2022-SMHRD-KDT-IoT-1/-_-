@@ -62,9 +62,9 @@
 					<div class="menu">
 						<ul>
 							<li class="logoteam1"><a href="#"></a>menu</li>
-							<li><a href="#" class="sb-menu"> 페이지 </a></li>
-							<li><a href="#" class="sb-menu"> 페이지 </a></li>
-							<li><a href="#" class="sb-menu"> 페이지 </a></li>
+							<li><a href="communityMain" class="sb-menu sb-menu1" > 게시판 </a></li>
+							<li><a href="" class="sb-menu sb-menu2"> 실시간 </a></li>
+							<li><a href="LogoutService" class="sb-menu"> 로그아웃 </a></li>
 						</ul>
 					</div>
 			</nav>			

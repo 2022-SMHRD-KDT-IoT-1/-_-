@@ -68,8 +68,8 @@
 					<div class="menu">
 						<ul>
 							<li class="logoteam1"><a href="#"></a>menu</li>
-							<li><a href="communityMain" class="sb-menu sb-menu1"> 게시판 </a></li>
-							<li><a href="" class="sb-menu sb-menu2"> 실시간 </a></li>
+							<li><a href="communityMain" class="sb-menu sb-menu1" > 게시판 </a></li>
+							<li><a href="Mypage.jsp" class="sb-menu sb-menu2"> 실시간 </a></li>
 							<li><a href="LogoutService" class="sb-menu"> 로그아웃 </a></li>
 						</ul>
 					</div>
@@ -102,7 +102,7 @@
 								<!-- ================예시=============== -->
 							<tbody>
 							<tr>
-									<%
+								<%-- 	<%
 										for (CommunityVO vo : list) {
 									%>
 									<td class="name td1""><%=vo.getArticle_seq()%></td>
@@ -113,7 +113,7 @@
 								</tr>
 								<%
 									}
-								%>
+								%> --%>
 							
 						</table>
 					</div>

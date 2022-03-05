@@ -27,7 +27,7 @@
 		</div>
 		<div class="ma1">
 			<p class="ma">
-				We will return<br> your sight
+				We will be<br> your staff
 			</p>	
 			<a href="Login.jsp" class="mainbtn-2"><button class="mainbtn-1">Join</button></a>
 		</div>

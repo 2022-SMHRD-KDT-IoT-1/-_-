@@ -18,6 +18,9 @@ main {
 	text-decoration-line: none;
 }
 
+
+
+
 .sosline {
 	width: 1238px;
 	text-align: center;
@@ -62,18 +65,27 @@ div#map {
 }
 
 
- .sb-menu1:visited{
-    color:red;
+.sb-menu:hover{
+	color:white;
+}
+ 
+ a.sb-menu.sb-menu1:visited{
+ color: white;
+
  }
  
-  .sb-menu2:visited{
-    color:red;
+ a.sb-menu.sb-menu1{
+        background: rgba(255, 255, 255, 0.3);
+    border-radius: 28px;
+    padding-left: 40px;
+    padding-right: 40px;
  }
+ 
 
 .write_2 {
-	text-align: center;
-	margin-top: 20px;
-	
+text-align: center;
+    margin-top: 31px;
+    margin-bottom: 31px;
 }
 
 /* 상단 배경 */
@@ -323,10 +335,10 @@ table.table2 td {
 table{
 border-collapse: collapse;
     overflow: hidden;
-    width: 84%;
+    width: 97%;
     margin: 0 auto;
     position: relative;
-    margin-left: 8%;
+    margin-left: 153px;
     margin-top: 41px;
 }
 
