@@ -14,7 +14,7 @@
 	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
 <%
-	MemberVO vo = (MemberVO)session.getAttribute("vo");
+	MemberVO vo = (MemberVO) session.getAttribute("vo");
 %>
 <title>관리자 페이지</title>
 
@@ -96,9 +96,7 @@
 										<tr>
 											<td class="writetd2">작성자</td>
 											<td><input class="user1 board2" type=text name=mem_id
-													
-											
-												value=<%=vo.getMem_id() %>
+											value= <%=vo.getMem_id() %> readonly 
 											size=30></td>
 										</tr>
 
