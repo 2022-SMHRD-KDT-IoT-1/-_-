@@ -28,8 +28,7 @@
 </head>
 <body>
 	<nav class="navbar navbar-expand bg">
-		<button type="button" onclick="location.href='LoginMain.jsp'"
-				class="btm_image" id="img_btn"><img class = "eye" src="assets/image/logo.png"></button>
+		
 		<form>
 			<div class="search">
 				<input class="se" type="text" placeholder="Search for...">
@@ -58,7 +57,9 @@
 			<nav class="sb-sidenav sidemenu-bg">
 				<div class="sb-sidenav-menu">
 					<div class="nav">
-						<div class="logoteam">logo</div>
+						<button type="button" onclick="location.href='LoginMain.jsp'"
+				class="btm_image" id="img_btn"><img class = "eye" src="assets/image/logo.png"></button>
+
 
 						<hr>
 
@@ -66,9 +67,10 @@
 					<div class="menu">
 						<ul>
 							<li class="logoteam1"><a href="#"></a>menu</li>
-							<li><a href="#" class="sb-menu"> 페이지 </a></li>
-							<li><a href="#" class="sb-menu"> 페이지 </a></li>
-							<li><a href="#" class="sb-menu"> 페이지 </a></li>
+							<li><a href="communityMain.jsp" class="sb-menu"> 게시판 </a></li>
+							<li><a href="#" class="sb-menu"> 실시간 </a></li>
+							<li><a href="LoginMain.jsp" class="sb-menu"> 홈으로 </a></li>
+							<li><a href="LogoutService" class="sb-menu"> 로그아웃 </a></li>
 						</ul>
 					</div>
 			</nav>
