@@ -60,8 +60,7 @@
 			<nav class="sb-sidenav sidemenu-bg">
 				<div class="sb-sidenav-menu">
 					<div class="nav">
-						<button type="button" onclick="location.href='LoginMain.jsp'"
-				class="btm_image" id="img_btn"><img class = "eye" src="assets/image/logo.png"></button>
+						<div class="logoteam">logo</div>
 
 						<hr>
 
@@ -69,10 +68,9 @@
 					<div class="menu">
 						<ul>
 							<li class="logoteam1"><a href="#"></a>menu</li>
-							<li><a href="communityMain.jsp" class="sb-menu"> 게시판 </a></li>
-							<li><a href="" class="sb-menu"> 실시간 </a></li>
-							<li><a href="LoginMain.jsp" class="sb-menu"> 홈으로 </a></li>
-							<li><a href="LogoutService" class="sb-menu"> 로그아웃 </a></li>
+							<li><a href="#" class="sb-menu"> 페이지 </a></li>
+							<li><a href="#" class="sb-menu"> 페이지 </a></li>
+							<li><a href="#" class="sb-menu"> 페이지 </a></li>
 						</ul>
 					</div>
 			</nav>
@@ -103,7 +101,7 @@
 								</tr>
 								<!-- ================예시=============== -->
 							<tbody>
-							<%-- 	<tr>
+							<tr>
 									<%
 										for (CommunityVO vo : list) {
 									%>
@@ -115,7 +113,7 @@
 								</tr>
 								<%
 									}
-								%> --%>
+								%>
 							
 						</table>
 					</div>

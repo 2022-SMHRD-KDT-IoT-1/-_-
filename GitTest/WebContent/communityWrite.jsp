@@ -28,8 +28,7 @@
 </head>
 <body>
 	<nav class="navbar navbar-expand bg">
-		<button type="button" onclick="location.href='LoginMain.jsp'"
-				class="btm_image" id="img_btn"><img class = "eye" src="assets/image/logo.png"></button>
+		<div class="logo">logo</div>
 		<form>
 			<div class="search">
 				<input class="se" type="text" placeholder="Search for...">

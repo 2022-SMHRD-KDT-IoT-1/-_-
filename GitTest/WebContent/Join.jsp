@@ -18,19 +18,16 @@
     <body>
 	<div class="wrap">
 		<video muted autoplay loop> <source src="assets/bg/bg.mp4" type="video/mp4"></video>
-		<div class="wrap_bg">
 		<div class="menu">	
 			<ul>
-				<button type="button" onclick="location.href='LoginMain.jsp'"
-				class="btm_image" id="img_btn"><img src="assets/image/logo.png"></button>
-
+				<li><a class="menu logo">logo</a></li>
 			</ul>
 		</div>
-			</div>
+			<div class="wrap_bg"></div>
 		<div class="form-wrap1">
 			<form action="JoinService" id="Join" class="input-group1" method="post">
 			<div id="btn">회원가입</div>
-				<input type="text" name="mem_id" class="input-field" placeholder="	* ID입력">
+				<input type="text" name="mem_id" class="input-field" placeholder="ID입력">
 				<input type="password" name="mem_pw" class="input-field" placeholder="PW입력">
 				<input type="text" name="mem_name" class="input-field" placeholder="이름 입력" required>
 				
@@ -41,7 +38,7 @@
 				<div class="gender">
 				남자&nbsp;<input type="radio" name="mem_gender" class="ge" value="m">
 				&nbsp;&nbsp;&nbsp;&nbsp;여자&nbsp;<input type="radio" name="mem_gender" class="ge" value="f">
-			</div>
+				</div>
 				
 				<input type="text" name="mem_tel" class="input-field" placeholder="연락처">
 				<input type="text" name="mem_guardian_tel" class="input-field" placeholder="보호자 연락처">

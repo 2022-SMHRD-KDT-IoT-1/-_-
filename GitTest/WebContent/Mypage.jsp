@@ -19,7 +19,7 @@
 <title>관리자 페이지</title>
 
 
-<link href="assets/css/styles6.css" rel="stylesheet" />
+<link href="assets/css/styles7.css" rel="stylesheet" />
 
 
 
@@ -28,7 +28,7 @@
 </head>
 <body>
 	<nav class="navbar navbar-expand bg">
-		
+		<div class="logo">logo</div>
 		<form>
 			<div class="search">
 				<input class="se" type="text" placeholder="Search for...">
@@ -57,9 +57,7 @@
 			<nav class="sb-sidenav sidemenu-bg">
 				<div class="sb-sidenav-menu">
 					<div class="nav">
-						<button type="button" onclick="location.href='LoginMain.jsp'"
-				class="btm_image" id="img_btn"><img class = "eye" src="assets/image/logo.png"></button>
-
+						<div class="logoteam">logo</div>
 
 						<hr>
 
@@ -67,72 +65,90 @@
 					<div class="menu">
 						<ul>
 							<li class="logoteam1"><a href="#"></a>menu</li>
-							<li><a href="communityMain.jsp" class="sb-menu"> 게시판 </a></li>
-							<li><a href="#" class="sb-menu"> 실시간 </a></li>
-							<li><a href="LoginMain.jsp" class="sb-menu"> 홈으로 </a></li>
-							<li><a href="LogoutService" class="sb-menu"> 로그아웃 </a></li>
+							<li><a href="#" class="sb-menu"> 페이지 </a></li>
+							<li><a href="#" class="sb-menu"> 페이지 </a></li>
+							<li><a href="#" class="sb-menu"> 페이지 </a></li>
 						</ul>
 					</div>
 			</nav>
 
 
 
+			
+
 		</div>
+		<div>
+			<p class="pppp">마이페이지</p>
+		</div>
+		<table class="111">
+			<tr class="sostr">
+				<td colspan="2" class="sostd tdmax">이름<br> <input
+					class="lentd5" type="text"></td>
+			</tr>
+			<tr class="sostr 2222">
+				<td class="sostd tdmax">아이디</td>
+				<td class="sostd tdmax">비밀번호</td>
+			</tr>
+			<tr class="sostr1">
+				<td class="inptd tdmax" style="width: 0px;"><input
+					class="lentd1" type="text"></td>
+				<td class="inptd inptd2 tdmax"><input class="lentd2"
+					type="password"></td>
+			</tr>
 
-		<main>
-			<div>
-				<h1 class="this">게시판</h1>
+			<tr class="sostr">
+				<td class="sostd tdmax">생년월일</td>
+			</tr>
+			<tr class="sostr1">
+				<td class="inptd tdmax"><form><input class="lentd4" type='date' id='currentDate' />
+					</form></td>
+<!-- <input class="lentd4" type="date"> -->
+			</tr>
+			<tr class="sostr">
+				<td class="sostd">연락처</td>
+				<td class="sostd tdmax">보호자연락처</td>
+			</tr>
+			<tr class="sostr1">
+				<td class="inptd tdmax"><input class="lentd3" type="text"></td>
+				<td class="inptd tdmax"><input class="lentd4" type="text"></td>
+			</tr>
+			<tr class="sostr">
+				<td class="sostd tdmax">제품번호</td>
+			</tr>
+			<tr class="sostr1">
+				<td colspan="2" class="inptd tdmax"><input class="lentd4" type="text"></td>
+			</tr>
+			<tr class="sostr1">
+				<td tdmax></td>
+				<td tdmax><div class="write_1">
+						<a href="communityWrite.jsp"><button class="write2">개인정보수정</button></a>
+					</div></td>
+			</tr>
+		</table>
+	</div>
 
 
-				<div>
-					<section class="section1">
-						<section class="section2">
-							<div class="my-1">
 
-
-							</div>
-						</section>
-						<section class="section3">
-							<div class="my-1">
-								<div class="my_1">
-									<p class="ra">이름 : <input class="inpu" type="text"></p>
-								</div>
-								<div class="my_1">
-									<p class="ra">비밀번호 : <input class="inpu" type="password"></p>
-								</div>
-								<div class="my_1">
-									<p class="ra">연락처 : <input class="inpu" type="text"></p>
-								</div>
-								<div class="my_1">
-									<p class="ra">보호자연락처 : <input class="inpu" type="text"></p>
-								</div>
-								<div class="my_1">
-									<p class="ra">이름 : <input class="inpu" type="text"></p>
-								</div>
-								<div class="my_1">
-									<p class="ra">제품번호 : <input class="inpu" type="text"></p>
-								</div>
-							</div>
-							<div class="write_1">
-							<a href="communityWrite.jsp"><button class="write2">개인정보수정</button></a>
-						</div>
-						</section>
-						
-					</section>
-				</div>
-			</div>
-		</main>
-
-		<!-- <table class="centerline">
+	<!-- <table class="centerline">
 				<tr>
 					<td></td>
 				</tr>
 			</table> -->
 
-		<!-- 레이아웃 왼쪽 사이드바 -->
+	<!-- 레이아웃 왼쪽 사이드바 -->
 
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-			crossorigin="anonymous"></script>
+
+
+
+<script>
+	document.getElementById('currentDate').value = new Date()
+			.toISOString().substring(0, 10);;
+			</script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		crossorigin="anonymous">
+	
+
+	</script>
 </body>
 </html>
