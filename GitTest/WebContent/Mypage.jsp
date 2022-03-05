@@ -19,7 +19,7 @@
 <title>관리자 페이지</title>
 
 
-<link href="assets/css/styles7.css" rel="stylesheet" />
+<link href="assets/css/styles9.css" rel="stylesheet" />
 
 
 

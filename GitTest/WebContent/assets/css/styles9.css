@@ -20,21 +20,6 @@ main {
 	text-decoration-line: none;
 }
 
-.sb-menu:hover{
-	color:white;
-}
- 
- a.sb-menu.sb-menu2:visited{
- color: white;
-
- }
- 
- a.sb-menu.sb-menu2{
-        background: rgba(255, 255, 255, 0.3);
-    border-radius: 28px;
-    padding-left: 40px;
-    padding-right: 40px;
- }
 
 .sosline {
 	width: 1238px;
@@ -202,13 +187,9 @@ table.table2 td {
 }
 /* 왼쪽 사이드바 글자 */
 
-div#map {
-    width: 500px;
-    height: 400px;
-    /* position: relative; */
-    overflow: hidden;
-    background: url(http://t1.daumcdn.net/mapjsapi/images/bg_tile.png);
-}
+
+
+
 
 .viewwrite {
 	background-color: #4682b4;
