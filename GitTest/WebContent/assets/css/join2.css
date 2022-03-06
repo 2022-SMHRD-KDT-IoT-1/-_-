@@ -147,7 +147,7 @@ video {
 	padding: 10px 30px;
 	s cursor: pointer;
 	display: block;
-	background: rgba(0, 0, 0, 0.4);
+	background: rgba(255, 255, 255, 0.4);
 	border: 0;
 	outline: none;
 	border-radius: 30px;
@@ -182,7 +182,7 @@ body .wrap {
 	padding: 10px 30px;
 	cursor: pointer;
 	display: block;
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(255, 255, 255, 0.4);
 	border: 0;
 	outline: none;
 	border-radius: 30px;
@@ -277,6 +277,7 @@ span {
 .list:hover {
 	color: red;
 }
+
 
 .menu {
 	position: relative;
@@ -430,7 +431,7 @@ img {
 img.eye {
 	width: 100px;
 	height: 100px;
-	margin-top: 13px;
+	margin-top: 10px;
 	margin-left: 20px;
 	float: right;
 }

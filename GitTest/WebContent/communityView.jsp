@@ -18,7 +18,6 @@
 					CommunityVO cvo = (CommunityVO) request.getAttribute("cvo");
 				%>
 	<nav class="navbar navbar-expand bg">
-		<button type="button" onclick="location.href='LoginMain.jsp'" class="btm_image" id="img_btn"><img class = "eye" src="assets/image/logo.png"></button>
 		<form>
 			<div class="search">
 				<input class="se" type="text" placeholder="Search for...">
@@ -68,6 +67,7 @@
 		</div>
 
 		<main>
+		<h1 class="this">게시판</h1>
 			<div>
 				
 
@@ -77,33 +77,33 @@
 						<table class="table3">
 							<tr>
 								<th class="writeth">제목</th>
-								<td class="writetd" colspan="2"><input type="text" name="article_title"
+								<td class="writetd" colspan="2"><input class="viewinput" type="text" name="article_title"
 									value="<%=cvo.getArticle_title()%>"></td>
 							</tr>
 							<tr>
 								<th class="writeth">아이디</th>
-								<td class="writetd" colspan="2"><input type="text" name="mem_id"
+								<td class="writetd" colspan="2"><input class="viewinput" type="text" name="mem_id"
 									value="<%=cvo.getMem_id()%>" readonly></td>
 							</tr>
 							<tr>
 								<th class="writeth">번호</th>
-								<td class="writetd" colspan="2"><input type="text" name="article_seq"
+								<td class="writetd" colspan="2"><input class="viewinput" type="text" name="article_seq"
 									value="<%=cvo.getArticle_seq()%>" readonly></td>
 							</tr>
 							<tr>
 								<th class="writeth">첨부파일</th>
-								<td class="writetd"><input type="text" name="article_file1"
-									value="<%=cvo.getArticle_file1()%>"><input
+								<td class="writetd"><input class="viewinput" type="text" name="article_file1"
+									value="<%=cvo.getArticle_file1()%>"><input class="viewinput"
 									type="file" name="article_file3"></td>
 
-								<td class="writetd"><input type="text" name="article_file2"
+								<td class="writetd"><input class="viewinput" type="text" name="article_file2"
 									value="<%=cvo.getArticle_file2()%>"><input type="file"
 									name="article_file4"></td>
 
 							</tr>
 							<tr>
 								<th class="writeth">내용</th>
-								<td class="writetd1"><textarea class="answer1" cols="100"
+								<td colspan="2" class="writetd1"><textarea class="answer1" cols="100"
 										rows="30" name="article_content"><%=cvo.getArticle_content()%></textarea></td>
 							</tr>
 						</table>
