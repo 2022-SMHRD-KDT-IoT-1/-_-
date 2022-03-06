@@ -18,6 +18,11 @@ main {
 	text-decoration-line: none;
 }
 
+.abc1 {
+	color: black;
+	text-decoration-line: none;
+}
+
 
 
 
@@ -79,6 +84,7 @@ div#map {
     border-radius: 28px;
     padding-left: 40px;
     padding-right: 40px;
+    color: white;
  }
  
 
@@ -252,19 +258,26 @@ table.table2 td {
 
 .writetd {
 	padding-left: 14px;
+	background: white;
+}
+
+.viewinput{
+	border:none;
+	font-size: 15px;
 }
 
 .writetd1 {
 	padding-left: 10px;
+		background: white;
 }
 
 .writeth {
-	color: black;
-	background-color: whitesmoke;
-	padding-right: 85px;
-	padding-left: 85px;
-	text-align: center;
-	width: 75px;
+    color: black;
+    background-color: whitesmoke;
+    padding-right: 40px;
+    padding-left: 40px;
+    text-align: center;
+    width: 140px;
 }
 
 .writeview {
@@ -277,9 +290,7 @@ table.table2 td {
 	border: 1px solid black;
 }
 
-.table3 {
-	margin-top: 135px;
-}
+
 
 .answer {
 	width: 97%;
@@ -293,6 +304,7 @@ table.table2 td {
 	height: 360px;
 	border: none;
 	font-size: 25px;
+	padding-top: 10px;
 }
 
 .board2 {
@@ -335,7 +347,7 @@ table.table2 td {
 table{
 border-collapse: collapse;
     overflow: hidden;
-    width: 97%;
+    width: 101%;
     margin: 0 auto;
     position: relative;
     margin-left: 153px;
@@ -526,7 +538,7 @@ input.lentd5 {
 }
 
 .form-1 {
-	width: 1500px;
+	width: 1200px;
 }
 
 .sos12 {

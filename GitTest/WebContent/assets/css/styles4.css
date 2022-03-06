@@ -33,7 +33,7 @@ display: flex;
 
 .member{
 margin-top: 30px;
-    margin-left: 10%;
+    margin-left: 12%;
 }
 
 .member1{
@@ -45,7 +45,7 @@ margin-top: 30px;
 
 
 .this {
-    margin-left: 71px;
+    margin-left: 95px;
     margin-top: 136px;
     font-size: 38px;
     width: 200px;
@@ -176,6 +176,7 @@ text-align: center;
     border-radius: 28px;
     padding-left: 40px;
     padding-right: 40px;
+    color: white;
  }
 
 .sb-menu {
@@ -264,7 +265,7 @@ table {
   background: white;
   border-radius: 10px;
   overflow: hidden;
-  width: 1329px;
+  width: 1350px;
   margin: 0 auto;
   position: relative;
 }
@@ -317,12 +318,12 @@ tbody tr:hover {
 }
 
 .name {
-  width: 15%;
+  width: 10%;
   padding-left: 40px;
 }
 
 .gender {
-  width: 15%;
+  width: 10%;
 }
 
 .birth {
@@ -427,32 +428,6 @@ img.eye {
     margin-left: 81px;
     margin-top: -7px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
