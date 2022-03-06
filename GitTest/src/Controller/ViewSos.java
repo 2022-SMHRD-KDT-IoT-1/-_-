@@ -22,12 +22,13 @@ public class ViewSos extends HttpServlet {
 	
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		int sos_seq =Integer.parseInt(request.getParameter("sos_seq"));
+		int sos_seq =Integer.parseInt(request.getParameter("num"));
 		
-		
+	
 		SosDAO dao = new SosDAO();
 		SosVO svo = dao.viewSos(sos_seq);
 		
+		System.out.println(svo);
 		
 		 request.setAttribute("svo", svo);
 		 RequestDispatcher rd = request.getRequestDispatcher("SOSlocation.jsp");

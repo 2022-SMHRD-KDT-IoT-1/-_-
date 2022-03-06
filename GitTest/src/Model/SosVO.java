@@ -18,6 +18,13 @@ public class SosVO {
 	private String mem_guardian_tel;
 	private String jp_num;
 	
+	
+	
+	
+	public SosVO() {
+		
+	}
+
 	public SosVO(int sos_seq, String sos_time, String latitude, String longitude, String mem_name, String mem_tel,
 			String mem_guardian_tel, String jp_num) {
 		super();
@@ -55,11 +62,11 @@ public class SosVO {
 		this.latitude = latitude;
 	}
 
-	public String getLongtitude() {
+	public String getLongitude() {
 		return longitude;
 	}
 
-	public void setLongtitude(String longitude) {
+	public void setLongitude(String longitude) {
 		this.longitude = longitude;
 	}
 

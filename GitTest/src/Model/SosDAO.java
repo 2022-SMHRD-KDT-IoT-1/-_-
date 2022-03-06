@@ -42,8 +42,9 @@ public class SosDAO {
 		
 		SqlSession session = sqlSessionFactory.openSession();
 		
+		System.out.println(sos_seq);
 		
-		SosVO vo = session.selectOne("viewSos",sos_seq);
+		SosVO vo = session.selectOne("ViewSos",sos_seq);
 		
 		session.close();
 		return  vo;

@@ -25,7 +25,7 @@
 			<ul>
 				<li><a href="ManagerMain.jsp" class="menu logo">logo</a></li>
 				<li><a href="communityMain?mem_id=<%=vo.getMem_id()%>" class="menu list">게시판</a></li>
-				<li><a href="SOSlocation" class="menu list">긴급메시지현황</a></li>
+				<li><a href="SosService" class="menu list">긴급메시지현황</a></li>
 				<li><a href="ManageService" class="menu list">회원관리</a></li>
 				<li><a href="LogoutService" class="menu list">로그아웃</a></li>
 			</ul>

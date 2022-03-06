@@ -42,7 +42,7 @@ public class LoginService extends HttpServlet {
 
 				PrintWriter out = response.getWriter();
 
-				out.println("location.href='ManagerMain.jsp';</script>");
+				out.println("<script>alert('관리자 로그인'); location.href='ManagerMain.jsp';</script>");
 
 				out.flush();
 			} else {

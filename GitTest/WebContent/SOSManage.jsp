@@ -109,12 +109,12 @@
                      </tr>
                   
                   <tbody>
-                  <%-- <%
+                  <%
 								for (SosVO vo : list) {
 							%>
 							<tr>
 								<td><%=vo.getSos_seq()%></td>
-								<td><%=vo.getLatitude()%><%=vo.getLongtitude()%></td>
+								<td><%=vo.getLatitude()%><%=vo.getLongitude()%></td>
 								<td><%=vo.getMem_name()%></td>
 								<td><%=vo.getMem_tel()%></td>
 								<td><%=vo.getMem_guardian_tel()%></td>
@@ -123,7 +123,7 @@
 							</tr>
 							<%
 								}
-							%> --%>
+							%> 
                   </tbody> 
                    </thead>
                </table>
