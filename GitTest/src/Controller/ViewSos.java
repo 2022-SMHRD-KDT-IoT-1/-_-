@@ -28,7 +28,7 @@ public class ViewSos extends HttpServlet {
 		SosDAO dao = new SosDAO();
 		SosVO svo = dao.viewSos(sos_seq);
 		
-		System.out.println(svo);
+		
 		
 		 request.setAttribute("svo", svo);
 		 RequestDispatcher rd = request.getRequestDispatcher("SOSlocation.jsp");

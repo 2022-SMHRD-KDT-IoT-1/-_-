@@ -23,6 +23,7 @@ public class SosService extends HttpServlet {
 		List<SosVO> list = dao.selectSos();
 		
 		request.setAttribute("list",list);
+		
 		RequestDispatcher rd = request.getRequestDispatcher("SOSManage.jsp");
 		rd.forward(request, response);
 	}
