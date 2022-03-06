@@ -64,12 +64,14 @@
 
 						<hr>
 
+
+									
 					</div>
 					<div class="menu">
 						<ul>
 							<li class="logoteam1"><a href="#"></a>menu</li>
-							<li><a href="communityMain" class="sb-menu sb-menu1" > 게시판 </a></li>
-							<li><a href="Location.jsp" class="sb-menu sb-menu2"> 실시간 </a></li>
+							<li><a href="communityMain?mem_id=<%=list.get(0).getMem_id() %>" class="sb-menu sb-menu1"  > 게시판 </a></li>
+							<li><a href="ViewLocation?mem_id=<%=list.get(0).getMem_id() %>" class="sb-menu sb-menu2"> 실시간 </a></li>
 							<li><a href="LogoutService" class="sb-menu"> 로그아웃 </a></li>
 						</ul>
 					</div>
@@ -82,9 +84,7 @@
 			<main>
 				<div class="content123">
 					<h1 class="this">게시판</h1>
-					<%-- 				<%
-					List<CommunityVO> list = (List<CommunityVO>) request.getAttribute("list");
-				%> --%>
+				
 					<div id="community">
 						<table id="comunityList" class="member1">
 							<thead>
@@ -102,7 +102,7 @@
 								<!-- ================예시=============== -->
 							<tbody>
 							<tr>
-								<%-- 	<%
+							<%
 										for (CommunityVO vo : list) {
 									%>
 									<td class="name td1""><%=vo.getArticle_seq()%></td>
@@ -113,7 +113,7 @@
 								</tr>
 								<%
 									}
-								%> --%>
+								%> 
 							
 						</table>
 					</div>

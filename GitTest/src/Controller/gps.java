@@ -24,7 +24,7 @@ public class gps extends HttpServlet {
 
 		double longitude = Double.parseDouble(request.getParameter("longitude"));
 		double latitude = Double.parseDouble(request.getParameter("latitude"));
-		String mem_id = "hjh950424";
+		
 		String loc_memo = "현재 위치는" +" 위도 :"+latitude + " 경도 : "+ longitude;
 		
 		
@@ -33,7 +33,7 @@ public class gps extends HttpServlet {
 		
 		
 		GpsDAO dao = new GpsDAO();
-		GpsVO vo = new GpsVO(mem_id, latitude, longitude, loc_memo);
+		GpsVO vo = new GpsVO(latitude, longitude, loc_memo);
 		
 		int cnt = dao.load(vo);
 		

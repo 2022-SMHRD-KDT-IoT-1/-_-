@@ -24,16 +24,19 @@ public class communityMain extends HttpServlet {
 		
 		
 		String mem_id = request.getParameter("mem_id");
+		System.out.println(mem_id);
 		CommunityDAO dao = new CommunityDAO();
 		List<CommunityVO> list = dao.communitySelect();
 
 		request.setAttribute("list", list);
 		
 		
+		
 		if(mem_id.contains("jp")) {
 			RequestDispatcher rd = request.getRequestDispatcher("ManageCommunitymain.jsp");
 			rd.forward(request, response);
-		}else {
+		}
+		else {
 		RequestDispatcher rd = request.getRequestDispatcher("communityMain.jsp");
 		rd.forward(request, response);
 		}

@@ -1,6 +1,7 @@
 package Controller;
 
 import java.io.IOException;
+import java.util.List;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -23,11 +24,10 @@ public class ViewLocation extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 			
 		String mem_id = request.getParameter("mem_id");
-		
 		System.out.println(mem_id);
 		GpsDAO dao = new GpsDAO();
 		GpsVO vo = dao.detect(mem_id);
-		System.out.println(vo);
+	
 		request.setAttribute("vo",vo);
 		
 		RequestDispatcher rd = request.getRequestDispatcher("Location.jsp");

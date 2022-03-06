@@ -60,7 +60,7 @@
 			<nav class="sb-sidenav sidemenu-bg">
 				<div class="sb-sidenav-menu">
 					<div class="nav">
-						<button type="button" onclick="location.href='LoginMain.jsp'" class="btm_image" id="img_btn"><img class = "eye" src="assets/image/logo.png"></button>
+						<button type="button" onclick="location.href='ManagerMain.jsp'" class="btm_image" id="img_btn"><img class = "eye" src="assets/image/logo.png"></button>
 
 						<hr>
 
@@ -68,8 +68,9 @@
 					<div class="menu">
 						<ul>
 							<li class="logoteam1"><a href="#"></a>menu</li>
-							<li><a href="ManageService" class="sb-menu sb-menu1" > 회원관리 </a></li>
-							<li><a href="Location.jsp" class="sb-menu sb-menu2"> 긴급메시지현황 </a></li>
+							<li><a href="ManageService" class="sb-menu sb-menu2" > 회원관리 </a></li>
+							<li><a href="SosService" class="sb-menu sb-menu2"> 긴급메시지현황 </a></li>
+							<li><a href="communityMain?mem_id=<%=list.get(0).getMem_id() %>" class="sb-menu sb-menu1" >게시판 </a></li>
 							<li><a href="LogoutService" class="sb-menu"> 로그아웃 </a></li>
 						</ul>
 					</div>

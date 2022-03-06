@@ -22,7 +22,8 @@ public class LoginService extends HttpServlet {
 
 		String mem_id = request.getParameter("mem_id");
 		String mem_pw = request.getParameter("mem_pw");
-
+		System.out.println(mem_id);
+		
 		MemberVO vo = new MemberVO(mem_id, mem_pw);
 
 		MemberDAO dao = new MemberDAO();
@@ -41,7 +42,7 @@ public class LoginService extends HttpServlet {
 
 				PrintWriter out = response.getWriter();
 
-				out.println("<script>alert('관리자 로그인'); location.href='ManagerMain.jsp';</script>");
+				out.println("location.href='ManagerMain.jsp';</script>");
 
 				out.flush();
 			} else {
