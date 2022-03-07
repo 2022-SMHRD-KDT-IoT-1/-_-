@@ -15,7 +15,7 @@
 	<% MemberVO vo = (MemberVO)session.getAttribute("vo"); %>
 	<div></div>
 	<div class="wrap">
-		<video muted autoplay loop> <source src="assets/bg/bg.mp4"
+		<video muted autoplay loop> <source src="assets/bg/wewalk.mp4"
 			type="video/mp4"></video>
 		<div class="wrap_bg">
 			<a href="Mypage.jsp" class="userimage"><img src="assets/image/user.png"></a>
@@ -23,18 +23,19 @@
 
 		<div class="menu">
 			<ul>
-				<li><a href="ManagerMain.jsp" class="menu logo">logo</a></li>
-				<li><a href="communityMain?mem_id=<%=vo.getMem_id()%>" class="menu list">게시판</a></li>
-				<li><a href="SosService" class="menu list">긴급메시지현황</a></li>
+				<li><button type="button" onclick="location.href='ManagerMain.jsp'"
+						class="btm_image" id="img_btn">
+						<img class = "eye" src="assets/image/logo.png">
+					</button></li>
 				<li><a href="ManageService" class="menu list">회원관리</a></li>
+				<li><a href="SosService" class="menu list">긴급메시지현황</a></li>
+				<li><a href="communityMain?mem_id=<%=vo.getMem_id()%>" class="menu list">게시판</a></li>
 				<li><a href="LogoutService" class="menu list">로그아웃</a></li>
 			</ul>
 		</div>
-		<div class="ma1">
-			<p class="ma">
-				We will return<br> your sight
-			</p>
-		</div>
+		<div class="fade-in-box1">
+				We are always by<br> your side<br>
+			</div>
 
 	</div>
 </body>

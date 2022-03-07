@@ -55,8 +55,8 @@
 					<div class="menu">
 						<ul>
 							<li class="logoteam1"><a href="#"></a>menu</li>
-							<li><a href="communityMain?mem_id=<%=cvo.getMem_id() %>" class="sb-menu"> 게시판 </a></li>
-							<li><a href="ViewLocation?mem_id=<%=cvo.getMem_id() %>" class="sb-menu"> 실시간 </a></li>
+							<li><a href="communityMain?mem_id=<%=cvo.getMem_id() %>" class="sb-menu sb-menu1""> 게시판 </a></li>
+							<li><a href="ViewLocation?mem_id=<%=cvo.getMem_id() %>" class="sb-menu sb-menu2""> 실시간 </a></li>
 							<li><a href="Logoutservice" class="sb-menu"> 로그아웃 </a></li>
 						</ul>
 					</div>

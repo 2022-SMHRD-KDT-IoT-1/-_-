@@ -23,6 +23,7 @@
 
 
 <link href="assets/css/styles6.css" rel="stylesheet" />
+<link href="assets/css/styles10.css" rel="stylesheet" />
 
 
 
@@ -105,7 +106,7 @@
 										for (CommunityVO vo : list) {
 									%>
 									<td class="name td1""><%=vo.getArticle_seq()%></td>
-									<td class="title td1"><a
+									<td class="title td1"><a class="abc1"
 										href="communityView?num=<%=vo.getArticle_seq()%>"><%=vo.getArticle_title()%></a></td>
 									<td class="gender td1"><%=vo.getMem_id()%></td>
 									<td class="date td1"><%=vo.getArticle_date()%></td>

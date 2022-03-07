@@ -48,7 +48,13 @@ margin-top: 30px;
     margin-left: 95px;
     margin-top: 136px;
     font-size: 38px;
-    width: 200px;
+    width: 320px;
+}
+
+
+.check{
+	border: none;
+	background: none;
 }
 
 hr {
@@ -190,6 +196,12 @@ text-align: center;
 .sidemenu-bg {
 	background-color: #212537;
 }
+
+.sosmenu{
+	width: 224px;
+	padding-left: 8%;
+}
+
 
 .sb-sidenav {
     height: 104.2%;

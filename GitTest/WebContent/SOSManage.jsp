@@ -50,15 +50,7 @@
 			<a href="Mypage.jsp" class="userimage"><img
 				src="assets/image/user1.png"></a>
 		</div>
-
-
-
-		<!-- 검색-->
-
-
 	</nav>
-
-
 	<!-- 레이아웃 왼쪽 사이드바 -->
 	<div id="sidemenu">
 		<div id="sidemenu_section">
@@ -66,32 +58,26 @@
 				<div class="sb-sidenav-menu">
 					<div class="nav">
 						<button type="button" onclick="location.href='ManagerMain.jsp'" class="btm_image" id="img_btn"><img class = "eye" src="assets/image/logo.png"></button>
-
-
 						<hr>
-
 					</div>
 					<div class="menu">
 						<ul>
 							<li class="logoteam1"><a href="#"></a>menu</li>
-							<li><a href="ManageMember.jsp" class="sb-menu sb-menu1" >회원관리 </a></li>
-							<li><a href="SOSLocation.jsp" class="sb-menu sb-menu2"> 실시간 </a></li>
-							<li><a href="LogoutService" class="sb-menu"> 로그아웃 </a></li>
+                     <li><a href="ManageService" class="sb-menu sb-menu2">회원관리</a></li>
+                     <li class="sosmenu"><a href="#" class="sb-menu sb-menu1">긴급메시지현황</a></li>
+                     <li><a href="ManageCommunitymain.jsp" class="sb-menu sb-menu2" >게시판 </a></li>
+                     <li><a href="LogoutService" class="sb-menu"> 로그아웃 </a></li>
 						</ul>
 					</div>
 			</nav>
-
-
-
 		</div>
 		<div id="layoutSidenav_content">
 			<main>
 				 <div class>
-               <h1 class="this">회원관리</h1>
+               <h1 class="this">긴급메시지현황</h1>
                <div>
                <table id="list" class="member">
-                  <thead>
-                  
+                  <thead>         
                   <!-- ================예시=============== -->
                      <tr>
                         <th class="name th1" scope="col">신고 순번

@@ -67,7 +67,7 @@
 							<li class="logoteam1"><a href="#"></a>menu</li>
 							<li><a href="ManageService" class="sb-menu sb-menu1" >회원관리 </a></li>
 							<li><a href="SosService" class="sb-menu sb-menu2">긴급메시지현황</a></li>
-							<li><a href="communityMain?mem_id=<%=list.get(0).getMem_id() %>" class="sb-menu sb-menu2" >게시판 </a></li>
+							<li><a href="ManageCommunitymain.jsp" class="sb-menu sb-menu2" >게시판 </a></li>
 							<li><a href="LogoutService" class="sb-menu"> 로그아웃 </a></li>
 						</ul>
 					</div>
@@ -110,7 +110,7 @@
                         <td><%=vo.getMem_birthdate()%></td>
                         <td><%=vo.getMem_tel()%></td>
                         <td><%=vo.getMem_guardian_tel()%></td>
-                        <td><%=vo.getJp_num()%></td>
+                        <td><%=vo.getJp_num()%>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="check">dd</button></td>
 
                      </tr>
                      <%

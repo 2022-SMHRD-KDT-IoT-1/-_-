@@ -33,7 +33,7 @@ main {
 }
 
 .write {
-	text-align: center;
+	text-align: right;
 	margin-left: 865px;
 	margin-top: 20px;
 	width: 38%;
@@ -825,8 +825,8 @@ button#img_btn {
 }
 
 img.eye {
-    width: 100px;
+width: 194px;
     height: 100px;
-    margin-left: 81px;
+    margin-left: 33px;
     margin-top: -7px;
 }

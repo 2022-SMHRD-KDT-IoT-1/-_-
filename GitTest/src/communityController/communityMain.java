@@ -24,22 +24,26 @@ public class communityMain extends HttpServlet {
 		
 		
 		String mem_id = request.getParameter("mem_id");
-		System.out.println(mem_id);
+		
 		CommunityDAO dao = new CommunityDAO();
 		List<CommunityVO> list = dao.communitySelect();
-
+		String id = list.get(0).getMem_id();
+		
 		request.setAttribute("list", list);
 		
-		
-		
-		if(mem_id.contains("jp")) {
-			RequestDispatcher rd = request.getRequestDispatcher("ManageCommunitymain.jsp");
-			rd.forward(request, response);
-		}
-		else {
 		RequestDispatcher rd = request.getRequestDispatcher("communityMain.jsp");
 		rd.forward(request, response);
+		
+		if(mem_id.contains("jp")) {
+			RequestDispatcher rd1 = request.getRequestDispatcher("ManageCommunitymain.jsp");
+			rd1.forward(request, response);
 		}
+		else {
+		RequestDispatcher rd1 = request.getRequestDispatcher("communityMain.jsp");
+		rd1.forward(request, response);
+		}
+		
+		
 	}
 
 }

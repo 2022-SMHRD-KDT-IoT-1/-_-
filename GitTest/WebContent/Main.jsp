@@ -12,10 +12,9 @@
 </head>
 
 <body>
-	<div>
-	</div>
+
 	<div class="wrap">
-		<video muted autoplay loop> <source src="assets/bg/bg.mp4"
+		<video muted autoplay> <source src="assets/bg/wewalk.mp4"
 			type="video/mp4"></video>
 		<div class="wrap_bg">
 		</div>
@@ -25,17 +24,19 @@
 				<button type="button" onclick="location.href='Main.jsp'" class="btm_image" id="img_btn"><img class = "eye" src="assets/image/logo.png"></button>
 			</ul>
 		</div>
-		<div class="ma1">
-			<p class="ma">
-				We will be<br> your staff
-			</p>	
-			<a href="Login.jsp" class="mainbtn-2"><button class="mainbtn-1">Join</button></a>
-		</div>
-		<div class="mainbtn">
-			
+		<div>
+		<div class="fade-in-box">
+				We are always by<br> your side<br>
+			<a href="Login.jsp" class="mainbtn-2"><button class="mainbtn-1" onclick="change()">Join</button></a>
 			</div>
+		</div>
 
 	</div>
+
+    	
+    	
+	
+	
 </body>
 </html>
 

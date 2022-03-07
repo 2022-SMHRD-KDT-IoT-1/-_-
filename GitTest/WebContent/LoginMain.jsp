@@ -15,9 +15,9 @@
 	<%
 		MemberVO vo = (MemberVO) session.getAttribute("vo");
 	%>
-	<div></div>
+	
 	<div class="wrap">
-		<video muted autoplay loop> <source src="assets/bg/bg.mp4"
+		<video muted autoplay loop> <source src="assets/bg/wewalk.mp4"
 			type="video/mp4"></video>
 		<div class="wrap_bg">
 			<a href="Mypage.jsp"><img src="assets/image/user.png"></a>
@@ -34,10 +34,11 @@
 				<li><a href="LogoutService" class="menu list">·Î±×¾Æ¿ô</a></li>
 			</ul>
 		</div>
-		<div class="ma1">
-			<p class="ma">
-				We will return<br> your sight
-			</p>
+		<div>
+		<div class="fade-in-box1">
+				We are always by<br> your side<br>
+			</div>
+		</div>
 		</div>
 
 	</div>

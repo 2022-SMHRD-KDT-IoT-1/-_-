@@ -17,7 +17,7 @@
     
     <body>
 	<div class="wrap">
-		<video muted autoplay loop> <source src="assets/bg/bg.mp4" type="video/mp4"></video>
+		<video muted autoplay> <source src="assets/bg/wewalk.mp4" type="video/mp4"></video>
 		<div class="menu">	
 			
 			
