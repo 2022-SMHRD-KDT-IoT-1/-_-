@@ -25,10 +25,10 @@ public class MessageSend {
   public void MessageTest() {
     try {
       // send					
-      params.put("to", "01082651707");
-      params.put("from", "01082651707");
+      params.put("to", "01062561988");
+      params.put("from", "01062561988");
       params.put("type", "SMS");
-      params.put("text", "sos test");
+      params.put("text", "JP사용자 '한준희'님께서 긴급신호를 보내셨습니다");
       params.put("mode", "test");
       result = message.send(params);
       assertNotNull(result.get("group_id"));

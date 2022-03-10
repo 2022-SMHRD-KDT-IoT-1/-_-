@@ -110,7 +110,7 @@
                         <td><%=vo.getMem_birthdate()%></td>
                         <td><%=vo.getMem_tel()%></td>
                         <td><%=vo.getMem_guardian_tel()%></td>
-                        <td><%=vo.getJp_num()%>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="check">dd</button></td>
+                        <td><%=vo.getJp_num()%></td>
 
                      </tr>
                      <%

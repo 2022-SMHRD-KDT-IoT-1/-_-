@@ -17,7 +17,7 @@ public class GpsDAO {
 			String resource = "Mapper/config.xml";
 			InputStream inputStream = Resources.getResourceAsStream(resource);
 			sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
-			System.out.println("들어오니");
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

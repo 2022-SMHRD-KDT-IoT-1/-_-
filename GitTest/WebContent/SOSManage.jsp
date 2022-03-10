@@ -78,7 +78,7 @@
                <div>
                <table id="list" class="member">
                   <thead>         
-                  <!-- ================예시=============== -->
+                  
                      <tr>
                         <th class="name th1" scope="col">신고 순번
                         </td>
@@ -104,9 +104,10 @@
 								<td><%=vo.getMem_name()%></td>
 								<td><%=vo.getMem_tel()%></td>
 								<td><%=vo.getMem_guardian_tel()%></td>
-								<td><a href = "ViewSos?num=<%=vo.getSos_seq()%>"><%=vo.getJp_num()%></a></td>
+								<td><a><%=vo.getJp_num()%><button id="checkbtn" class="check">미발송</button></a></td>
 
 							</tr>
+							
 							<%
 								}
 							%> 
@@ -119,6 +120,18 @@
 			</main>
 		</div>
 		<!-- 레이아웃 왼쪽 사이드바 -->
+		
+		<script src="//code.jquery.com/jquery.min.js"></script>
+      <script>
+         $(function() {
+            $('#checkbtn').click(function() {
+               if ($(this).html() == '미발송') {
+                  $(this).html('발송완료');
+               } 
+            });
+         });
+      </script>
+     
 
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

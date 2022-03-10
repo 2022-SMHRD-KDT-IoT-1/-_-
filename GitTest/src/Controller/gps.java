@@ -27,11 +27,6 @@ public class gps extends HttpServlet {
 		
 		String loc_memo = "현재 위치는" +" 위도 :"+latitude + " 경도 : "+ longitude;
 		
-		
-		System.out.print("위도 :" + latitude );
-		System.out.print("경도 :" + longitude );
-		
-		
 		GpsDAO dao = new GpsDAO();
 		GpsVO vo = new GpsVO(latitude, longitude, loc_memo);
 		
@@ -39,10 +34,8 @@ public class gps extends HttpServlet {
 		
 		if(cnt > 0) {
 			
-			
 			response.setStatus(200);	
 			 
-			
 			//성공
 			
 		}else {
@@ -50,15 +43,9 @@ public class gps extends HttpServlet {
 			
 			response.setStatus(400);	
 			 
-			
-			
 		}
-		
-		
-		return;
+			return;
 				
-	
-	
 	}
 	
 }

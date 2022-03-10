@@ -14,19 +14,11 @@ public class GpsVO {
 	private double longitude;
 	private String loc_memo;
 	private String loc_date;
-	
-	
 
-
-	
 	
 	public GpsVO() {
 	
 	}
-
-
-
-
 
 	public GpsVO(int jp_loc_seq, double latitude, double longitude, String mem_id, String mem_name, String mem_tel, String mem_guardian_tel, String jp_num
 			) {
