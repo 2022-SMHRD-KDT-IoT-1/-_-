@@ -53,7 +53,7 @@
 ![image](https://user-images.githubusercontent.com/99255481/158327431-0d0d8078-9ac1-477d-b91b-118a04e28bb5.png)
 
 
-### 7. 회로도!
+### 7. 회로도
 
 
 ![image](https://user-images.githubusercontent.com/99255481/158327472-02205ce2-bf8a-4cad-a143-3826dec04863.png)
