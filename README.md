@@ -37,25 +37,39 @@
 
  ### 4. 대표 이미지
  
- 
+ ![image](https://user-images.githubusercontent.com/99255481/158326598-5c66694e-0f68-4daa-9ce0-df32bab6dbed.png)
  ### 5. 기능 흐름도
   
   > 디스펜서
 
+![image](https://user-images.githubusercontent.com/99255481/158327219-132e087a-6f62-485c-ba4e-32b6aaf47c21.png)
 
   > 웹 페이지
+  
+![image](https://user-images.githubusercontent.com/99255481/158327117-5f09084a-ff9b-450a-9576-51cb30ec61fc.png)
+
 
 ### 6. 사용 부품
+![image](https://user-images.githubusercontent.com/99255481/158327431-0d0d8078-9ac1-477d-b91b-118a04e28bb5.png)
 
 
-### 7. 회로도
+### 7. 회로도!
+
+
+![image](https://user-images.githubusercontent.com/99255481/158327472-02205ce2-bf8a-4cad-a143-3826dec04863.png)
 
 ### 8. 최종 산출물
 
   > 준팡이 Mok-Up
-  
+
+![image](https://user-images.githubusercontent.com/99255481/158327528-0096be2c-3439-45f5-bed2-b37631341133.png)
+
 
   > 웹 페이지 화면
+
+![image](https://user-images.githubusercontent.com/99255481/158327596-12a9d3c6-eff4-45c9-953d-6ee12509fafd.png)
+![image](https://user-images.githubusercontent.com/99255481/158327640-9dfc3452-5179-4100-8e97-c847948e88d5.png)
+
 
 ### 9. 제작일정
 
