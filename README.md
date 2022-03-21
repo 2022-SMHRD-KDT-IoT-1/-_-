@@ -88,3 +88,21 @@
 |김*웅|aduino 설계 / 디바이스 기능 제작 및 3D모델링|
 |최*훈|웹 페이지 디자인 설계 및 제작 |
 |정*비|DB 설계 / 메시징 서비스 구현(COOLSMS API)|
+
+
+### 제품 시연영상
+ 
+  > 웹 페이지 영상
+
+
+https://user-images.githubusercontent.com/99255481/159208266-2906ff43-2c13-40d9-8b3b-41847ef020e3.mp4
+
+
+  > 제품 영상
+  
+ 
+
+https://user-images.githubusercontent.com/99255481/159211304-36de2c77-dd85-40a4-991a-5fdc37a3616e.mp4
+
+
+
